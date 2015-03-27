@@ -468,7 +468,7 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #777777; }
+  color: white; }
 
 .text-primary {
   color: #337ab7; }
@@ -528,10 +528,10 @@ a.bg-warning:hover {
   background-color: #f7ecb5; }
 
 .bg-danger {
-  background-color: #f2dede; }
+  background-color: red; }
 
 a.bg-danger:hover {
-  background-color: #e4b9b9; }
+  background-color: #cc0000; }
 
 .page-header {
   padding-bottom: 9px;
@@ -1375,7 +1375,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777777;
+  color: white;
   text-align: left; }
 
 th {
@@ -2172,19 +2172,19 @@ select[multiple].input-lg,
 
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a; }
+  background-color: red;
+  border-color: #e60000; }
   .btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
     color: #fff;
-    background-color: #c9302c;
-    border-color: #ac2925; }
+    background-color: #cc0000;
+    border-color: #a80000; }
   .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
     background-image: none; }
   .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
-    background-color: #d9534f;
-    border-color: #d43f3a; }
+    background-color: red;
+    border-color: #e60000; }
   .btn-danger .badge {
-    color: #d9534f;
+    color: red;
     background-color: #fff; }
 
 .btn-link {
@@ -4138,9 +4138,9 @@ a.label:hover, a.label:focus {
     background-color: #ec971f; }
 
 .label-danger {
-  background-color: #d9534f; }
+  background-color: red; }
   .label-danger[href]:hover, .label-danger[href]:focus {
-    background-color: #c9302c; }
+    background-color: #cc0000; }
 
 .badge {
   display: inline-block;
@@ -4364,7 +4364,7 @@ a.thumbnail.active {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-danger {
-  background-color: #d9534f; }
+  background-color: red; }
   .progress-striped .progress-bar-danger {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5621,5 +5621,860 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+html,
+body {
+  height: 100%; }
+
+.navbar {
+  min-height: 90px;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%; }
+  .navbar .navbar-nav {
+    float: none;
+    text-align: right;
+    padding-top: 14px; }
+    .navbar .navbar-nav li {
+      float: none;
+      display: inline-block;
+      font-size: rem(18px);
+      font-size: 24px;
+      padding: 0 21px; }
+      .navbar .navbar-nav li a {
+        color: gray; }
+
+.portada {
+  background-image: url("http://placehold.it/1200x700");
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  display: table; }
+  .portada .text-vertical-center {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 63px; }
+    .portada .text-vertical-center h3 {
+      font-size: 40px; }
+    .portada .text-vertical-center p {
+      font-size: 18px; }
+
+.nosotros {
+  background-color: #eeeeee;
+  padding: 70px 300px; }
+  .nosotros p {
+    color: gray;
+    font-size: 18px; }
+  .nosotros .btn-custom {
+    color: #3ea4a8;
+    border: 2px solid;
+    background-color: #eeeeee;
+    padding: 7px 42px;
+    font-size: 21px;
+    margin-top: 35px; }
+
+.col-xs-8 {
+  padding: 3% 0; }
+
+.bg-danger,
+.bg-info {
+  padding: 3%; }
+  .bg-danger button,
+  .bg-info button {
+    margin-top: 35px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 30px; }
+
+.caricaturas {
+  background-color: #eeeeee; }
+
+.alianzas ul {
+  padding: 0 21%;
+  margin-bottom: 42px; }
+
+.novedades {
+  background-color: #eeeeee; }
+  .novedades .post {
+    background-color: white;
+    color: gray; }
+    .novedades .post img {
+      width: 100%; }
+    .novedades .post h4 {
+      padding: 21px 0; }
+    .novedades .post p {
+      padding: 0 21px 21px; }
+  .novedades .posts {
+    padding: 0 7%; }
+  .novedades .btn-custom {
+    color: #3ea4a8;
+    border: 2px solid;
+    background-color: #eeeeee;
+    padding: 7px 42px;
+    font-size: 21px;
+    margin: 35px 0; }
+
+.noticias {
+  padding: 7% 21%; }
+  .noticias h4 {
+    font-size: 42px; }
+  .noticias .input-group-addon {
+    background-color: #0478e8;
+    color: white; }
+
+.redes .sociales {
+  height: 300px;
+  background-color: lightgray; }
+.redes .redessociales {
+  padding: 0 14% 7%; }
+
+.footer {
+  background-color: black;
+  padding: 7px 42px; }
+  .footer .text-right {
+    border-right: 1px solid; }
+
+html,
+body {
+  height: 100%; }
+
+.navbar {
+  min-height: 90px;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%; }
+  .navbar .navbar-nav {
+    float: none;
+    text-align: right;
+    padding-top: 14px; }
+    .navbar .navbar-nav li {
+      float: none;
+      display: inline-block;
+      font-size: rem(18px);
+      font-size: 24px;
+      padding: 0 21px; }
+      .navbar .navbar-nav li a {
+        color: gray; }
+
+#portada {
+  background-image: url("http://placehold.it/1200x700");
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  display: table; }
+  #portada .text-vertical-center {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 63px; }
+    #portada .text-vertical-center h3 {
+      font-size: 40px; }
+    #portada .text-vertical-center p {
+      font-size: 18px; }
+
+#seccion2 {
+  padding: 35px; }
+  #seccion2 p {
+    color: gray;
+    font-size: 18px; }
+
+.col-xs-8 {
+  padding: 3% 0; }
+
+#area {
+  background-color: #eeeeee;
+  padding: 0 100px; }
+  #area .trabajo {
+    padding-bottom: 14px; }
+    #area .trabajo .areastrabajo img {
+      width: 100%; }
+  #area .overlay {
+    padding: 21px; }
+    #area .overlay h3 {
+      margin-bottom: 35px; }
+
+.overlay:hover {
+  background-color: #cef7f5;
+  border: 1px solid #2996b6; }
+
+#equipo {
+  padding: 42px 0; }
+  #equipo .row .col-md-4 .text-center {
+    padding: 0 70px; }
+    #equipo .row .col-md-4 .text-center img {
+      width: 100%; }
+    #equipo .row .col-md-4 .text-center h4 {
+      color: #0cc7cf; }
+
+#asociados {
+  background-color: lightgray; }
+  #asociados .colaboradores {
+    padding-bottom: 42px; }
+
+footer {
+  background-color: black;
+  padding: 7px 42px; }
+  footer .text-right {
+    border-right: 1px solid; }
+
+body,
+html,
+.container-fluid,
+.container {
+  height: 100%; }
+
+.navbar-default {
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+
+.navbar-nav {
+  float: none;
+  text-align: right; }
+  .navbar-nav li {
+    float: none;
+    display: inline-block; }
+
+#portada {
+  background-image: url(http://placehold.it/1000x500);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative; }
+  #portada .botones-portada {
+    text-align: center;
+    margin-top: 125px;
+    margin-left: 43%; }
+    #portada .botones-portada .btn-default {
+      background-color: transparent;
+      color: white; }
+    #portada .botones-portada .btn-fold {
+      float: left;
+      border-radius: 0;
+      border: 1px solid white; }
+
+#nosotros .text-center {
+  padding: 7% 14%; }
+
+#novedades {
+  background-color: lightgray; }
+  #novedades .container {
+    padding: 0 7%;
+    padding-bottom: 2%; }
+
+footer {
+  background-color: black;
+  padding: 7px 42px; }
+  footer .text-right {
+    border-right: 1px solid; }
+  footer .col-xs-8 {
+    padding: 3% 0; }
+
+body,
+html,
+.container-fluid,
+.container {
+  height: 100%; }
+
+.navbar-default {
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+
+.navbar {
+  min-height: 90px;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%; }
+  .navbar .navbar-nav {
+    float: none;
+    text-align: right;
+    padding-top: 14px; }
+    .navbar .navbar-nav li {
+      float: none;
+      display: inline-block;
+      font-size: rem(18px);
+      font-size: 24px;
+      padding: 0 21px; }
+      .navbar .navbar-nav li a {
+        color: gray; }
+
+#portada {
+  background-image: url(http://placehold.it/1000x500);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative; }
+
+#novedades .container {
+  padding: 0 7%;
+  padding-bottom: 2%; }
+#novedades h3 {
+  text-align: initial;
+  padding: 21px 0; }
+#novedades .novedades {
+  position: relative; }
+  #novedades .novedades img {
+    width: 100%; }
+  #novedades .novedades .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    #novedades .novedades .overlay h4,
+    #novedades .novedades .overlay p {
+      visibility: hidden; }
+
+.overlay:hover h4,
+.overlay:hover p {
+  visibility: visible; }
+
+.overlay:hover {
+  background-color: #d7e0e9; }
+
+footer {
+  background-color: black;
+  padding: 7px 42px; }
+  footer .text-right {
+    border-right: 1px solid; }
+  footer .col-xs-8 {
+    padding: 3% 0; }
+
+body,
+html,
+.container-fluid,
+.container {
+  height: 100%; }
+
+.navbar {
+  min-height: 90px;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%; }
+  .navbar .navbar-nav {
+    float: none;
+    text-align: right;
+    padding-top: 14px; }
+    .navbar .navbar-nav li {
+      float: none;
+      display: inline-block;
+      font-size: rem(18px);
+      font-size: 24px;
+      padding: 0 21px; }
+      .navbar .navbar-nav li a {
+        color: gray; }
+
+.navbar-nav {
+  float: none;
+  text-align: right; }
+  .navbar-nav li {
+    float: none;
+    display: inline-block; }
+
+#portada {
+  background-image: url(http://placehold.it/1000x500);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative; }
+  #portada .botones-portada {
+    text-align: center;
+    margin-top: 125px;
+    margin-left: 43%; }
+    #portada .botones-portada .btn-default {
+      background-color: transparent;
+      color: white; }
+    #portada .botones-portada .btn-fold {
+      float: left;
+      border-radius: 0;
+      border: 1px solid white; }
+
+#nosotros .btn-custom {
+  color: #3ea4a8;
+  border: 2px solid;
+  padding: 7px 42px;
+  font-size: 21px;
+  margin: 35px 0; }
+#nosotros .text-center {
+  padding: 7% 14%; }
+
+#novedades {
+  background-color: lightgray; }
+  #novedades .container {
+    padding: 0 7%;
+    padding-bottom: 2%; }
+  #novedades .btn-custom {
+    color: #3ea4a8;
+    border: 2px solid;
+    padding: 7px 42px;
+    font-size: 21px;
+    margin: 35px 0; }
+
+footer {
+  background-color: black;
+  padding: 7px 42px; }
+  footer .text-right {
+    border-right: 1px solid; }
+  footer .col-xs-8 {
+    padding: 3% 0; }
+
+.p-0 {
+  padding: rem(0) !important;
+  padding: 0px !important; }
+
+.p-7 {
+  padding: rem(7) !important;
+  padding: 7px !important; }
+
+.p-14 {
+  padding: rem(14) !important;
+  padding: 14px !important; }
+
+.p-21 {
+  padding: rem(21) !important;
+  padding: 21px !important; }
+
+.p-28 {
+  padding: rem(28) !important;
+  padding: 28px !important; }
+
+.p-35 {
+  padding: rem(35) !important;
+  padding: 35px !important; }
+
+.p-42 {
+  padding: rem(42) !important;
+  padding: 42px !important; }
+
+.p-49 {
+  padding: rem(49) !important;
+  padding: 49px !important; }
+
+.p-56 {
+  padding: rem(56) !important;
+  padding: 56px !important; }
+
+.p-63 {
+  padding: rem(63) !important;
+  padding: 63px !important; }
+
+.p-70 {
+  padding: rem(70) !important;
+  padding: 70px !important; }
+
+.m-0 {
+  margin: rem(0) !important;
+  margin: 0px !important; }
+
+.m-7 {
+  margin: rem(7) !important;
+  margin: 7px !important; }
+
+.m-14 {
+  margin: rem(14) !important;
+  margin: 14px !important; }
+
+.m-21 {
+  margin: rem(21) !important;
+  margin: 21px !important; }
+
+.m-28 {
+  margin: rem(28) !important;
+  margin: 28px !important; }
+
+.m-35 {
+  margin: rem(35) !important;
+  margin: 35px !important; }
+
+.m-42 {
+  margin: rem(42) !important;
+  margin: 42px !important; }
+
+.m-49 {
+  margin: rem(49) !important;
+  margin: 49px !important; }
+
+.m-56 {
+  margin: rem(56) !important;
+  margin: 56px !important; }
+
+.m-63 {
+  margin: rem(63) !important;
+  margin: 63px !important; }
+
+.m-70 {
+  margin: rem(70) !important;
+  margin: 70px !important; }
+
+.pt-0 {
+  padding-top: rem(0) !important;
+  padding-top: 0px !important; }
+
+.pt-7 {
+  padding-top: rem(7) !important;
+  padding-top: 7px !important; }
+
+.pt-14 {
+  padding-top: rem(14) !important;
+  padding-top: 14px !important; }
+
+.pt-21 {
+  padding-top: rem(21) !important;
+  padding-top: 21px !important; }
+
+.pt-28 {
+  padding-top: rem(28) !important;
+  padding-top: 28px !important; }
+
+.pt-35 {
+  padding-top: rem(35) !important;
+  padding-top: 35px !important; }
+
+.pt-42 {
+  padding-top: rem(42) !important;
+  padding-top: 42px !important; }
+
+.pt-49 {
+  padding-top: rem(49) !important;
+  padding-top: 49px !important; }
+
+.pt-56 {
+  padding-top: rem(56) !important;
+  padding-top: 56px !important; }
+
+.pt-63 {
+  padding-top: rem(63) !important;
+  padding-top: 63px !important; }
+
+.pt-70 {
+  padding-top: rem(70) !important;
+  padding-top: 70px !important; }
+
+.pb-0 {
+  padding-bottom: rem(0) !important;
+  padding-bottom: 0px !important; }
+
+.pb-7 {
+  padding-bottom: rem(7) !important;
+  padding-bottom: 7px !important; }
+
+.pb-14 {
+  padding-bottom: rem(14) !important;
+  padding-bottom: 14px !important; }
+
+.pb-21 {
+  padding-bottom: rem(21) !important;
+  padding-bottom: 21px !important; }
+
+.pb-28 {
+  padding-bottom: rem(28) !important;
+  padding-bottom: 28px !important; }
+
+.pb-35 {
+  padding-bottom: rem(35) !important;
+  padding-bottom: 35px !important; }
+
+.pb-42 {
+  padding-bottom: rem(42) !important;
+  padding-bottom: 42px !important; }
+
+.pb-49 {
+  padding-bottom: rem(49) !important;
+  padding-bottom: 49px !important; }
+
+.pb-56 {
+  padding-bottom: rem(56) !important;
+  padding-bottom: 56px !important; }
+
+.pb-63 {
+  padding-bottom: rem(63) !important;
+  padding-bottom: 63px !important; }
+
+.pb-70 {
+  padding-bottom: rem(70) !important;
+  padding-bottom: 70px !important; }
+
+.pl-0 {
+  padding-left: rem(0) !important;
+  padding-left: 0px !important; }
+
+.pl-7 {
+  padding-left: rem(7) !important;
+  padding-left: 7px !important; }
+
+.pl-14 {
+  padding-left: rem(14) !important;
+  padding-left: 14px !important; }
+
+.pl-21 {
+  padding-left: rem(21) !important;
+  padding-left: 21px !important; }
+
+.pl-28 {
+  padding-left: rem(28) !important;
+  padding-left: 28px !important; }
+
+.pl-35 {
+  padding-left: rem(35) !important;
+  padding-left: 35px !important; }
+
+.pl-42 {
+  padding-left: rem(42) !important;
+  padding-left: 42px !important; }
+
+.pl-49 {
+  padding-left: rem(49) !important;
+  padding-left: 49px !important; }
+
+.pl-56 {
+  padding-left: rem(56) !important;
+  padding-left: 56px !important; }
+
+.pl-63 {
+  padding-left: rem(63) !important;
+  padding-left: 63px !important; }
+
+.pl-70 {
+  padding-left: rem(70) !important;
+  padding-left: 70px !important; }
+
+.pr-0 {
+  padding-right: rem(0) !important;
+  padding-right: 0px !important; }
+
+.pr-7 {
+  padding-right: rem(7) !important;
+  padding-right: 7px !important; }
+
+.pr-14 {
+  padding-right: rem(14) !important;
+  padding-right: 14px !important; }
+
+.pr-21 {
+  padding-right: rem(21) !important;
+  padding-right: 21px !important; }
+
+.pr-28 {
+  padding-right: rem(28) !important;
+  padding-right: 28px !important; }
+
+.pr-35 {
+  padding-right: rem(35) !important;
+  padding-right: 35px !important; }
+
+.pr-42 {
+  padding-right: rem(42) !important;
+  padding-right: 42px !important; }
+
+.pr-49 {
+  padding-right: rem(49) !important;
+  padding-right: 49px !important; }
+
+.pr-56 {
+  padding-right: rem(56) !important;
+  padding-right: 56px !important; }
+
+.pr-63 {
+  padding-right: rem(63) !important;
+  padding-right: 63px !important; }
+
+.pr-70 {
+  padding-right: rem(70) !important;
+  padding-right: 70px !important; }
+
+.mt-0 {
+  margin-top: rem(0) !important;
+  margin-top: 0px !important; }
+
+.mt-7 {
+  margin-top: rem(7) !important;
+  margin-top: 7px !important; }
+
+.mt-14 {
+  margin-top: rem(14) !important;
+  margin-top: 14px !important; }
+
+.mt-21 {
+  margin-top: rem(21) !important;
+  margin-top: 21px !important; }
+
+.mt-28 {
+  margin-top: rem(28) !important;
+  margin-top: 28px !important; }
+
+.mt-35 {
+  margin-top: rem(35) !important;
+  margin-top: 35px !important; }
+
+.mt-42 {
+  margin-top: rem(42) !important;
+  margin-top: 42px !important; }
+
+.mt-49 {
+  margin-top: rem(49) !important;
+  margin-top: 49px !important; }
+
+.mt-56 {
+  margin-top: rem(56) !important;
+  margin-top: 56px !important; }
+
+.mt-63 {
+  margin-top: rem(63) !important;
+  margin-top: 63px !important; }
+
+.mt-70 {
+  margin-top: rem(70) !important;
+  margin-top: 70px !important; }
+
+.mb-0 {
+  margin-bottom: rem(0) !important;
+  margin-bottom: 0px !important; }
+
+.mb-7 {
+  margin-bottom: rem(7) !important;
+  margin-bottom: 7px !important; }
+
+.mb-14 {
+  margin-bottom: rem(14) !important;
+  margin-bottom: 14px !important; }
+
+.mb-21 {
+  margin-bottom: rem(21) !important;
+  margin-bottom: 21px !important; }
+
+.mb-28 {
+  margin-bottom: rem(28) !important;
+  margin-bottom: 28px !important; }
+
+.mb-35 {
+  margin-bottom: rem(35) !important;
+  margin-bottom: 35px !important; }
+
+.mb-42 {
+  margin-bottom: rem(42) !important;
+  margin-bottom: 42px !important; }
+
+.mb-49 {
+  margin-bottom: rem(49) !important;
+  margin-bottom: 49px !important; }
+
+.mb-56 {
+  margin-bottom: rem(56) !important;
+  margin-bottom: 56px !important; }
+
+.mb-63 {
+  margin-bottom: rem(63) !important;
+  margin-bottom: 63px !important; }
+
+.mb-70 {
+  margin-bottom: rem(70) !important;
+  margin-bottom: 70px !important; }
+
+.ml-0 {
+  margin-left: rem(0) !important;
+  margin-left: 0px !important; }
+
+.ml-7 {
+  margin-left: rem(7) !important;
+  margin-left: 7px !important; }
+
+.ml-14 {
+  margin-left: rem(14) !important;
+  margin-left: 14px !important; }
+
+.ml-21 {
+  margin-left: rem(21) !important;
+  margin-left: 21px !important; }
+
+.ml-28 {
+  margin-left: rem(28) !important;
+  margin-left: 28px !important; }
+
+.ml-35 {
+  margin-left: rem(35) !important;
+  margin-left: 35px !important; }
+
+.ml-42 {
+  margin-left: rem(42) !important;
+  margin-left: 42px !important; }
+
+.ml-49 {
+  margin-left: rem(49) !important;
+  margin-left: 49px !important; }
+
+.ml-56 {
+  margin-left: rem(56) !important;
+  margin-left: 56px !important; }
+
+.ml-63 {
+  margin-left: rem(63) !important;
+  margin-left: 63px !important; }
+
+.ml-70 {
+  margin-left: rem(70) !important;
+  margin-left: 70px !important; }
+
+.mr-0 {
+  margin-right: rem(0) !important;
+  margin-right: 0px !important; }
+
+.mr-7 {
+  margin-right: rem(7) !important;
+  margin-right: 7px !important; }
+
+.mr-14 {
+  margin-right: rem(14) !important;
+  margin-right: 14px !important; }
+
+.mr-21 {
+  margin-right: rem(21) !important;
+  margin-right: 21px !important; }
+
+.mr-28 {
+  margin-right: rem(28) !important;
+  margin-right: 28px !important; }
+
+.mr-35 {
+  margin-right: rem(35) !important;
+  margin-right: 35px !important; }
+
+.mr-42 {
+  margin-right: rem(42) !important;
+  margin-right: 42px !important; }
+
+.mr-49 {
+  margin-right: rem(49) !important;
+  margin-right: 49px !important; }
+
+.mr-56 {
+  margin-right: rem(56) !important;
+  margin-right: 56px !important; }
+
+.mr-63 {
+  margin-right: rem(63) !important;
+  margin-right: 63px !important; }
+
+.mr-70 {
+  margin-right: rem(70) !important;
+  margin-right: 70px !important; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
 
 /*# sourceMappingURL=main.css.map */

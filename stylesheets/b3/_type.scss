@@ -129,7 +129,7 @@ mark,
 
 @include bg-variant('.bg-warning', $state-warning-bg);
 
-@include bg-variant('.bg-danger', $state-danger-bg);
+@include bg-variant('.bg-danger', $brand-danger);
 
 
 // Page header

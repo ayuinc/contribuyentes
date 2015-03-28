@@ -1,0 +1,70 @@
+body,
+html,
+.container-fluid,
+.container {
+	height: 100%;
+}
+
+.navbar-default{
+	position:fixed;
+	width:100%;	
+	z-index:10;
+}
+
+.navbar-nav {
+float:none;
+text-align:right;
+li{
+	float:none;
+	display:inline-block;
+}
+}
+
+#portada {
+	background-image: url(http://placehold.it/1000x500);
+	background-size:cover;
+	height:100%;
+	width:100%;
+	display:table;
+	position:relative;
+	.botones-portada {
+		text-align: center;
+		margin-top: 125px;
+   	    margin-left: 43%;
+    .btn-default{
+    background-color: transparent;
+    color:white;
+    }
+   		.btn-fold {
+			float: left;
+			border-radius: 0;
+			border: 1px solid white;
+		}
+	}
+}
+
+#nosotros{
+	.text-center{
+	  padding: 7% 14%;
+	}
+}
+
+
+#novedades{
+	background-color:lightgray;
+	.container{
+	padding: 0 7%;
+    padding-bottom: 2%;
+	}
+}
+
+footer {
+	background-color: black;
+	padding: 7px 42px;
+	.text-right{
+	border-right: 1px solid;
+	}
+	.col-xs-8{
+	  padding: 3% 0;
+	}
+}

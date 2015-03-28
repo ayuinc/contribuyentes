@@ -1,0 +1,150 @@
+html,
+body{
+	height: 100%;
+}
+
+.navbar{
+	min-height: 90px;
+	margin-bottom:0;
+	position:fixed;
+	z-index:10;
+	background-color:rgba(255, 255, 255, 0.9);
+	width:100%;
+.navbar-nav{
+	float: none;
+	text-align: right;
+	padding-top:14px;
+li{
+	float: none;
+	display: inline-block;
+	font-size:rem(18px);
+	font-size:24px;
+	padding:0 21px;
+	a{
+	color:gray;
+	}
+}
+}
+}
+
+.portada{
+	background-image: url("http://placehold.it/1200x700");
+	height:100%;
+	width:100%;
+	position:relative;
+	background-size:cover;
+	display: table;
+	.text-vertical-center{
+		color:white;
+		display: table-cell;
+		vertical-align: middle;
+		padding-left:63px;
+		h3{
+		font-size:40px;
+		}
+		p{
+		font-size:18px;
+		}
+	}
+
+}
+
+.nosotros {
+	background-color:$gray-lighter;
+	padding: 70px 300px;
+	p{
+	color:gray;
+	font-size:18px;
+	}
+	.btn-custom{
+	color: rgb(62, 164, 168);
+	border: 2px solid;
+	background-color: rgb(238, 238, 238);
+	padding: 7px 42px;
+	font-size: 21px;
+	margin-top:35px;
+	}
+}
+
+.col-xs-8{
+	padding: 3% 0;
+}
+
+.bg-danger,
+.bg-info{
+	padding:3%;
+	button{
+	  margin-top: 35px;
+	  background-color: transparent;
+	  border: 2px solid white;
+	  padding: 10px 30px;
+	}
+}
+
+.caricaturas{
+	background-color: $gray-lighter;
+}
+
+.alianzas{
+	ul{
+	padding: 0 21%;
+	margin-bottom:42px;
+	}
+}
+
+.novedades {
+background-color: $gray-lighter;
+	.post{
+	background-color: white;
+	color:gray;
+	img{
+	width:100%;
+	}
+	h4{
+	padding: 21px 0;
+	}
+	p{
+	padding: 0 21px 21px;
+	}
+	}
+	.posts{
+	  padding: 0 7%;
+	}
+	.btn-custom{
+	  color: #3ea4a8;
+	  border: 2px solid;
+	  background-color: #eeeeee;
+	  padding: 7px 42px;
+	  font-size: 21px;
+	  margin: 35px 0;
+	}
+}
+
+.noticias{
+	padding: 7% 21%;
+	h4{
+	font-size:42px;
+	}
+	.input-group-addon{
+	background-color:rgb(4, 120, 232);
+	color: white;
+	}
+}
+
+.redes{
+	.sociales{
+	  height: 300px;
+  	background-color: lightgray;
+	}
+	.redessociales{
+	padding: 0 14% 7%;
+	}
+}
+
+.footer {
+	background-color: black;
+	padding: 7px 42px;
+	.text-right{
+	border-right: 1px solid;
+	}
+}

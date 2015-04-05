@@ -6518,8 +6518,10 @@ html,
     border-color: #4d4c4c; }
     .navbar .navbar-toggle .icon-bar {
       background-color: #544F4F; }
-  .navbar .navbar-brand img {
-    padding-left: 49px; }
+  .navbar .navbar-brand {
+    padding: 8px 15px !important; }
+    .navbar .navbar-brand img {
+      padding-left: 49px; }
 
 footer {
   background-color: #353131;

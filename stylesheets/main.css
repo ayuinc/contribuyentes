@@ -5976,22 +5976,6 @@ html,
     border-radius: 0;
     border: 1px solid white; }
 
-#nosotros {
-  padding-top: 80px;
-  padding-bottom: 50px; }
-  #nosotros p {
-    color: #a09e9e;
-    font-size: 18px; }
-  #nosotros .btn-custom {
-    color: #3ea4a8;
-    border: 2px solid;
-    background-color: #eeeeee;
-    padding: 7px 42px;
-    font-size: 21px;
-    margin-top: 50px;
-    border-radius: 0;
-    font-family: serif; }
-
 .p-0 {
   padding: rem(0) !important;
   padding: 0px !important; }

@@ -5649,7 +5649,7 @@ body {
     border: 2px solid;
     background-color: #eeeeee;
     padding: 7px 42px;
-    font-size: 21px;
+    font-size: 14px !important;
     margin-top: 50px;
     border-radius: 0;
     font-family: "museo-slab"; }

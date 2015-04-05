@@ -5812,7 +5812,7 @@ body {
   padding-top: 70px; }
   #portada .text-vertical-center h1 {
     font-size: 45px;
-    font-family: serif; }
+    font-family: "museo-slab"; }
   #portada .text-vertical-center p {
     font-size: 18px; }
 
@@ -5828,7 +5828,7 @@ body {
     #seccion2 .mision a h3 {
       margin-top: 0;
       color: gray;
-      font-family: serif; }
+      font-family: "museo-slab"; }
 
 .col-xs-8 {
   padding: 3% 0; }
@@ -5839,7 +5839,7 @@ body {
   #area .descripcion {
     padding-bottom: 60px; }
   #area .text-center h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
@@ -5847,7 +5847,7 @@ body {
     color: #c5c5c5;
     font-size: 18px; }
   #area .text-center h3 {
-    font-family: serif; }
+    font-family: "museo-slab"; }
   #area .trabajo {
     padding-bottom: 14px; }
     #area .trabajo .areastrabajo img {
@@ -5866,7 +5866,7 @@ body {
 #equipo {
   padding: 42px 0; }
   #equipo h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
@@ -5877,7 +5877,7 @@ body {
       width: 100%; }
     #equipo .row .col-md-4 .text-center h4 {
       color: #0cc7cf;
-      font-family: serif;
+      font-family: "museo-slab";
       font-size: 27px;
       margin-top: 26px; }
     #equipo .row .col-md-4 .text-center p {
@@ -5887,7 +5887,7 @@ body {
 #asociados {
   background-color: lightgray; }
   #asociados h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }

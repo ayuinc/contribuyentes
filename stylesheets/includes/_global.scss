@@ -1,0 +1,66 @@
+#portada{
+    background: url(http://placehold.it/1000x500) no-repeat center center scroll;
+	height:100%;
+	width:100%;
+	position:relative;
+	background-size:cover;
+	display: table;
+}
+
+#novedades {
+background-color: #eeeeee;
+h2 {
+	 font-family: serif;
+     font-size: 35px;
+     color: rgb(110, 103, 103);
+     margin-bottom: 30px;
+     text-aling:left;
+	}
+.novedades{
+  padding: 50px 0;
+	p{
+	    color: rgb(197, 197, 197);
+        font-size: 18px;
+       }
+	}
+	.posts{
+	  padding: 0 9%;
+	  .post{
+	background-color: white;
+	color:gray;
+	a{
+	  color: rgb(131, 127, 127);
+	}
+	h3:hover {
+	  color: rgb(6, 187, 194);
+	  text-decoration: none;
+	  }
+	img{
+	width:100%;
+	}
+	h3{
+	padding: 50px 0 20px;
+	text-align:center;
+	}
+	p{
+	padding: 0 21px 70px;
+	line-height: 25px;
+	font-size: 16px;
+	}
+	h3,
+	p{
+	color: rgb(163, 161, 161);
+	}
+	}
+	}
+	.btn-custom{
+	  color: #3ea4a8;
+	  border: 2px solid;
+	  background-color: #eeeeee;
+	  padding: 7px 42px;
+	  font-size: 21px;
+	  margin: 35px 0;
+	  margin-bottom: 70px;
+	  border-radius:0;
+	}
+}

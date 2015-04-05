@@ -3,44 +3,16 @@ body{
 	height: 100%;
 }
 
-.navbar{
-	min-height: 90px;
-	margin-bottom:0;
-	position:fixed;
-	z-index:10;
-	background-color:rgba(255, 255, 255, 0.9);
-	width:100%;
-.navbar-nav{
-	float: none;
-	text-align: right;
-	padding-top:14px;
-li{
-	float: none;
-	display: inline-block;
-	font-size:rem(18px);
-	font-size:24px;
-	padding:0 21px;
-	a{
-	color:gray;
-	}
-}
-}
-}
-
-.portada{
-	background-image: url("http://placehold.it/1200x700");
-	height:100%;
-	width:100%;
-	position:relative;
-	background-size:cover;
-	display: table;
+#portada{
 	.text-vertical-center{
 		color:white;
 		display: table-cell;
 		vertical-align: middle;
 		padding-left:63px;
-		h3{
-		font-size:40px;
+		padding-top: 70px;
+		h1{
+		font-size:45px;
+		font-family: serif;
 		}
 		p{
 		font-size:18px;
@@ -49,11 +21,12 @@ li{
 
 }
 
-.nosotros {
-	background-color:$gray-lighter;
-	padding: 70px 300px;
+#nosotros {
+	background-color: #F0F0F0;
+    padding-top: 80px;
+    padding-bottom: 50px;
 	p{
-	color:gray;
+	color: rgb(160, 158, 158);
 	font-size:18px;
 	}
 	.btn-custom{
@@ -62,12 +35,55 @@ li{
 	background-color: rgb(238, 238, 238);
 	padding: 7px 42px;
 	font-size: 21px;
-	margin-top:35px;
+	margin-top: 50px;
+	border-radius: 0;
+	font-family: serif;
 	}
 }
 
-.col-xs-8{
-	padding: 3% 0;
+#investigacion{
+.row{
+	padding-bottom: 3px;
+}
+	h2{
+	 font-family: serif;
+     font-size: 35px;
+     color: rgb(110, 103, 103);
+	}
+	.text-center{
+	  padding: 50px 0;
+	  h2{
+	    margin-bottom: 30px;
+	  }
+	  p{
+	    color: rgb(197, 197, 197);
+        font-size: 18px;
+       }
+	}
+	.text-muted,{
+	  padding: 50px 40px;
+	h2{
+	  font-family: serif;
+	  color:white;
+	}
+	p{
+	color:white;
+	font-size: 16px;
+	}
+	button {
+    margin-top: 18px;
+    border-radius: 0;
+    font-family: serif;
+    font-size: 20px;
+    padding: 10px 60px;
+	}
+	}
+}
+
+.imagen{
+	img{
+	width:100%
+	}
 }
 
 .bg-danger,
@@ -81,34 +97,94 @@ li{
 	}
 }
 
-.caricaturas{
+
+#caricaturas{
+    padding: 50px 0;
 	background-color: $gray-lighter;
+	h2{
+	font-family: serif;
+     font-size: 35px;
+     color: rgb(110, 103, 103);
+     margin-bottom: 30px;
+	}
+	p{
+	    color: rgb(197, 197, 197);
+        font-size: 18px;
+       }
 }
 
-.alianzas{
+#alianzas{
+	h2 {
+	 font-family: serif;
+     font-size: 35px;
+     color: rgb(110, 103, 103);
+     margin-bottom: 30px;
+	}
+	h3{
+	color: rgb(150, 146, 146);
+	}
+	 p{
+	    color: rgb(197, 197, 197);
+        font-size: 18px;
+       }
 	ul{
 	padding: 0 21%;
 	margin-bottom:42px;
+	li{
+	  padding-bottom: 21px;
+	  .media-body{
+	  h3{
+	    margin-bottom: 14px;
+	  }
+	  }
+	}
 	}
 }
 
-.novedades {
-background-color: $gray-lighter;
-	.post{
+#novedades {
+background-color: #eeeeee;
+.novedades{
+  padding: 50px 0;
+h2 {
+	 font-family: serif;
+     font-size: 35px;
+     color: rgb(110, 103, 103);
+     margin-bottom: 30px;
+	}
+	p{
+	    color: rgb(197, 197, 197);
+        font-size: 18px;
+       }
+	}
+	.posts{
+	  padding: 0 9%;
+	  .post{
 	background-color: white;
 	color:gray;
+	a{
+	  color: rgb(131, 127, 127);
+	}
+	h3:hover {
+	  color: rgb(6, 187, 194);
+	  text-decoration: none;
+	  }
 	img{
 	width:100%;
 	}
-	h4{
-	padding: 21px 0;
+	h3{
+	padding: 50px 0 20px;
+	text-align:center;
 	}
 	p{
-	padding: 0 21px 21px;
+	padding: 0 21px 70px;
+	line-height: 25px;
+	font-size: 16px;
+	}
+	h3,
+	p{
+	color: rgb(163, 161, 161);
 	}
 	}
-	.posts{
-	  padding: 0 7%;
 	}
 	.btn-custom{
 	  color: #3ea4a8;
@@ -117,13 +193,20 @@ background-color: $gray-lighter;
 	  padding: 7px 42px;
 	  font-size: 21px;
 	  margin: 35px 0;
+	  margin-bottom: 70px;  
+	  border-radius:0;
 	}
 }
 
-.noticias{
-	padding: 7% 21%;
+#noticias{
+  padding: 170px 0;
 	h4{
-	font-size:42px;
+	font-family: serif;
+	font-size: 49px;
+	}
+	.form-control{
+	padding:21px;
+	  font-size: 20px;
 	}
 	.input-group-addon{
 	background-color:rgb(4, 120, 232);
@@ -131,20 +214,30 @@ background-color: $gray-lighter;
 	}
 }
 
-.redes{
+#redes{
+h2{
+	 font-family: serif;
+     font-size: 35px;
+     color: rgb(110, 103, 103);
+     margin-bottom: 30px;
+	}
+	p{
+	    color: rgb(197, 197, 197);
+        font-size: 18px;
+       }
+       .text-center{
+         padding: 50px 0;
+       }
 	.sociales{
-	  height: 300px;
+	  height: 250px;
+	  padding: 10px 21px;
+	  color:white;
   	background-color: lightgray;
 	}
 	.redessociales{
-	padding: 0 14% 7%;
+	padding: 0 8% 7%;
+	.col-md-4{
+	  margin-bottom: 27px;
 	}
-}
-
-.footer {
-	background-color: black;
-	padding: 7px 42px;
-	.text-right{
-	border-right: 1px solid;
 	}
 }

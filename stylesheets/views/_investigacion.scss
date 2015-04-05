@@ -5,53 +5,14 @@ html,
 	height: 100%;
 }
 
-.navbar{
-	min-height: 90px;
-	margin-bottom:0;
-	position:fixed;
-	z-index:10;
-	background-color:rgba(255, 255, 255, 0.9);
-	width:100%;
-.navbar-nav{
-	float: none;
-	text-align: right;
-	padding-top:14px;
-li{
-	float: none;
-	display: inline-block;
-	font-size:rem(18px);
-	font-size:24px;
-	padding:0 21px;
-	a{
-	color:gray;
-	}
-}
-}
-}
-
-
-.navbar-nav {
-float:none;
-text-align:right;
-li{
-	float:none;
-	display:inline-block;
-}
-}
-
 #portada {
-	background-image: url(http://placehold.it/1000x500);
-	background-size:cover;
-	height:100%;
-	width:100%;
-	display:table;
-	position:relative;
 	.botones-portada {
 		text-align: center;
-		margin-top: 125px;
-   	    margin-left: 43%;
+		margin-top: 150px;
+   	    margin-left: 35%;
     .btn-default{
     background-color: transparent;
+      font-size: 25px;
     color:white;
     }
    		.btn-fold {
@@ -60,45 +21,24 @@ li{
 			border: 1px solid white;
 		}
 	}
-	
 }
 
-#nosotros{
-	.btn-custom{
-	  color: #3ea4a8;
-	  border: 2px solid;
-	  padding: 7px 42px;
-	  font-size: 21px;
-	  margin: 35px 0;
-	}
-	.text-center{
-	  padding: 7% 14%;
-	}
-}
-
-
-#novedades{
-	background-color:lightgray;
-	.container{
-	padding: 0 7%;
-    padding-bottom: 2%;
+#nosotros {
+    padding-top: 80px;
+    padding-bottom: 50px;
+	p{
+	color: rgb(160, 158, 158);
+	font-size:18px;
 	}
 	.btn-custom{
-	  color: #3ea4a8;
-	  border: 2px solid;
-	  padding: 7px 42px;
-	  font-size: 21px;
-	  margin: 35px 0;
-	}
-}
-
-footer {
-	background-color: black;
+	color: rgb(62, 164, 168);
+	border: 2px solid;
+	background-color: rgb(238, 238, 238);
 	padding: 7px 42px;
-	.text-right{
-	border-right: 1px solid;
-	}
-	.col-xs-8{
-	  padding: 3% 0;
+	font-size: 21px;
+	margin-top: 50px;
+	border-radius: 0;
+	font-family: serif;
 	}
 }
+

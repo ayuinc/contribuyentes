@@ -31,7 +31,7 @@
 					<div class="col-md-4 bg-danger text-center text-muted">
 						<h3>Costo y Beneficio</h3>
 						<p>{home_introduccion_costo_benefici}</p>
-						<a class="btn btn-custom" href="{site_url}costo-beneficio">ver más</a>
+						<a class="btn btn-custom" href="{site_url}costo-beneficio">VER MÁS</a>
 					</div>
 					<div class="col-md-8 p-0">
 						<div class="imagen">
@@ -48,7 +48,7 @@
 					<div class="col-md-4 bg-info text-center text-muted">
 						<h3>Plaza Bolivar</h3>
 						<p>{home_introduccin_plaza_bolivar}</p>
-						<a class="btn btn-custom" href="{site_url}plaza-bolivar">ver más</a>
+						<a class="btn btn-custom" href="{site_url}plaza-bolivar">VER MÁS</a>
 					</div>
 				</div>
 				</div>
@@ -74,92 +74,34 @@
 					</div>
 				</div>
 				<ul class="media-list">
-	  			<li class="media">
-	    			<div class="media-left">
-	      			<a href="#">
-	        			<img class="media-object" src="http://placehold.it/100x100" alt="...">
-	      			</a>
-	    			</div>
-	    			<div class="media-body">
-	      			<h3 class="media-heading">Infraestructura para Todos</h3>
-	      			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    				</div>
-	  			</li>
-	  			<li class="media">
-	    			<div class="media-left">
-	      			<a href="#">
-	        			<img class="media-object" src="http://placehold.it/100x100" alt="...">
-	      			</a>
-	    			</div>
-	    			<div class="media-body">
-	      			<h3 class="media-heading">Proyectos de Ley</h3>
-	      			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    				</div>
-	  			</li>
-	  			<li class="media">
-	    			<div class="media-left">
-	      			<a href="#">
-	        			<img class="media-object" src="http://placehold.it/100x100" alt="...">
-	      			</a>
-	    			</div>
-	    			<div class="media-body">
-	      			<h3 class="media-heading">Atlas Network</h3>
-	      			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    				</div>
-	  			</li>
+					{embed="includes/alianzas"}
 				</ul>
 			</div>
 		</section>
 		<section id="novedades" class="text-center">
 			<div class="container p-0">
 				<div class="row m-0">
-						<div class="col-md-2"></div>
-						<div class="col-md-8 novedades">
-							<h2 class="tex-center">Novedades</h2>
-							<p>{home_introduccion_novedades}</p>
-						</div>
+					<div class="col-md-8 col-md-offset-2 novedades">
+						<h2 class="tex-center">Novedades</h2>
+						<p>{home_introduccion_novedades}</p>
+					</div>
 				</div>
 				<div class="row m-0 posts">
-					<div class="col-md-4">
-						<div class="post text-center">
-							<img src="http://placehold.it/300x250">
-							<a href=""><h3>Nombre del Post 1</h3></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="post text-center">
-							<img src="http://placehold.it/300x250">
-							<a href=""><h3>Nombre del Post 1</h3></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="post text-center">
-							<img src="http://placehold.it/300x250">
-							<a href=""><h3>Nombre del Post 1</h3></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-					</div>
+					{embed="includes/novedades"}
 				</div>
-				<button class="btn btn-custom">ver más</button>
+				<button class="btn btn-custom">VER MÁS</button>
 			</div>
 		</section>
 		<section id="noticias" class="bg-danger">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
+					<div class="col-md-10 col-md-offset-1">
 						<h4 class="text-center text-muted">Mantente al tanto de nuestras noticias</h4>
+					</div>
+					<div class="col-md-6 col-md-offset-3 mt-14">
 						<div class="input-group">
 						  <input type="text" class="form-control" placeholder="ingresa tu correo electrónico" aria-describedby="basic-addon2">
-						  <span class="input-group-addon" id="basic-addon2">suscribirse</span>
+						  <span class="input-group-addon" id="basic-addon2">SUSCRIBIRSE</span>
 						</div>
 					</div>
 				</div>
@@ -168,8 +110,7 @@
 		<section id="redes">
 			<div class="container">
 				<div class="row m-0">
-						<div class="col-md-2"></div>
-						<div class="col-md-8 text-center">
+						<div class="col-md-8 col-md-offset-2 text-center">
 							<h2>Síguenos</h2>
 							<p>{home_introduccion_siguenos}</p>
 						</div>

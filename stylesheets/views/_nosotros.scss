@@ -13,7 +13,7 @@ body{
 		padding-top: 70px;
 		h1{
 		font-size:45px;
-		font-family: serif;
+		font-family: $font-family-serif;
 		}
 		p{
 		font-size:18px;
@@ -37,7 +37,7 @@ body{
 	h3{
 	margin-top: 0;
 	color:gray;
-	font-family: serif;
+	font-family: $font-family-serif;
 	}
 	}
 	}
@@ -55,7 +55,7 @@ body{
 	}
 	.text-center{
 	h2{
-	font-family: serif;
+	font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
@@ -65,7 +65,7 @@ body{
         font-size: 18px;
        }
        h3{
-       font-family:serif;
+       font-family:$font-family-serif;
        }
 	}
 	.trabajo{
@@ -94,7 +94,7 @@ body{
 #equipo{
 	padding: 42px 0;
 	h2{
-	font-family: serif;
+	font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
@@ -109,7 +109,7 @@ body{
 	  }
 	  h4{
 	  color: rgb(12, 199, 207);
-	  font-family: serif;
+	  font-family: $font-family-serif;
 	  font-size: 27px;
 	  margin-top: 26px;
 	  }
@@ -125,7 +125,7 @@ body{
 #asociados{
 	background-color: lightgray;
 	h2{
-	font-family: serif;
+	font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;

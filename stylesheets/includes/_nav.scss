@@ -1,0 +1,38 @@
+.navbar{
+	min-height: 125px;
+	margin-bottom:0;
+	position:fixed;
+	z-index:10;
+	background-color:rgba(255, 255, 255, 0.9);
+	width:100%;
+	.navbar-nav{
+		float: none;
+		text-align: right;
+		padding-top:40px;
+		li{
+			float: none;
+			display: inline-block;
+			font-size:rem(18px);
+			font-size:24px;
+			padding:0 21px;
+			@media screen and (max-width: #{$screen-phone}){
+				display: block;
+			}
+				a {
+					color:rgb(166, 161, 161);
+				}
+			}
+			}
+		.navbar-toggle{
+			  background-color: #CCCCC !important;
+			  border-color: rgb(77, 76, 76);
+				.icon-bar{
+				background-color:#544F4F;
+				}
+			}
+		.navbar-brand{
+			img{
+			  padding-left: 49px;
+				}
+		}
+	} 

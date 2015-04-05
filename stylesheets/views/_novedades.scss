@@ -5,50 +5,15 @@ html,
 	height: 100%;
 }
 
-.navbar-default{
-	position:fixed;
-	width:100%;	
-	z-index:10;
-}
 
-.navbar{
-	min-height: 90px;
-	margin-bottom:0;
-	position:fixed;
-	z-index:10;
-	background-color:rgba(255, 255, 255, 0.9);
-	width:100%;
-.navbar-nav{
-	float: none;
-	text-align: right;
-	padding-top:14px;
-li{
-	float: none;
-	display: inline-block;
-	font-size:rem(18px);
-	font-size:24px;
-	padding:0 21px;
-	a{
-	color:gray;
-	}
-}
-}
-}
-
-#portada {
-	background-image: url(http://placehold.it/1000x500);
-	background-size:cover;
-	height:100%;
-	width:100%;
-	display:table;
-	position:relative;
-}
-
-
-#novedades{
+#novedad{
+    padding: 50px 0;
 	.container{
 	  padding: 0 7%;
   	  padding-bottom: 2%;
+	}
+	.row{
+	  padding-bottom: 14px;
 	}
 	h3{
 	text-align: initial;
@@ -79,15 +44,4 @@ li{
 
 .overlay:hover{
 	background-color:rgb(215, 224, 233);
-}
-
-footer {
-	background-color: black;
-	padding: 7px 42px;
-	.text-right{
-	border-right: 1px solid;
-	}
-	.col-xs-8{
-	  padding: 3% 0;
-	}
 }

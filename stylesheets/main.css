@@ -5633,7 +5633,7 @@ body {
   padding-top: 70px; }
   #portada .text-vertical-center h1 {
     font-size: 45px;
-    font-family: serif; }
+    font-family: "museo-slab"; }
   #portada .text-vertical-center p {
     font-size: 18px; }
 
@@ -5652,12 +5652,12 @@ body {
     font-size: 21px;
     margin-top: 50px;
     border-radius: 0;
-    font-family: serif; }
+    font-family: "museo-slab"; }
 
 #investigacion .row {
   padding-bottom: 3px; }
 #investigacion h2 {
-  font-family: serif;
+  font-family: "museo-slab";
   font-size: 35px;
   color: #6e6767; }
 #investigacion .text-center {
@@ -5670,7 +5670,7 @@ body {
 #investigacion .text-muted {
   padding: 50px 40px; }
   #investigacion .text-muted h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     color: white; }
   #investigacion .text-muted p {
     color: white;
@@ -5678,7 +5678,7 @@ body {
   #investigacion .text-muted button {
     margin-top: 18px;
     border-radius: 0;
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 20px;
     padding: 10px 60px; }
 
@@ -5699,7 +5699,7 @@ body {
   padding: 50px 0;
   background-color: #eeeeee; }
   #caricaturas h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
@@ -5708,7 +5708,7 @@ body {
     font-size: 18px; }
 
 #alianzas h2 {
-  font-family: serif;
+  font-family: "museo-slab";
   font-size: 35px;
   color: #6e6767;
   margin-bottom: 30px; }
@@ -5730,7 +5730,7 @@ body {
   #novedades .novedades {
     padding: 50px 0; }
     #novedades .novedades h2 {
-      font-family: serif;
+      font-family: "museo-slab";
       font-size: 35px;
       color: #6e6767;
       margin-bottom: 30px; }
@@ -5772,7 +5772,7 @@ body {
 #noticias {
   padding: 170px 0; }
   #noticias h4 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 49px; }
   #noticias .form-control {
     padding: 21px;
@@ -5782,7 +5782,7 @@ body {
     color: white; }
 
 #redes h2 {
-  font-family: serif;
+  font-family: "museo-slab";
   font-size: 35px;
   color: #6e6767;
   margin-bottom: 30px; }

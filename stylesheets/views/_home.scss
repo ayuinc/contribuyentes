@@ -12,7 +12,7 @@ body{
 		padding-top: 70px;
 		h1{
 		font-size:45px;
-		font-family: serif;
+		font-family: $font-family-serif;
 		}
 		p{
 		font-size:18px;
@@ -37,7 +37,7 @@ body{
 	font-size: 21px;
 	margin-top: 50px;
 	border-radius: 0;
-	font-family: serif;
+	font-family: $font-family-serif;
 	}
 }
 
@@ -46,7 +46,7 @@ body{
 	padding-bottom: 3px;
 }
 	h2{
-	 font-family: serif;
+	 font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
 	}
@@ -63,7 +63,7 @@ body{
 	.text-muted,{
 	  padding: 50px 40px;
 	h2{
-	  font-family: serif;
+	  font-family: $font-family-serif;
 	  color:white;
 	}
 	p{
@@ -73,7 +73,7 @@ body{
 	button {
     margin-top: 18px;
     border-radius: 0;
-    font-family: serif;
+    font-family: $font-family-serif;
     font-size: 20px;
     padding: 10px 60px;
 	}
@@ -102,7 +102,7 @@ body{
     padding: 50px 0;
 	background-color: $gray-lighter;
 	h2{
-	font-family: serif;
+	font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
@@ -115,7 +115,7 @@ body{
 
 #alianzas{
 	h2 {
-	 font-family: serif;
+	 font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
@@ -146,7 +146,7 @@ background-color: #eeeeee;
 .novedades{
   padding: 50px 0;
 h2 {
-	 font-family: serif;
+	 font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
@@ -201,7 +201,7 @@ h2 {
 #noticias{
   padding: 170px 0;
 	h4{
-	font-family: serif;
+	font-family: $font-family-serif;
 	font-size: 49px;
 	}
 	.form-control{
@@ -216,7 +216,7 @@ h2 {
 
 #redes{
 h2{
-	 font-family: serif;
+	 font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;

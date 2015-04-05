@@ -6501,8 +6501,7 @@ html,
   width: 100%; }
   .navbar .navbar-nav {
     float: none;
-    text-align: right;
-    padding-top: 40px; }
+    text-align: right; }
     .navbar .navbar-nav li {
       float: none;
       display: inline-block;

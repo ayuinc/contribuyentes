@@ -5708,7 +5708,8 @@ body {
     font-size: 18px; }
 
 #alianzas .picture img {
-  width: 100px; }
+  width: 100px;
+  margin: 0 auto; }
 #alianzas h2 {
   font-family: serif;
   font-size: 35px;

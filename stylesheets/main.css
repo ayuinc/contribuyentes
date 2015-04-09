@@ -5625,20 +5625,12 @@ html,
 body {
   height: 100%; }
 
-#portada {
-  /*.text-vertical-center{
-  	color:white;
-  	display: table-cell;
-  	vertical-align: middle;
-  	padding-left:50px;
-  	padding-top: 70px;*/ }
-  #portada h1 {
-    font-size: 39px;
-    font-family: serif; }
-  #portada p {
-    font-size: 18px; }
+#portada h1 {
+  font-size: 39px;
+  font-family: serif; }
+#portada p {
+  font-size: 18px; }
 
-/*}*/
 #nosotros {
   background-color: #F0F0F0;
   padding-top: 80px;
@@ -5715,6 +5707,8 @@ body {
     color: #c5c5c5;
     font-size: 18px; }
 
+#alianzas .picture img {
+  width: 100px; }
 #alianzas h2 {
   font-family: serif;
   font-size: 35px;
@@ -5722,18 +5716,10 @@ body {
   margin-bottom: 30px; }
 #alianzas h3 {
   color: #969292; }
-#alianzas p {
-  color: #c5c5c5;
-  font-size: 15px; }
+#alianzas h4 {
+  color: #c5c5c5; }
 #alianzas .row {
   padding-bottom: 14px; }
-#alianzas ul {
-  padding: 0 21%;
-  margin-bottom: 42px; }
-  #alianzas ul li {
-    padding-bottom: 21px; }
-    #alianzas ul li .media-body h3 {
-      margin-bottom: 14px; }
 
 #novedades {
   background-color: #eeeeee; }

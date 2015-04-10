@@ -528,10 +528,10 @@ a.bg-warning:hover {
   background-color: #f7ecb5; }
 
 .bg-danger {
-  background-color: red; }
+  background-color: #e31b13; }
 
 a.bg-danger:hover {
-  background-color: #cc0000; }
+  background-color: #b4150f; }
 
 .page-header {
   padding-bottom: 9px;
@@ -2172,19 +2172,19 @@ select[multiple].input-lg,
 
 .btn-danger {
   color: #fff;
-  background-color: red;
-  border-color: #e60000; }
+  background-color: #e31b13;
+  border-color: #cb1811; }
   .btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
     color: #fff;
-    background-color: #cc0000;
-    border-color: #a80000; }
+    background-color: #b4150f;
+    border-color: #93110c; }
   .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
     background-image: none; }
   .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
-    background-color: red;
-    border-color: #e60000; }
+    background-color: #e31b13;
+    border-color: #cb1811; }
   .btn-danger .badge {
-    color: red;
+    color: #e31b13;
     background-color: #fff; }
 
 .btn-link {
@@ -4138,9 +4138,9 @@ a.label:hover, a.label:focus {
     background-color: #ec971f; }
 
 .label-danger {
-  background-color: red; }
+  background-color: #e31b13; }
   .label-danger[href]:hover, .label-danger[href]:focus {
-    background-color: #cc0000; }
+    background-color: #b4150f; }
 
 .badge {
   display: inline-block;
@@ -4364,7 +4364,7 @@ a.thumbnail.active {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-danger {
-  background-color: red; }
+  background-color: #e31b13; }
   .progress-striped .progress-bar-danger {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5644,7 +5644,7 @@ body {
     background-color: #eeeeee;
     padding: 7px 30px;
     font-size: 21px;
-    margin-top: 50px;
+    margin-top: 35px;
     border-radius: 0;
     font-family: serif; }
 
@@ -5805,7 +5805,7 @@ body {
   bottom: 0;
   left: 0;
   height: 100%;
-  background-color: rgba(10, 10, 10, 0.3); }
+  background-color: rgba(10, 10, 10, 0.4); }
 
 html,
 body {

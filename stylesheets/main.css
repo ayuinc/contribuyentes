@@ -5798,13 +5798,13 @@ body {
   #redes .redessociales .col-md-4 {
     margin-bottom: 27px; }
 
-.overlay {
+.text-fold {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 521px;
+  height: 100%;
   background-color: rgba(10, 10, 10, 0.3); }
 
 html,

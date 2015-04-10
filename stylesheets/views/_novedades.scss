@@ -12,6 +12,9 @@ html,
 	  padding: 0 7%;
   	  padding-bottom: 2%;
 	}
+	.text-center{
+		margin-bottom: 50px;
+	}
 	.row{
 	  padding-bottom: 14px;
 	}
@@ -21,17 +24,24 @@ html,
 	}
 	.novedades{
 	position:relative;
+	height: 300px;
 	img{
 	width:100%;
+	height: 300px;
 	}
 	.overlay{
 		position:absolute;
 		top:0;
 		width: 100%;
 		height: 100%;
+		padding: 35px;
 		h4,
 		p{
 			visibility: hidden;
+		}
+		h4{
+			font-family: $font-family-serif;
+			margin-bottom: 30px; 
 		}
 	}
 }
@@ -39,9 +49,9 @@ html,
 
 .overlay:hover h4,
 .overlay:hover p {
-	visibility: visible;
+	visibility: visible !important;
 }
 
 .overlay:hover{
-	background-color:rgb(215, 224, 233);
+	background-color:#228d9f;
 }

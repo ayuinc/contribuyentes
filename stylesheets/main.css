@@ -198,7 +198,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -4995,7 +4995,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5090,7 +5090,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857;
@@ -5625,20 +5625,18 @@ html,
 body {
   height: 100%; }
 
-#portada {
-  /*.text-vertical-center{
-  	color:white;
-  	display: table-cell;
-  	vertical-align: middle;
-  	padding-left:50px;
-  	padding-top: 70px;*/ }
-  #portada h1 {
-    font-size: 39px;
-    font-family: serif; }
-  #portada p {
+#portada .text-vertical-center {
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 63px;
+  padding-top: 70px; }
+  #portada .text-vertical-center h1 {
+    font-size: 45px;
+    font-family: "museo-slab" !important; }
+  #portada .text-vertical-center p {
     font-size: 18px; }
 
-/*}*/
 #nosotros {
   background-color: #F0F0F0;
   padding-top: 80px;
@@ -5646,20 +5644,19 @@ body {
   #nosotros p {
     color: #a09e9e;
     font-size: 18px; }
-  #nosotros .btn-nosotros {
+  #nosotros .btn-custom {
     color: #3ea4a8;
     border: 2px solid;
     background-color: #eeeeee;
-    padding: 7px 30px;
-    font-size: 21px;
+    padding: 7px 42px;
+    font-size: 14px !important;
     margin-top: 50px;
-    border-radius: 0;
-    font-family: serif; }
+    border-radius: 0; }
 
 #investigacion .row {
   padding-bottom: 3px; }
 #investigacion h2 {
-  font-family: serif;
+  font-family: "museo-slab";
   font-size: 35px;
   color: #6e6767; }
 #investigacion .text-center {
@@ -5672,7 +5669,7 @@ body {
 #investigacion .text-muted {
   padding: 50px 40px; }
   #investigacion .text-muted h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     color: white; }
   #investigacion .text-muted p {
     color: white;
@@ -5680,22 +5677,16 @@ body {
   #investigacion .text-muted button {
     margin-top: 18px;
     border-radius: 0;
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 20px;
     padding: 10px 60px; }
 
-.imagen {
-  height: 400px; }
-  .imagen img {
-    width: 100%;
-    display: block;
-    max-width: 100%;
-    height: 400px; }
+.imagen img {
+  width: 100%; }
 
 .bg-danger,
 .bg-info {
-  padding: 3%;
-  height: 400px; }
+  padding: 3%; }
   .bg-danger button,
   .bg-info button {
     margin-top: 35px;
@@ -5707,7 +5698,7 @@ body {
   padding: 50px 0;
   background-color: #eeeeee; }
   #caricaturas h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
@@ -5716,7 +5707,7 @@ body {
     font-size: 18px; }
 
 #alianzas h2 {
-  font-family: serif;
+  font-family: "museo-slab";
   font-size: 35px;
   color: #6e6767;
   margin-bottom: 30px; }
@@ -5724,9 +5715,7 @@ body {
   color: #969292; }
 #alianzas p {
   color: #c5c5c5;
-  font-size: 15px; }
-#alianzas .row {
-  padding-bottom: 14px; }
+  font-size: 18px; }
 #alianzas ul {
   padding: 0 21%;
   margin-bottom: 42px; }
@@ -5740,7 +5729,7 @@ body {
   #novedades .novedades {
     padding: 50px 0; }
     #novedades .novedades h2 {
-      font-family: serif;
+      font-family: "museo-slab";
       font-size: 35px;
       color: #6e6767;
       margin-bottom: 30px; }
@@ -5774,7 +5763,7 @@ body {
     border: 2px solid;
     background-color: #eeeeee;
     padding: 7px 42px;
-    font-size: 21px;
+    font-size: 15px !important;
     margin: 35px 0;
     margin-bottom: 70px;
     border-radius: 0; }
@@ -5782,7 +5771,7 @@ body {
 #noticias {
   padding: 170px 0; }
   #noticias h4 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 49px; }
   #noticias .form-control {
     padding: 21px;
@@ -5792,7 +5781,7 @@ body {
     color: white; }
 
 #redes h2 {
-  font-family: serif;
+  font-family: "museo-slab";
   font-size: 35px;
   color: #6e6767;
   margin-bottom: 30px; }
@@ -5819,11 +5808,11 @@ body {
   color: white;
   display: table-cell;
   vertical-align: middle;
-  padding-left: 50px;
+  padding-left: 63px;
   padding-top: 70px; }
   #portada .text-vertical-center h1 {
-    font-size: 39px;
-    font-family: serif; }
+    font-size: 45px;
+    font-family: "museo-slab"; }
   #portada .text-vertical-center p {
     font-size: 18px; }
 
@@ -5839,7 +5828,7 @@ body {
     #seccion2 .mision a h3 {
       margin-top: 0;
       color: gray;
-      font-family: serif; }
+      font-family: "museo-slab"; }
 
 .col-xs-8 {
   padding: 3% 0; }
@@ -5850,15 +5839,15 @@ body {
   #area .descripcion {
     padding-bottom: 60px; }
   #area .text-center h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
   #area .text-center p {
-    color: #c5c5c5;
+    color: #555555;
     font-size: 18px; }
   #area .text-center h3 {
-    font-family: serif; }
+    font-family: "museo-slab"; }
   #area .trabajo {
     padding-bottom: 14px; }
     #area .trabajo .areastrabajo img {
@@ -5877,7 +5866,7 @@ body {
 #equipo {
   padding: 42px 0; }
   #equipo h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
@@ -5888,7 +5877,7 @@ body {
       width: 100%; }
     #equipo .row .col-md-4 .text-center h4 {
       color: #0cc7cf;
-      font-family: serif;
+      font-family: "museo-slab";
       font-size: 27px;
       margin-top: 26px; }
     #equipo .row .col-md-4 .text-center p {
@@ -5898,12 +5887,12 @@ body {
 #asociados {
   background-color: lightgray; }
   #asociados h2 {
-    font-family: serif;
+    font-family: "museo-slab";
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
   #asociados p {
-    color: #c5c5c5;
+    color: #555555;
     font-size: 18px; }
   #asociados .text-center {
     padding-bottom: 50px; }
@@ -5916,11 +5905,21 @@ html,
 .container {
   height: 100%; }
 
+#portada .botones-portada {
+  text-align: center;
+  margin-top: 125px;
+  margin-left: 43%; }
+  #portada .botones-portada .btn-default {
+    background-color: transparent;
+    color: white; }
+  #portada .botones-portada .btn-fold {
+    float: left;
+    border-radius: 0;
+    border: 1px solid white; }
+
 #nosotros .text-center {
   padding: 50px 0;
   text-align: left; }
-  #nosotros .text-center .btn-custom {
-    padding: 7px 25px; }
 
 body,
 html,
@@ -5970,28 +5969,12 @@ html,
   margin-left: 35%; }
   #portada .botones-portada .btn-default {
     background-color: transparent;
-    font-size: 22px;
+    font-size: 25px;
     color: white; }
   #portada .botones-portada .btn-fold {
     float: left;
     border-radius: 0;
     border: 1px solid white; }
-
-#nosotros {
-  padding-top: 80px;
-  padding-bottom: 50px; }
-  #nosotros p {
-    color: #a09e9e;
-    font-size: 18px; }
-  #nosotros .btn-custom {
-    color: #3ea4a8;
-    border: 2px solid;
-    background-color: #eeeeee;
-    padding: 7px 42px;
-    font-size: 21px;
-    margin-top: 50px;
-    border-radius: 0;
-    font-family: serif; }
 
 .p-0 {
   padding: rem(0) !important;
@@ -6439,12 +6422,6 @@ html,
 .pull-right {
   float: right; }
 
-.container-sm {
-  width: 748px;
-  padding-left: 14px;
-  padding-right: 14px;
-  margin: 0 auto; }
-
 #portada {
   background: url(http://placehold.it/1000x500) no-repeat center center scroll;
   height: 100%;
@@ -6499,26 +6476,35 @@ html,
     border-radius: 0; }
 
 .navbar {
-  min-height: 125px;
+  min-height: 100px;
   margin-bottom: 0;
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   width: 100%; }
   .navbar .navbar-nav {
     float: none;
-    text-align: right;
-    padding-top: 40px; }
+    text-align: right; }
     .navbar .navbar-nav li {
       float: none;
       display: inline-block;
-      font-size: rem(18px);
-      font-size: 24px;
+      font-size: rem(16px);
+      font-size: 20px;
       padding: 0 21px; }
+      @media screen and (max-width: 480px) {
+        .navbar .navbar-nav li {
+          display: block; } }
       .navbar .navbar-nav li a {
         color: #a6a1a1; }
-  .navbar .navbar-brand img {
-    padding-left: 49px; }
+  .navbar .navbar-toggle {
+    background-color: #CCCCC !important;
+    border-color: #4d4c4c; }
+    .navbar .navbar-toggle .icon-bar {
+      background-color: #544F4F; }
+  .navbar .navbar-brand {
+    padding: 15px !important; }
+    .navbar .navbar-brand img {
+      padding-left: 49px; }
 
 footer {
   background-color: #353131;
@@ -6526,8 +6512,6 @@ footer {
   footer .text-right {
     border-right: 1px solid;
     padding: 0 14px; }
-  footer .col-md-2 {
-    padding: 3% 0; }
   footer .text-muted {
     padding-right: 30px; }
 

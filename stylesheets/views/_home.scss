@@ -27,10 +27,10 @@ body{
 	border: 2px solid;
 	background-color: rgb(238, 238, 238);
 	padding: 7px 30px;
-	font-size: 21px;
+	font-size: 17px;
 	margin-top: 35px;
 	border-radius: 0;
-	font-family: font-family-serif;
+	font-family: $font-family-serif;
 	}
 }
 
@@ -39,7 +39,7 @@ body{
 	padding-bottom: 3px;
 }
 	h2{
-	 font-family: font-family-serif;
+	 font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
 	}
@@ -71,6 +71,14 @@ body{
     padding: 10px 60px;
 	}
 	}
+}
+
+.weight-light {
+	  font-weight: 100 !important;
+}
+
+.text-serif {
+	font-family: $font-family-serif;
 }
 
 .imagen{
@@ -205,5 +213,5 @@ h2{
 }
 
 .text-gray-light {
-	color:#c5c5c5;
+	color:#bbb;
 }

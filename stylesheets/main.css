@@ -6427,7 +6427,8 @@ html,
     padding: 0 9%; }
     #novedades .posts .post {
       background-color: white;
-      color: gray; }
+      color: gray;
+      height: 522px; }
       #novedades .posts .post a {
         color: #837f7f; }
       #novedades .posts .post h3:hover {

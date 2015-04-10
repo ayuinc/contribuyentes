@@ -5625,6 +5625,7 @@ html,
 body {
   height: 100%; }
 
+
 #portada .text-vertical-center {
   color: white;
   display: table-cell;
@@ -5636,6 +5637,13 @@ body {
     font-family: "museo-slab" !important; }
   #portada .text-vertical-center p {
     font-size: 18px; }
+
+#portada h1 {
+  font-size: 39px;
+  font-family: serif; }
+#portada p {
+  font-size: 18px; }
+
 
 #nosotros {
   background-color: #F0F0F0;
@@ -5706,6 +5714,9 @@ body {
     color: #c5c5c5;
     font-size: 18px; }
 
+#alianzas .picture img {
+  width: 100px;
+  margin: 0 auto; }
 #alianzas h2 {
   font-family: "museo-slab";
   font-size: 35px;
@@ -5713,6 +5724,7 @@ body {
   margin-bottom: 30px; }
 #alianzas h3 {
   color: #969292; }
+<<<<<<< HEAD
 #alianzas p {
   color: #c5c5c5;
   font-size: 18px; }
@@ -5723,6 +5735,12 @@ body {
     padding-bottom: 21px; }
     #alianzas ul li .media-body h3 {
       margin-bottom: 14px; }
+=======
+#alianzas h4 {
+  color: #c5c5c5; }
+#alianzas .row {
+  padding-bottom: 14px; }
+>>>>>>> cfc5e33d456ed28b9bbef4c958759bcb75067165
 
 #novedades {
   background-color: #eeeeee; }

@@ -5732,7 +5732,7 @@ body {
   border: 1px solid #fff; }
 
 #noticias {
-  padding: 170px 0; }
+  padding: 125px 0; }
   #noticias h4 {
     font-family: "museo-slab";
     font-size: 49px; }
@@ -5904,30 +5904,38 @@ html,
   #novedad .container {
     padding: 0 7%;
     padding-bottom: 2%; }
+  #novedad .text-center {
+    margin-bottom: 50px; }
   #novedad .row {
     padding-bottom: 14px; }
   #novedad h3 {
     text-align: initial;
     padding: 21px 0; }
   #novedad .novedades {
-    position: relative; }
+    position: relative;
+    height: 300px; }
     #novedad .novedades img {
-      width: 100%; }
+      width: 100%;
+      height: 300px; }
     #novedad .novedades .overlay {
       position: absolute;
       top: 0;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      padding: 35px; }
       #novedad .novedades .overlay h4,
       #novedad .novedades .overlay p {
         visibility: hidden; }
+      #novedad .novedades .overlay h4 {
+        font-family: "museo-slab";
+        margin-bottom: 30px; }
 
 .overlay:hover h4,
 .overlay:hover p {
-  visibility: visible; }
+  visibility: visible !important; }
 
 .overlay:hover {
-  background-color: #d7e0e9; }
+  background-color: #228d9f; }
 
 body,
 html,
@@ -6419,7 +6427,8 @@ html,
     padding: 0 9%; }
     #novedades .posts .post {
       background-color: white;
-      color: gray; }
+      color: gray;
+      height: 522px; }
       #novedades .posts .post a {
         color: #837f7f; }
       #novedades .posts .post h3:hover {
@@ -6434,7 +6443,7 @@ html,
         text-align: center;
         font-family: "museo-slab"; }
       #novedades .posts .post p {
-        padding: 0 21px 70px;
+        padding: 0 32px;
         line-height: 25px;
         font-size: 16px; }
       #novedades .posts .post h3,

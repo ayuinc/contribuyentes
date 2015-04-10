@@ -198,7 +198,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -4995,7 +4995,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5090,7 +5090,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857;
@@ -5820,10 +5820,12 @@ body {
   #area .trabajo {
     padding-bottom: 14px; }
     #area .trabajo .areastrabajo img {
-      width: 100%; }
+      width: 100%;
+      height: 300px; }
   #area .overlay {
-    padding: 21px;
-    border: 1px solid white; }
+    height: 300px;
+    border: 1px solid white;
+    padding: 21px; }
     #area .overlay h3 {
       margin-bottom: 35px;
       color: gray; }
@@ -5843,7 +5845,8 @@ body {
     padding: 0 70px;
     padding-bottom: 35px; }
     #equipo .row .col-md-4 .text-center img {
-      width: 100%; }
+      width: 100%;
+      height: 200px; }
     #equipo .row .col-md-4 .text-center h4 {
       color: #0cc7cf;
       font-family: "museo-slab";

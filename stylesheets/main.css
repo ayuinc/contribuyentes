@@ -5784,6 +5784,9 @@ body {
 .text-gray-light {
   color: #bbb; }
 
+.weight {
+  font-weight: 300 !important; }
+
 html,
 body {
   height: 100%; }

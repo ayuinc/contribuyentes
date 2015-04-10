@@ -5625,25 +5625,11 @@ html,
 body {
   height: 100%; }
 
-
-#portada .text-vertical-center {
-  color: white;
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 63px;
-  padding-top: 70px; }
-  #portada .text-vertical-center h1 {
-    font-size: 45px;
-    font-family: "museo-slab" !important; }
-  #portada .text-vertical-center p {
-    font-size: 18px; }
-
 #portada h1 {
   font-size: 39px;
   font-family: serif; }
 #portada p {
   font-size: 18px; }
-
 
 #nosotros {
   background-color: #F0F0F0;
@@ -5652,19 +5638,20 @@ body {
   #nosotros p {
     color: #a09e9e;
     font-size: 18px; }
-  #nosotros .btn-custom {
+  #nosotros .btn-nosotros {
     color: #3ea4a8;
     border: 2px solid;
     background-color: #eeeeee;
-    padding: 7px 42px;
-    font-size: 14px !important;
+    padding: 7px 30px;
+    font-size: 21px;
     margin-top: 50px;
-    border-radius: 0; }
+    border-radius: 0;
+    font-family: serif; }
 
 #investigacion .row {
   padding-bottom: 3px; }
 #investigacion h2 {
-  font-family: "museo-slab";
+  font-family: serif;
   font-size: 35px;
   color: #6e6767; }
 #investigacion .text-center {
@@ -5677,7 +5664,7 @@ body {
 #investigacion .text-muted {
   padding: 50px 40px; }
   #investigacion .text-muted h2 {
-    font-family: "museo-slab";
+    font-family: serif;
     color: white; }
   #investigacion .text-muted p {
     color: white;
@@ -5685,16 +5672,22 @@ body {
   #investigacion .text-muted button {
     margin-top: 18px;
     border-radius: 0;
-    font-family: "museo-slab";
+    font-family: serif;
     font-size: 20px;
     padding: 10px 60px; }
 
-.imagen img {
-  width: 100%; }
+.imagen {
+  height: 400px; }
+  .imagen img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: 400px; }
 
 .bg-danger,
 .bg-info {
-  padding: 3%; }
+  padding: 3%;
+  height: 400px; }
   .bg-danger button,
   .bg-info button {
     margin-top: 35px;
@@ -5706,7 +5699,7 @@ body {
   padding: 50px 0;
   background-color: #eeeeee; }
   #caricaturas h2 {
-    font-family: "museo-slab";
+    font-family: serif;
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
@@ -5718,36 +5711,23 @@ body {
   width: 100px;
   margin: 0 auto; }
 #alianzas h2 {
-  font-family: "museo-slab";
+  font-family: serif;
   font-size: 35px;
   color: #6e6767;
   margin-bottom: 30px; }
 #alianzas h3 {
   color: #969292; }
-<<<<<<< HEAD
-#alianzas p {
-  color: #c5c5c5;
-  font-size: 18px; }
-#alianzas ul {
-  padding: 0 21%;
-  margin-bottom: 42px; }
-  #alianzas ul li {
-    padding-bottom: 21px; }
-    #alianzas ul li .media-body h3 {
-      margin-bottom: 14px; }
-=======
 #alianzas h4 {
   color: #c5c5c5; }
 #alianzas .row {
   padding-bottom: 14px; }
->>>>>>> cfc5e33d456ed28b9bbef4c958759bcb75067165
 
 #novedades {
   background-color: #eeeeee; }
   #novedades .novedades {
     padding: 50px 0; }
     #novedades .novedades h2 {
-      font-family: "museo-slab";
+      font-family: serif;
       font-size: 35px;
       color: #6e6767;
       margin-bottom: 30px; }
@@ -5781,7 +5761,7 @@ body {
     border: 2px solid;
     background-color: #eeeeee;
     padding: 7px 42px;
-    font-size: 15px !important;
+    font-size: 21px;
     margin: 35px 0;
     margin-bottom: 70px;
     border-radius: 0; }
@@ -5789,7 +5769,7 @@ body {
 #noticias {
   padding: 170px 0; }
   #noticias h4 {
-    font-family: "museo-slab";
+    font-family: serif;
     font-size: 49px; }
   #noticias .form-control {
     padding: 21px;
@@ -5799,7 +5779,7 @@ body {
     color: white; }
 
 #redes h2 {
-  font-family: "museo-slab";
+  font-family: serif;
   font-size: 35px;
   color: #6e6767;
   margin-bottom: 30px; }

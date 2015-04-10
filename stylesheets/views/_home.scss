@@ -4,22 +4,15 @@ body{
 }
 
 #portada{
-	.text-vertical-center{
-		color:white;
-		display: table-cell;
-		vertical-align: middle;
-		padding-left:63px;
-		padding-top: 70px;
 		h1{
-		font-size:45px;
-		font-family: $font-family-serif !important;
+		font-size:39px;
+		font-family: serif;
 		}
 		p{
-		font-size:18px;	
+		font-size:18px;
 		}
 	}
 
-}
 
 #nosotros {
 	background-color: #F0F0F0;
@@ -29,14 +22,15 @@ body{
 	color: rgb(160, 158, 158);
 	font-size:18px;
 	}
-	.btn-custom{
+	.btn-nosotros{
 	color: rgb(62, 164, 168);
 	border: 2px solid;
 	background-color: rgb(238, 238, 238);
-	padding: 7px 42px;
-	font-size: 14px !important;
+	padding: 7px 30px;
+	font-size: 21px;
 	margin-top: 50px;
 	border-radius: 0;
+	font-family: serif;
 	}
 }
 
@@ -45,7 +39,7 @@ body{
 	padding-bottom: 3px;
 }
 	h2{
-	 font-family: $font-family-serif;
+	 font-family: serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
 	}
@@ -62,7 +56,7 @@ body{
 	.text-muted,{
 	  padding: 50px 40px;
 	h2{
-	  font-family: $font-family-serif;
+	  font-family: serif;
 	  color:white;
 	}
 	p{
@@ -72,7 +66,7 @@ body{
 	button {
     margin-top: 18px;
     border-radius: 0;
-    font-family: $font-family-serif;
+    font-family: serif;
     font-size: 20px;
     padding: 10px 60px;
 	}
@@ -80,14 +74,19 @@ body{
 }
 
 .imagen{
+	height: 400px;
 	img{
-	width:100%
+	width:100%;
+	display: block;
+	max-width: 100%;
+	height: 400px;
 	}
 }
 
 .bg-danger,
 .bg-info{
 	padding:3%;
+	height: 400px;
 	button{
 	  margin-top: 35px;
 	  background-color: transparent;
@@ -101,7 +100,7 @@ body{
     padding: 50px 0;
 	background-color: $gray-lighter;
 	h2{
-	font-family: $font-family-serif;
+	font-family: serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
@@ -113,8 +112,14 @@ body{
 }
 
 #alianzas{
+	.picture{
+		img{
+			width: 100px;
+			margin: 0 auto;
+		}
+	}
 	h2 {
-	 font-family: $font-family-serif;
+	 font-family: serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
@@ -122,22 +127,13 @@ body{
 	h3{
 	color: rgb(150, 146, 146);
 	}
-	 p{
+	 h4{
 	    color: rgb(197, 197, 197);
-        font-size: 18px;
        }
-	ul{
-	padding: 0 21%;
-	margin-bottom:42px;
-	li{
-	  padding-bottom: 21px;
-	  .media-body{
-	  h3{
-	    margin-bottom: 14px;
-	  }
-	  }
-	}
-	}
+       .row{
+       		padding-bottom: 14px;
+       	
+       }
 }
 
 #novedades {
@@ -145,7 +141,7 @@ background-color: #eeeeee;
 .novedades{
   padding: 50px 0;
 h2 {
-	 font-family: $font-family-serif;
+	 font-family: serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
@@ -190,7 +186,7 @@ h2 {
 	  border: 2px solid;
 	  background-color: #eeeeee;
 	  padding: 7px 42px;
-	  font-size: 15px !important; 
+	  font-size: 21px;
 	  margin: 35px 0;
 	  margin-bottom: 70px;  
 	  border-radius:0;
@@ -200,7 +196,7 @@ h2 {
 #noticias{
   padding: 170px 0;
 	h4{
-	font-family: $font-family-serif;
+	font-family: serif;
 	font-size: 49px;
 	}
 	.form-control{
@@ -215,7 +211,7 @@ h2 {
 
 #redes{
 h2{
-	 font-family: $font-family-serif;
+	 font-family: serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;

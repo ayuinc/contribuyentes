@@ -2,10 +2,12 @@
 		{embed="includes/nav"}
 		{exp:channel:entries channel="homepage" limit="1"}
 		<section id="portada" style="background-image:url({imgen_hero});">
-			<div class="text-vertical-center">
-				<h1>{home_titulo_hero}</h1>
-				<p>{home_subttulo_hero}</p>
-			</div>
+			<div class="overlay flex-middle text-fold">
+		    <div class="container-fluid text-vertical-center">
+          <h1>{home_titulo_hero}</h1>
+					<p>{home_subttulo_hero}</p>
+        </div>
+		  </div>
 		</section>
 		<section id="nosotros" class="text-center">
 			<div class="container">

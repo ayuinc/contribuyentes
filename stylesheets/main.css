@@ -5798,6 +5798,15 @@ body {
   #redes .redessociales .col-md-4 {
     margin-bottom: 27px; }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 521px;
+  background-color: rgba(10, 10, 10, 0.3); }
+
 html,
 body {
   height: 100%; }

@@ -32,6 +32,13 @@ body{
 	}
 }
 
+@media only screen and (max-width: 480px) {
+	#nosotros{
+		  padding: 80px 20px 50px;
+		}
+	}
+
+
 #investigacion{
 .row{
 	padding-bottom: 3px;
@@ -70,6 +77,14 @@ body{
 	}
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	#investigacion{
+		.investigacion{
+			 padding: 0 20px;
+		}
+	}
+} 
 
 .weight-light {
 	  font-weight: 100 !important;
@@ -117,6 +132,12 @@ body{
        }
 }
 
+@media only screen and (max-width: 480px) {
+	#caricaturas{
+		padding: 50px 20px;
+		}
+	}
+
 #alianzas{
 	.picture{
 		img{
@@ -142,6 +163,15 @@ body{
        	
        }
 }
+
+@media only screen and (max-width: 480px) {
+	#novedades{
+		.novedades{
+			 padding: 0 20px;
+		}
+	}
+} 
+
 
 .btn-investigacion {
 	margin-top: 18px;
@@ -169,8 +199,8 @@ body{
 }
 
 @media only screen and (max-width: 480px) {
-	.form-control{
-		padding: 0;
+	#noticias{
+		padding: 40px 0;
 	}
 }
 

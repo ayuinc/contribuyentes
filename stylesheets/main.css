@@ -5790,6 +5790,74 @@ body {
 .text-white {
   color: white !important; }
 
+/* 
+
+	EBM: Module
+	Share grid
+
+*/
+#share-grid a {
+  padding: 0;
+  position: relative;
+  display: block;
+  height: 198px;
+  overflow: hidden;
+  border: 2px solid white; }
+
+@media only screen and (min-width: 768px) {
+  #share-grid a:hover .overlay, #share-grid a.active .overlay {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; } }
+@media only screen and (max-width: 768px) {
+  #share-grid a .overlay {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%); } }
+#share-grid .network-name,
+#share-grid .share-icon {
+  padding: 14px;
+  color: white;
+  font-size: 24px;
+  z-index: 30; }
+
+#share-grid .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+@media only screen and (min-width: 768px) {
+  #share-grid .overlay {
+    -webkit-transform: translateX(-101%);
+    -moz-transform: translateX(-101%);
+    -ms-transform: translateX(-101%);
+    -o-transform: translateX(-101%);
+    transform: translateX(-101%); } }
+#share-grid .network-name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0; }
+
+#share-grid .share-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: right; }
+
 html,
 body {
   height: 100%; }

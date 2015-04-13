@@ -5823,9 +5823,9 @@ body {
   margin-bottom: 21px;
   margin-top: 21px; }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   #share-grid a {
-    margin-left: 0; } }
+    margin-left: 0 !important; } }
 @media only screen and (min-width: 768px) {
   #share-grid a:hover .overlay, #share-grid a.active .overlay {
     -webkit-transform: translateX(0%);

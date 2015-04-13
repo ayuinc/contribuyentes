@@ -9,16 +9,15 @@ body{
 		color:white;
 		display: table-cell;
 		vertical-align: middle;
-		padding-left: 63px;
-  	padding-top: 277px;
-
-		h1{
-		font-size:45px;
-		font-family: $font-family-serif;
-		}
-		p{
-		font-size:18px;
-		}
+		padding-left: 30px;
+		background-color: rgba(10, 10, 10, 0.4);
+			h1{
+			font-size:38px;
+			font-family: $font-family-serif;
+			}
+			p{
+			font-size:18px;
+			}
 	}
 
 }
@@ -28,18 +27,23 @@ body{
 	.text-center{
 	 padding-bottom: 50px;
 	}
-	p{
-	color:gray;
-	font-size:18px;
+	 p{
+	   color:gray;
+	   font-size:18px;
 	}
 	.mision{
-	padding-bottom: 14px;
+	  padding-bottom: 14px;
+	  width: 35%;
+  	  margin: 0 auto;
+  	  img{
+  	  	width:100%
+  	  }
 	a{
-	h3{
-	margin-top: 0;
-	color:gray;
-	font-family: $font-family-serif;
-	}
+		h3{
+			margin-top: 0;
+			color:gray;
+			font-family: $font-family-serif;
+		}
 	}
 	}
 }

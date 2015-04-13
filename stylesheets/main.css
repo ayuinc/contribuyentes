@@ -5642,8 +5642,6 @@ body {
     color: #3ea4a8;
     border: 2px solid;
     background-color: #eeeeee;
-    padding: 7px 30px;
-    font-size: 17px;
     margin-top: 35px;
     border-radius: 0;
     font-family: "museo-slab"; }
@@ -5749,6 +5747,9 @@ body {
     background-color: #0478e8;
     color: white; }
 
+@media only screen and (max-width: 480px) {
+  .form-control {
+    padding: 0; } }
 #redes h2 {
   font-family: "museo-slab";
   font-size: 35px;
@@ -5866,10 +5867,10 @@ body {
   color: white;
   display: table-cell;
   vertical-align: middle;
-  padding-left: 63px;
-  padding-top: 277px; }
+  padding-left: 30px;
+  background-color: rgba(10, 10, 10, 0.4); }
   #portada .text-vertical-center h1 {
-    font-size: 45px;
+    font-size: 38px;
     font-family: "museo-slab"; }
   #portada .text-vertical-center p {
     font-size: 18px; }
@@ -5882,7 +5883,11 @@ body {
     color: gray;
     font-size: 18px; }
   #seccion2 .mision {
-    padding-bottom: 14px; }
+    padding-bottom: 14px;
+    width: 35%;
+    margin: 0 auto; }
+    #seccion2 .mision img {
+      width: 100%; }
     #seccion2 .mision a h3 {
       margin-top: 0;
       color: gray;
@@ -5999,7 +6004,8 @@ html,
     padding: 21px 0; }
   #novedad .novedades {
     position: relative;
-    height: 300px; }
+    height: 300px;
+    margin-bottom: 14px; }
     #novedad .novedades img {
       width: 100%;
       height: 300px; }
@@ -6021,7 +6027,7 @@ html,
   visibility: visible !important; }
 
 .overlay:hover {
-  background-color: #228d9f; }
+  background-color: rgba(19, 199, 229, 0.6); }
 
 body,
 html,
@@ -6604,6 +6610,9 @@ html,
   background-size: cover;
   display: table; }
 
+@media only screen and (max-width: 480px) {
+  #portada .text-vertical-center {
+    padding-left: 23px; } }
 #novedades {
   background-color: #eeeeee; }
   #novedades h2 {
@@ -6622,7 +6631,8 @@ html,
     #novedades .posts .post {
       background-color: white;
       color: gray;
-      height: 522px; }
+      height: 522px;
+      margin-bottom: 14px; }
       #novedades .posts .post a {
         color: #837f7f; }
       #novedades .posts .post h3:hover {

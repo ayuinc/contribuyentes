@@ -25,6 +25,7 @@ html,
 	.novedades{
 	position:relative;
 	height: 300px;
+	margin-bottom: 14px;
 	img{
 	width:100%;
 	height: 300px;
@@ -53,5 +54,5 @@ html,
 }
 
 .overlay:hover{
-	background-color:#228d9f;
+	background-color:rgba(19, 199, 229, 0.6);
 }

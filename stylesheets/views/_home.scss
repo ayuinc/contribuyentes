@@ -26,8 +26,6 @@ body{
 	color: rgb(62, 164, 168);
 	border: 2px solid;
 	background-color: rgb(238, 238, 238);
-	padding: 7px 30px;
-	font-size: 17px;
 	margin-top: 35px;
 	border-radius: 0;
 	font-family: $font-family-serif;
@@ -167,6 +165,12 @@ body{
 	.input-group-addon{
 	background-color:rgb(4, 120, 232);
 	color: white;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.form-control{
+		padding: 0;
 	}
 }
 

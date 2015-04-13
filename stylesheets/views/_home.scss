@@ -257,3 +257,461 @@ h2{
 .text-white {
 	color: white !important;
 }
+
+/* 
+
+	EBM: Module
+	Share grid
+
+*/
+#share-grid a {
+  padding: 0;
+  position: relative;
+  display: block;
+  height: 198px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+@media only screen and (min-width: 768px) {
+  #share-grid a:hover .overlay, #share-grid a.active .overlay {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #share-grid a .overlay {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+#share-grid .network-name,
+#share-grid .share-icon {
+  padding: 14px;
+  color: white;
+  font-size: 24px;
+  z-index: 30;
+}
+#share-grid .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+  #share-grid .overlay {
+    -webkit-transform: translateX(-101%);
+    -moz-transform: translateX(-101%);
+    -ms-transform: translateX(-101%);
+    -o-transform: translateX(-101%);
+    transform: translateX(-101%);
+  }
+}
+#share-grid .network-name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+#share-grid .share-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+}
+
+// GRID LIST
+
+.grid-list {
+  padding: 0;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+.grid-list:before, .grid-list:after {
+  content: " ";
+  display: table;
+}
+.grid-list:after {
+  clear: both;
+}
+.grid-list .grid-list-item,
+.grid-list > li {
+  float: left;
+  padding: 14px;
+  padding: 1rem;
+}
+.grid-list.grid-list-item-height .grid-list-item,
+.grid-list.grid-list-item-height > li {
+  min-height: 350px;
+}
+.grid-list.grid-list-1 .grid-list-item,
+.grid-list.grid-list-1 > li {
+  width: 99.7%;
+}
+.grid-list.grid-list-2 .grid-list-item,
+.grid-list.grid-list-2 > li {
+  width: 49.7%;
+}
+.grid-list.grid-list-3 .grid-list-item,
+.grid-list.grid-list-3 > li {
+  width: 33.03333%;
+}
+.grid-list.grid-list-4 .grid-list-item,
+.grid-list.grid-list-4 > li {
+  width: 24.7%;
+}
+.grid-list.grid-list-5 .grid-list-item,
+.grid-list.grid-list-5 > li {
+  width: 19.7%;
+}
+.grid-list.grid-list-6 .grid-list-item,
+.grid-list.grid-list-6 > li {
+  width: 16.36667%;
+}
+.grid-list.grid-list-7 .grid-list-item,
+.grid-list.grid-list-7 > li {
+  width: 13.98571%;
+}
+.grid-list.grid-list-8 .grid-list-item,
+.grid-list.grid-list-8 > li {
+  width: 12.2%;
+}
+.grid-list.grid-list-9 .grid-list-item,
+.grid-list.grid-list-9 > li {
+  width: 10.81111%;
+}
+.grid-list.grid-list-10 .grid-list-item,
+.grid-list.grid-list-10 > li {
+  width: 9.7%;
+}
+.grid-list.grid-list-11 .grid-list-item,
+.grid-list.grid-list-11 > li {
+  width: 8.79091%;
+}
+.grid-list.grid-list-12 .grid-list-item,
+.grid-list.grid-list-12 > li {
+  width: 8.03333%;
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-1-xs .grid-list-item,
+  .grid-list.grid-list-1-xs > li {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-1-sm .grid-list-item,
+  .grid-list.grid-list-1-sm > li {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-1-md .grid-list-item,
+  .grid-list.grid-list-1-md > li {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-1-lg .grid-list-item,
+  .grid-list.grid-list-1-lg > li {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-2-xs .grid-list-item,
+  .grid-list.grid-list-2-xs > li {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-2-sm .grid-list-item,
+  .grid-list.grid-list-2-sm > li {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-2-md .grid-list-item,
+  .grid-list.grid-list-2-md > li {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-2-lg .grid-list-item,
+  .grid-list.grid-list-2-lg > li {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-3-xs .grid-list-item,
+  .grid-list.grid-list-3-xs > li {
+    width: 33.33333%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-3-sm .grid-list-item,
+  .grid-list.grid-list-3-sm > li {
+    width: 33.33333%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-3-md .grid-list-item,
+  .grid-list.grid-list-3-md > li {
+    width: 33.33333%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-3-lg .grid-list-item,
+  .grid-list.grid-list-3-lg > li {
+    width: 33.33333%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-4-xs .grid-list-item,
+  .grid-list.grid-list-4-xs > li {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-4-sm .grid-list-item,
+  .grid-list.grid-list-4-sm > li {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-4-md .grid-list-item,
+  .grid-list.grid-list-4-md > li {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-4-lg .grid-list-item,
+  .grid-list.grid-list-4-lg > li {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-5-xs .grid-list-item,
+  .grid-list.grid-list-5-xs > li {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-5-sm .grid-list-item,
+  .grid-list.grid-list-5-sm > li {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-5-md .grid-list-item,
+  .grid-list.grid-list-5-md > li {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-5-lg .grid-list-item,
+  .grid-list.grid-list-5-lg > li {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-6-xs .grid-list-item,
+  .grid-list.grid-list-6-xs > li {
+    width: 16.66667%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-6-sm .grid-list-item,
+  .grid-list.grid-list-6-sm > li {
+    width: 16.66667%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-6-md .grid-list-item,
+  .grid-list.grid-list-6-md > li {
+    width: 16.66667%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-6-lg .grid-list-item,
+  .grid-list.grid-list-6-lg > li {
+    width: 16.66667%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-7-xs .grid-list-item,
+  .grid-list.grid-list-7-xs > li {
+    width: 14.28571%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-7-sm .grid-list-item,
+  .grid-list.grid-list-7-sm > li {
+    width: 14.28571%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-7-md .grid-list-item,
+  .grid-list.grid-list-7-md > li {
+    width: 14.28571%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-7-lg .grid-list-item,
+  .grid-list.grid-list-7-lg > li {
+    width: 14.28571%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-8-xs .grid-list-item,
+  .grid-list.grid-list-8-xs > li {
+    width: 12.5%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-8-sm .grid-list-item,
+  .grid-list.grid-list-8-sm > li {
+    width: 12.5%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-8-md .grid-list-item,
+  .grid-list.grid-list-8-md > li {
+    width: 12.5%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-8-lg .grid-list-item,
+  .grid-list.grid-list-8-lg > li {
+    width: 12.5%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-9-xs .grid-list-item,
+  .grid-list.grid-list-9-xs > li {
+    width: 11.11111%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-9-sm .grid-list-item,
+  .grid-list.grid-list-9-sm > li {
+    width: 11.11111%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-9-md .grid-list-item,
+  .grid-list.grid-list-9-md > li {
+    width: 11.11111%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-9-lg .grid-list-item,
+  .grid-list.grid-list-9-lg > li {
+    width: 11.11111%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-10-xs .grid-list-item,
+  .grid-list.grid-list-10-xs > li {
+    width: 10%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-10-sm .grid-list-item,
+  .grid-list.grid-list-10-sm > li {
+    width: 10%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-10-md .grid-list-item,
+  .grid-list.grid-list-10-md > li {
+    width: 10%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-10-lg .grid-list-item,
+  .grid-list.grid-list-10-lg > li {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-11-xs .grid-list-item,
+  .grid-list.grid-list-11-xs > li {
+    width: 9.09091%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-11-sm .grid-list-item,
+  .grid-list.grid-list-11-sm > li {
+    width: 9.09091%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-11-md .grid-list-item,
+  .grid-list.grid-list-11-md > li {
+    width: 9.09091%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-11-lg .grid-list-item,
+  .grid-list.grid-list-11-lg > li {
+    width: 9.09091%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grid-list.grid-list-12-xs .grid-list-item,
+  .grid-list.grid-list-12-xs > li {
+    width: 8.33333%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .grid-list.grid-list-12-sm .grid-list-item,
+  .grid-list.grid-list-12-sm > li {
+    width: 8.33333%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-list.grid-list-12-md .grid-list-item,
+  .grid-list.grid-list-12-md > li {
+    width: 8.33333%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-list.grid-list-12-lg .grid-list-item,
+  .grid-list.grid-list-12-lg > li {
+    width: 8.33333%;
+  }
+}
+.grid-list.grid-list-centered {
+  text-align: center;
+}
+.grid-list.grid-list-centered .grid-list-item,
+.grid-list.grid-list-centered > li {
+  float: none;
+  display: inline-block;
+}
+.grid-list.grid-list-right .grid-list-item,
+.grid-list.grid-list-right > li {
+  float: right;
+}
+.grid-list.grid-list-anchors .grid-list-item a,
+.grid-list.grid-list-anchors > li a {
+  display: block;
+}
+.grid-list.grid-list-full-width .grid-list-item,
+.grid-list.grid-list-full-width > li {
+  width: 100%;
+}

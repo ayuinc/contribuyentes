@@ -6149,6 +6149,9 @@ body {
 .grid-list.grid-list-full-width > li {
   width: 100%; }
 
+.bg-gray-light {
+  background-color: #eee; }
+
 html,
 body {
   height: 100%; }

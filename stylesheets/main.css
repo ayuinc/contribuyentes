@@ -5747,6 +5747,9 @@ body {
     background-color: #0478e8;
     color: white; }
 
+@media only screen and (max-width: 480px) {
+  .form-control {
+    padding: 0; } }
 #redes h2 {
   font-family: "museo-slab";
   font-size: 35px;
@@ -5812,7 +5815,11 @@ body {
     color: gray;
     font-size: 18px; }
   #seccion2 .mision {
-    padding-bottom: 14px; }
+    padding-bottom: 14px;
+    width: 35%;
+    margin: 0 auto; }
+    #seccion2 .mision img {
+      width: 100%; }
     #seccion2 .mision a h3 {
       margin-top: 0;
       color: gray;
@@ -6535,6 +6542,9 @@ html,
   background-size: cover;
   display: table; }
 
+@media only screen and (max-width: 480px) {
+  #portada .text-vertical-center {
+    padding-left: 23px; } }
 #novedades {
   background-color: #eeeeee; }
   #novedades h2 {

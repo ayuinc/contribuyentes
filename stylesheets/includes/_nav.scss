@@ -34,6 +34,13 @@
 			img{
 			  	padding-left: 49px;
 				}
+				.logo-navegacion {
+						width: 50%;
+					    height: 30px;
+					    top: 10px;
+					    position: absolute;
+					    padding-left: 0;
+				}
 		}
 	} 
 @media only screen and (max-width: 480px) {
@@ -42,9 +49,10 @@
 		}
 } 
 
-.navbar .navbar-brand .logo-navegacion img {
-	width: 50%;
-    height: 50px;
-    top: 10px;
-    position: absolute;
-}
+@media only screen and (max-width: 480px) {
+		.navbar ul{
+			 padding-top: 0 !important;
+		}
+} 
+
+

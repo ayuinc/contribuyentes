@@ -103,18 +103,9 @@
 						<h4 class="text-gray-light mt-42 mb-42">{home_introduccion_alianzas}</h4>
 					</div>
 				</div>
-				{exp:channel:entries channel="alianzas" limit="3" dynamic="off"}
-				<div class="row m-0">
-					<div class="col-md-2"></div>
-				  <div class="col-md-2 text-center picture">
-						<img class="media-object mb-14" src="{alianzas_imagen}" alt="{title}">
-					</div>
-					<div class="col-md-6">
-						<h3 class="mt-0 mb-7">{title}</h3>
-			      <p class="text-gray">{alianzas_descripcion}</p>
-					</div>
+				<div >
+					{embed="includes/alianzas"}
 				</div>
-	  		{/exp:channel:entries}
 			</div>
 		</section>
 		<section id="novedades" class="text-center">

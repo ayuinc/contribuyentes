@@ -7008,16 +7008,15 @@ html,
     padding: 15px !important; }
     .navbar .navbar-brand img {
       padding-left: 49px; }
+    .navbar .navbar-brand .logo-navegacion img {
+      width: 50%;
+      height: 30px;
+      top: 10px;
+      position: absolute; }
 
 @media only screen and (max-width: 480px) {
   .navbar {
     min-height: 60px; } }
-.navbar .navbar-brand .logo-navegacion img {
-  width: 50%;
-  height: 50px;
-  top: 10px;
-  position: absolute; }
-
 footer {
   background-color: #353131;
   padding: 30px 42px; }

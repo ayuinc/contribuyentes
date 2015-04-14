@@ -5716,6 +5716,13 @@ body {
   #caricaturas p {
     color: #c5c5c5;
     font-size: 18px; }
+  #caricaturas .carousel-control.right,
+  #caricaturas .carousel-control.left {
+    border: 2px solid gray;
+    width: 3%; }
+  #caricaturas .carousel-inner > .item > img, #caricaturas .carousel-inner > .item > a > img {
+    width: 100%;
+    height: 300px; }
 
 @media only screen and (max-width: 480px) {
   #caricaturas {

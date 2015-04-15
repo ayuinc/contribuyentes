@@ -3585,9 +3585,6 @@ tbody.collapse.in {
   display: table; }
 .navbar-header:after {
   clear: both; }
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left; } }
 
 .navbar-collapse {
   overflow-x: visible;

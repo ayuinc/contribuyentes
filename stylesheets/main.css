@@ -7007,7 +7007,6 @@ html,
       padding-left: 49px; }
     .navbar .navbar-brand .logo-navegacion {
       width: 50%;
-      height: 30px;
       top: 10px;
       position: absolute;
       padding-left: 0; }
@@ -7019,8 +7018,15 @@ html,
   .navbar ul {
     margin-top: 22px !important; } }
 @media only screen and (max-width: 480px) {
+  .navbar-collapse {
+    width: 100%; } }
+@media only screen and (max-width: 480px) {
   .navbar .navbar-nav li {
-    text-align: center; } }
+    text-align: center;
+    padding: 20px 0px; } }
+@media only screen and (max-width: 480px) {
+  .bg-header {
+    background: #eee; } }
 footer {
   background-color: #353131;
   padding: 30px 42px; }

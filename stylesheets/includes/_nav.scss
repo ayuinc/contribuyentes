@@ -63,5 +63,12 @@
 @media only screen and (max-width: 480px) {
 		.navbar .navbar-nav li{
 			 text-align:center;
+			 padding: 20px 0px;
+		}
+} 
+
+@media only screen and (max-width: 480px) {
+		.bg-header {
+			background: #eee;
 		}
 } 

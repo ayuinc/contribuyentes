@@ -7017,7 +7017,10 @@ html,
     min-height: 60px; } }
 @media only screen and (max-width: 480px) {
   .navbar ul {
-    padding-top: 0 !important; } }
+    margin-top: 22px !important; } }
+@media only screen and (max-width: 480px) {
+  .navbar .navbar-nav li {
+    text-align: center; } }
 footer {
   background-color: #353131;
   padding: 30px 42px; }

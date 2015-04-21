@@ -7163,12 +7163,12 @@ html[xmlns] .flexslider .slides {
   font-family: "flexslider-icon";
   font-size: 40px;
   display: inline-block;
-  content: '\f001';
+  content: url(http://s17.postimg.org/aw0yj31gb/flechas_15.png);
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); }
 
 .flex-direction-nav a.flex-next:before {
-  content: '\f002'; }
+  content: url(http://s28.postimg.org/ytvmpi7bt/flechas_16.png); }
 
 .flex-direction-nav .flex-prev {
   left: -50px; }

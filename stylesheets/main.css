@@ -5646,6 +5646,9 @@ body {
 @media only screen and (max-width: 480px) {
   #nosotros {
     padding: 80px 20px 50px; } }
+@media only screen and (max-width: 480px) {
+  #alianzas .alianzas-center {
+    text-align: center; } }
 #investigacion .row {
   padding-bottom: 3px; }
 #investigacion h2 {

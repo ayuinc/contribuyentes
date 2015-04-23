@@ -5710,6 +5710,8 @@ body {
     font-size: 35px;
     color: #6e6767;
     margin-bottom: 30px; }
+  #caricaturas .text-center {
+    padding: 0 40px; }
   #caricaturas p {
     color: #c5c5c5;
     font-size: 18px; }
@@ -5732,6 +5734,8 @@ body {
   font-size: 35px;
   color: #6e6767;
   margin-bottom: 30px; }
+#alianzas .text-center {
+  padding: 0 40px; }
 #alianzas h3 {
   color: #969292;
   font-family: "museo-slab"; }

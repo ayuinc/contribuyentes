@@ -9,16 +9,16 @@ html,
 	.botones-portada {
 		text-align: center;
 		margin-top: 150px;
-   	    margin-left: 35%;
-		    .btn-default{
+   	margin-left: 35%;
+		   .btn-default{
 			    background-color: transparent;
-			     font-size: 25px;
+			    font-size: 25px;
 			    color:white;
 	    }
    		.btn-fold {
-			float: left;
-			border-radius: 0;
-			border: 1px solid white;
+				float: left;
+				border-radius: 0;
+				border: 1px solid white;
 		}
 	}
 }

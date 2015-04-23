@@ -4,19 +4,19 @@ body{
 }
 
 #portada{
-		h1{
+	h1{
 		font-size:39px;
 		font-family: $font-family-serif;
 		}
-		p{
+	p{
 		font-size:18px;
 		}
 	}
 
 
 #nosotros {
-	background-color: #F0F0F0;
-    padding-top: 80px;
+	  background-color: #F0F0F0;
+    padding-top: 35px;
     padding-bottom: 50px;
 	p{
 	color: rgb(160, 158, 158);
@@ -118,14 +118,14 @@ body{
 
 
 #caricaturas{
-    padding: 50px 0;
+  padding: 50px 0;
 	background-color: $gray-lighter;
 	h2{
-	font-family: $font-family-serif;
+	   font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
-	}
+	 }
 	p{
 	    color: rgb(197, 197, 197);
         font-size: 18px;
@@ -155,14 +155,14 @@ body{
 		}
 	}
 	h2 {
-	 font-family: $font-family-serif;
+	   font-family: $font-family-serif;
      font-size: 35px;
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
 	}
 	h3{
-	color: rgb(150, 146, 146);
-	font-family: $font-family-serif;
+  	color: rgb(150, 146, 146);
+  	font-family: $font-family-serif;
 	}
 	 h4{
 	    color: rgb(197, 197, 197);
@@ -198,8 +198,9 @@ body{
 	font-size: 49px;
 	}
 	.form-control{
-	padding:21px;
-	  font-size: 20px;
+	   padding:21px;
+	   font-size: 20px;
+     font-weight: 300;
 	}
 	.input-group-addon{
 	background-color:rgb(4, 120, 232);

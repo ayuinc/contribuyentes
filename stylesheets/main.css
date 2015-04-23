@@ -6196,9 +6196,9 @@ body {
   padding: 90px 0 40px; }
   #seccion2 .text-center {
     padding-bottom: 50px; }
-  #seccion2 p {
-    color: gray;
-    font-size: 18px; }
+  #seccion2 h2 {
+    color: #6e6767;
+    font-family: serif; }
   #seccion2 .mision {
     padding-bottom: 14px;
     width: 35%;

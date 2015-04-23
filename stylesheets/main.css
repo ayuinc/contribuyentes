@@ -6359,6 +6359,14 @@ html,
     border-radius: 0;
     border: 1px solid white; }
 
+#nosotros .btn-vista-investigacion {
+  color: #3ea4a8;
+  border: 2px solid;
+  background-color: #eeeeee;
+  margin-top: 35px;
+  border-radius: 0;
+  font-family: "museo-slab"; }
+
 .p-0 {
   padding: rem(0) !important;
   padding: 0px !important; }

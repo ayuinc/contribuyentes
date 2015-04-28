@@ -6982,6 +6982,15 @@ html,
     border-radius: 0;
     font-family: serif; }
 
+.bg-facebook:hover {
+  background-color: #3b5998 !important; }
+
+.bg-twitter:hover {
+  background-color: #32aadc !important; }
+
+.bg-youtube:hover {
+  background-color: #ec2828 !important; }
+
 .navbar {
   min-height: 100px;
   margin-bottom: 0;

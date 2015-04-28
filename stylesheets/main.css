@@ -6991,6 +6991,9 @@ html,
 .bg-youtube:hover {
   background-color: #ec2828 !important; }
 
+.bg-gray {
+  background: #ccc !important; }
+
 .navbar {
   min-height: 100px;
   margin-bottom: 0;

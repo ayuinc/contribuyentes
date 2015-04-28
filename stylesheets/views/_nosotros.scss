@@ -9,7 +9,7 @@ body{
 		color:white;
 		display: table-cell;
 		vertical-align: middle;
-		padding-left: 30px;
+		padding-left: 60px;
 		background-color: rgba(10, 10, 10, 0.4);
 			h1{
 			font-size:38px;
@@ -27,9 +27,9 @@ body{
 	.text-center{
 	 padding-bottom: 50px;
 	}
-	 p{
-	   color:gray;
-	   font-size:18px;
+	h2{
+		color: #6e6767;
+  	font-family: serif;
 	}
 	.mision{
 	  padding-bottom: 14px;
@@ -65,10 +65,6 @@ body{
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
 	}
-		p{
-	    color: $gray;
-        font-size: 18px;
-       }
        h3{
        font-family:$font-family-serif;
        }
@@ -138,10 +134,6 @@ body{
      color: rgb(110, 103, 103);
      margin-bottom: 30px;
 	}
-	p{
-  color: $gray;
-    font-size: 18px;
-   }
    .text-center{
      padding-bottom: 50px;
    }

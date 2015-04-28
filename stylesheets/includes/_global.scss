@@ -1,10 +1,10 @@
 #portada{
     background: url(http://placehold.it/1000x500) no-repeat center center scroll;
-	height:100%;
-	width:100%;
-	position:relative;
-	background-size:cover;
-	display: table;
+		height:100%;
+		width:100%;
+		position:relative;
+		background-size:cover;
+		display: table;
 }
 
 @media only screen and (max-width: 480px){
@@ -34,10 +34,10 @@ h2 {
 	.posts{
 	  padding: 0 9%;
 	  .post{
-		background-color: white;
-		color:gray;
-		height: 486px;
-		margin-bottom: 14px;
+			background-color: white;
+			color:gray;
+			height: 440px;
+			margin-bottom: 14px;
 	a{
 	  color: rgb(131, 127, 127);
 	}
@@ -57,12 +57,7 @@ h2 {
 	}
 	p{
 	  padding: 0 32px;
-	  line-height: 25px;
 	  font-size: 14px;
-	}
-	h3,
-	p{
-	color: rgb(163, 161, 161);
 	}
 	}
 	}
@@ -70,10 +65,10 @@ h2 {
 	  color: #3ea4a8;
 	  border: 2px solid;
 	  background-color: #eeeeee;
-	  padding: 7px 42px;
 	  font-size: 21px;
 	  margin: 35px 0;
 	  margin-bottom: 70px;
 	  border-radius:0;
+	  font-family: serif;
 	}
 }

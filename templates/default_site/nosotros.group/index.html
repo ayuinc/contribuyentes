@@ -1,7 +1,7 @@
 {embed="includes/head"}
 		{embed="includes/nav"}
 		<section id="portada">
-			<div class="text-vertical-center pt-70">
+			<div class="text-vertical-center">
 				<h1>Somos Contribuyentes</h1>
 				<h4>Como tales, queremos promover que las políticas públicas se traduzcan en mejores servicios a los ciudadanos y en marco regulatorio e institucional que favorezca el crecimiento e inclusión. </h4>
 				<p><em>Contribuyentes por Respeto</em> es una organización ciudadana que defiende y promueve el interés público bajo los principios de libertad individual (política y económica), responsabilidad personal, mercados competitivos, y Estado de Derecho, porque estamos convencidos que ésta es la receta que trae mayor bienestar para los peruanos y que ha permitido sacar de la pobreza a casi 8 millones de personas en los últimos años.</p>
@@ -15,9 +15,7 @@
 							<a href=""><img src="http://placehold.it/100x100"></a>
 						</div>
 						<h2 class="pb-0">Misión</h2>
-						<h4 class="text-gray-light">Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+						<h4 class="text-gray-light">Un marco regulatorio inclusivo que respete los principios libertad individual (política y económica), responsabilidad personal, mercados competitivos, y Estado de Derecho, promoviendo así una mayor generación de riqueza y movilidad social.</h4>
 					</div>
 				</div>
 				<div class="row m-0">
@@ -26,9 +24,7 @@
 							<a href=""><img src="http://placehold.it/100x100"></a>
 						</div>
 						<h2 class="pb-0">Visión</h2>
-						<h4 class="text-gray-light">Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+						<h4 class="text-gray-light">Promover que las políticas públicas en el Perú se basen en la evidencia y en un adecuado análisis costo-beneficio; debatidas de manera transparente y tomando en cuenta los intereses y opiniones de todos los involucrados.</h4>
 					</div>
 				</div>
 			</div>
@@ -39,9 +35,7 @@
 					<div class="col-md-2"></div>
 					<div class="col-md-8 text-center">
 						<h2>Área de Trabajo</h2>
-						<h4 class="text-gray-light">Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+						<h4 class="text-gray-light">Nuestras áreas de investigación y difusión son:</h4>
 					</div>
 				</div>
 				<div class="container"> 
@@ -64,12 +58,14 @@
 		</section>
 		<section id="equipo">
 			<h2 class="text-center">Equipo</h2>
+			<h4 class="text-gray-light">El trabajo de Contribuyentes por Respeto no sería posible sin el siguiente equipo:</h4>
 			<div class="row m-0">
 				{exp:channel:entries channel="equipo" limit="6" dynamic="off"}
 				<div class="col-md-3">
 					<div class="text-center">
 						<img src="{equipo_imagen}" alt="{title}">
 						<h4>{title}</h4>
+						<small>{equipo_cargo}</small>
 						<p>{equipo_descripcion}</p>
 					</div>
 				</div>
@@ -88,8 +84,10 @@
 				</div>
 				<div class="row m-0 colaboradores">
 					{exp:channel:entries channel="asociados" limit="20" dynamic="off"}
-					<div class="col-md-2">
+					<div class="col-md-3">
 						<a href="{asociados_link}" target="_blank"><img src="{asociados_imagen}" alt="{title}"></a>
+						<h5>{title}</h5>
+						<small>{asociados_tipo}</small>
 					</div>
 					{/exp:channel:entries}
 				</div>

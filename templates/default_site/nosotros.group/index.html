@@ -68,7 +68,7 @@
 				<div class="col-md-4">
 					<div class="text-center">
 						<img src="{equipo_imagen}" alt="{title}">
-						<h4>{title}</h4>
+						<h5 class="mb-0 pb-0">{title}</h5>
 						<small>{equipo_cargo}</small>
 						<p>{equipo_descripcion}</p>
 					</div>
@@ -90,7 +90,7 @@
 					{exp:channel:entries channel="asociados" limit="20" dynamic="off"}
 					<div class="col-md-3">
 						<a href="{asociados_link}" target="_blank"><img src="{asociados_imagen}" alt="{title}"></a>
-						<h5>{title}</h5>
+						<h5 class="mb-0 pb-0">{title}</h5>
 						<small>{asociados_tipo}</small>
 					</div>
 					{/exp:channel:entries}

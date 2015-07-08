@@ -5688,7 +5688,8 @@ body {
   color: white; }
 #investigacion .bg-danger p, #investigacion .bg-info p {
   color: white;
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 125%; }
 #investigacion .bg-danger .btn-investigacion, #investigacion .bg-info .btn-investigacion {
   margin-top: 10px;
   border-radius: 0;

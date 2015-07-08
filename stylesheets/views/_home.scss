@@ -100,7 +100,7 @@ body{
 			color:white;
 			font-size: 16px;
 		}
-		button {
+		.btn-investigacion {
 	    margin-top: 10px;
 	    border-radius: 0;
 	    font-family: $font-family-serif;
@@ -217,15 +217,6 @@ body{
 	}
 } 
 
-
-.btn-investigacion {
-	margin-top: 18px;
-	border-radius: 0;
-	font-family: $font-family-serif;
-	font-size: 20px;
-	padding: 10px 60px;
-	border: 1px solid #fff;
-}
 
 #noticias{
   padding: 125px 0;

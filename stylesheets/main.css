@@ -5691,7 +5691,7 @@ body {
   #investigacion .text-muted p {
     color: white;
     font-size: 16px; }
-  #investigacion .text-muted button {
+  #investigacion .text-muted .btn-investigacion {
     margin-top: 10px;
     border-radius: 0;
     font-family: "museo-slab"; }
@@ -5769,14 +5769,6 @@ body {
 @media only screen and (max-width: 480px) {
   #novedades .novedades {
     padding: 0 20px; } }
-.btn-investigacion {
-  margin-top: 18px;
-  border-radius: 0;
-  font-family: "museo-slab";
-  font-size: 20px;
-  padding: 10px 60px;
-  border: 1px solid #fff; }
-
 #noticias {
   padding: 125px 0; }
   #noticias h4 {

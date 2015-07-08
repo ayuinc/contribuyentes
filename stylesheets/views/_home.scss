@@ -75,7 +75,6 @@ body{
      color: rgb(110, 103, 103);
 	}
 	.text-center{
-	  padding: 50px 0;
 	  h2 {
 	    margin-bottom: 30px;
 	  }
@@ -90,8 +89,7 @@ body{
 			line-height: 125%;
     }
 	}
-	.text-muted{
-	  padding: 30;
+	.bg-danger, .bg-info {
 		h2 {
 	  font-family: $font-family-serif;
 	  color:white;

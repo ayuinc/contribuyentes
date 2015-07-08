@@ -5671,30 +5671,26 @@ body {
   font-family: "museo-slab";
   font-size: 35px;
   color: #6e6767; }
-#investigacion .text-center {
-  padding: 50px 0; }
-  #investigacion .text-center h2 {
-    margin-bottom: 30px; }
-  #investigacion .text-center h4 {
-    line-height: 125%;
-    font-weight: 100; }
-  #investigacion .text-center p {
-    color: #a09e9e;
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 125%; }
-#investigacion .text-muted {
-  padding: 30; }
-  #investigacion .text-muted h2 {
-    font-family: "museo-slab";
-    color: white; }
-  #investigacion .text-muted p {
-    color: white;
-    font-size: 14px; }
-  #investigacion .text-muted .btn-investigacion {
-    margin-top: 10px;
-    border-radius: 0;
-    font-family: "museo-slab"; }
+#investigacion .text-center h2 {
+  margin-bottom: 30px; }
+#investigacion .text-center h4 {
+  line-height: 125%;
+  font-weight: 100; }
+#investigacion .text-center p {
+  color: #a09e9e;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 125%; }
+#investigacion .bg-danger h2, #investigacion .bg-info h2 {
+  font-family: "museo-slab";
+  color: white; }
+#investigacion .bg-danger p, #investigacion .bg-info p {
+  color: white;
+  font-size: 14px; }
+#investigacion .bg-danger .btn-investigacion, #investigacion .bg-info .btn-investigacion {
+  margin-top: 10px;
+  border-radius: 0;
+  font-family: "museo-slab"; }
 
 @media only screen and (max-width: 480px) {
   #investigacion .investigacion {

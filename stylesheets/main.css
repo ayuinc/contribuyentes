@@ -5684,13 +5684,13 @@ body {
     font-weight: 100;
     line-height: 125%; }
 #investigacion .text-muted {
-  padding: 50px 40px; }
+  padding: 30; }
   #investigacion .text-muted h2 {
     font-family: "museo-slab";
     color: white; }
   #investigacion .text-muted p {
     color: white;
-    font-size: 16px; }
+    font-size: 14px; }
   #investigacion .text-muted .btn-investigacion {
     margin-top: 10px;
     border-radius: 0;

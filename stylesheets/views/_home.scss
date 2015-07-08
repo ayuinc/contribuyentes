@@ -4,14 +4,14 @@ body{
 }
 
 #portada{
-	h1{
-		font-size:39px;
-		font-family: $font-family-serif;
-		}
-	p{
-		font-size:18px;
-		}
+	position:absolute;
+	top:0px;
+	div {
+		position:relative;
+		top:10rem;
 	}
+}
+
 
 
 #nosotros {

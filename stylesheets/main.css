@@ -5675,6 +5675,9 @@ body {
   padding: 50px 0; }
   #investigacion .text-center h2 {
     margin-bottom: 30px; }
+  #investigacion .text-center h4 {
+    line-height: 125%;
+    font-weight: 100; }
   #investigacion .text-center p {
     color: #a09e9e;
     font-size: 18px;
@@ -5689,11 +5692,9 @@ body {
     color: white;
     font-size: 16px; }
   #investigacion .text-muted button {
-    margin-top: 18px;
+    margin-top: 10px;
     border-radius: 0;
-    font-family: "museo-slab";
-    font-size: 20px;
-    padding: 10px 60px; }
+    font-family: "museo-slab"; }
 
 @media only screen and (max-width: 480px) {
   #investigacion .investigacion {

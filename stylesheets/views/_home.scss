@@ -79,6 +79,10 @@ body{
 	  h2 {
 	    margin-bottom: 30px;
 	  }
+		h4 {
+			line-height: 125%;
+			font-weight: 100;
+		}	  
 	  p {
 			color: rgb(160, 158, 158);
 			font-size:18px;
@@ -88,21 +92,19 @@ body{
 	}
 	.text-muted,{
 	  padding: 50px 40px;
-	h2{
+		h2 {
 	  font-family: $font-family-serif;
 	  color:white;
-	}
-	p{
-	color:white;
-	font-size: 16px;
-	}
-	button {
-    margin-top: 18px;
-    border-radius: 0;
-    font-family: $font-family-serif;
-    font-size: 20px;
-    padding: 10px 60px;
-	}
+		}
+		p {
+			color:white;
+			font-size: 16px;
+		}
+		button {
+	    margin-top: 10px;
+	    border-radius: 0;
+	    font-family: $font-family-serif;
+		}
 	}
 }
 

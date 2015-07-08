@@ -5645,7 +5645,8 @@ body {
   padding-top: 50px;
   padding-bottom: 75px; }
   #nosotros h4 {
-    line-height: 125%; }
+    line-height: 125%;
+    font-weight: 100; }
   #nosotros p {
     color: #a09e9e;
     font-size: 18px;
@@ -5675,8 +5676,10 @@ body {
   #investigacion .text-center h2 {
     margin-bottom: 30px; }
   #investigacion .text-center p {
-    color: #c5c5c5;
-    font-size: 18px; }
+    color: #a09e9e;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 125%; }
 #investigacion .text-muted {
   padding: 50px 40px; }
   #investigacion .text-muted h2 {

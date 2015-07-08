@@ -5681,7 +5681,7 @@ body {
   font-size: 18px;
   font-weight: 100;
   line-height: 125%; }
-#investigacion .bg-danger h2, #investigacion .bg-info h2 {
+#investigacion .bg-danger h3, #investigacion .bg-info h3 {
   font-family: "museo-slab";
   color: white; }
 #investigacion .bg-danger p, #investigacion .bg-info p {

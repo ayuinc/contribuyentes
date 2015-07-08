@@ -6184,18 +6184,6 @@ html,
 body {
   height: 100%; }
 
-#portada .text-vertical-center {
-  color: white;
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 60px;
-  background-color: rgba(10, 10, 10, 0.4); }
-  #portada .text-vertical-center h1 {
-    font-size: 38px;
-    font-family: "museo-slab"; }
-  #portada .text-vertical-center p {
-    font-size: 18px; }
-
 #seccion2 {
   padding: 90px 0 40px; }
   #seccion2 .text-center {

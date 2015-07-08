@@ -3,25 +3,6 @@ body{
 	height: 100%;
 }
 
-
-#portada{
-	.text-vertical-center{
-		color:white;
-		display: table-cell;
-		vertical-align: middle;
-		padding-left: 60px;
-		background-color: rgba(10, 10, 10, 0.4);
-			h1{
-			font-size:38px;
-			font-family: $font-family-serif;
-			}
-			p{
-			font-size:18px;
-			}
-	}
-
-}
-
 #seccion2{
 	padding: 90px 0 40px;
 	.text-center{

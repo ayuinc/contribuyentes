@@ -5690,7 +5690,10 @@ body {
 #investigacion .bg-danger .btn-investigacion, #investigacion .bg-info .btn-investigacion {
   margin-top: 10px;
   border-radius: 0;
-  font-family: "museo-slab"; }
+  font-family: "museo-slab";
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #FFF; }
 
 @media only screen and (max-width: 480px) {
   #investigacion .investigacion {

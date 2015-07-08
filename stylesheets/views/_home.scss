@@ -28,20 +28,22 @@ body{
 
 
 #nosotros {
-	  background-color: #F0F0F0;
-    padding-top: 35px;
-    padding-bottom: 50px;
-	p{
-	color: rgb(160, 158, 158);
-	font-size:18px;
+  background-color: #F0F0F0;
+  padding-top: 50px;
+  padding-bottom: 75px;
+	p {
+		color: rgb(160, 158, 158);
+		font-size:18px;
+		font-weight: 100;
 	}
 	.btn-nosotros{
-	color: rgb(62, 164, 168);
-	border: 2px solid;
-	background-color: rgb(238, 238, 238);
-	margin-top: 35px;
-	border-radius: 0;
-	font-family: $font-family-serif;
+		color: white;
+		border: 1px solid;
+		background-color: rgb(62, 164, 168);
+		margin-top: 35px;
+		border-radius: 0;
+		font-size: 300;
+		font-family: $font-family-serif;
 	}
 }
 

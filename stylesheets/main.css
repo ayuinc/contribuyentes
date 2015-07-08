@@ -5647,14 +5647,13 @@ body {
   #nosotros p {
     color: #a09e9e;
     font-size: 18px;
-    font-weight: 100; }
+    font-weight: 100;
+    line-height: 125%; }
   #nosotros .btn-nosotros {
     color: white;
-    border: 1px solid;
     background-color: #3ea4a8;
     margin-top: 35px;
     border-radius: 0;
-    font-size: 300;
     font-family: "museo-slab"; }
 
 @media only screen and (max-width: 480px) {

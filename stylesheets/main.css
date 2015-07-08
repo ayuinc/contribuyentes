@@ -5626,8 +5626,16 @@ body {
   position: absolute;
   top: 0px; }
   #portada div {
-    position: relative;
-    top: 10rem; }
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 60px;
+    background-color: rgba(10, 10, 10, 0.4); }
+    #portada div h1 {
+      font-size: 38px;
+      font-family: "museo-slab"; }
+    #portada div p {
+      font-size: 18px; }
 
 #nosotros {
   background-color: #F0F0F0;

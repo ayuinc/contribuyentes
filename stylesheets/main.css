@@ -5644,6 +5644,8 @@ body {
   background-color: #F1F1F1;
   padding-top: 50px;
   padding-bottom: 75px; }
+  #nosotros h2 {
+    font-family: "museo-slab"; }
   #nosotros h4 {
     line-height: 125%;
     font-weight: 100; }

@@ -31,6 +31,9 @@ body{
   background-color: #F1F1F1;
   padding-top: 50px;
   padding-bottom: 75px;
+  h2 {
+	  font-family: $font-family-serif;
+  }
 	h4 {
 		line-height: 125%;
 		font-weight: 100;

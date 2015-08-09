@@ -27,14 +27,14 @@
 					{exp:channel:entries channel="news" limit="10"}
 					<div class="col-md-4">
 						<div class="post text-center">
-							<img src="http://placehold.it/300x250">
+							<img src="{novedades_imagen}">
 							<a href="{site_url}/investigacion/articulo/{url_tile}"><h3>{title}</h3></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>{novedades_descripcion}</p>
 						</div>
 					</div>
 					{/exp:channel:entries}
 				</div>
-				<button class="btn btn-custom">ver más</button>
+				<a href="{site_url}/investigacion/lista" class="btn btn-custom">ver más</a>
 			</div>
 		</section>
 {embed="includes/footer"}

@@ -1,0 +1,27 @@
+{embed="includes/head"}
+		{embed="includes/nav"}
+		{exp:channel:entries channel="investigacion" limit="1"}
+		<section id="novedad">
+			<div class="container">
+				<div class="row mt-70">
+					<div class="col-md-1"></div>
+					<div class="col-md-10 text-left mb-0">
+						<h1 class="ml-14">{title}</h1>
+					</div>
+				</div>
+				<div class="row m-0">
+	 				<div class="col-md-10 col-md-offset-1">
+ 						<div class="pb-28">
+	 						<img src="http://placehold.it/780x300">
+ 						</div>
+		  			{novedades_contenido}
+		  			<div class="pt-28">
+			  			<h4>Comentarios</h4>
+			  			<div id="disqus_thread"></div>
+		  			</div>
+			  	</div>
+				</div>
+			</div>
+		</section>
+		{/exp:channel:entries}
+{embed="includes/footer"}

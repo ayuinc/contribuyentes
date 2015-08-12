@@ -1,50 +1,30 @@
 {embed="includes/head"}
 		{embed="includes/nav"}
-		{exp:channel:entries channel="costo_beneficio" limit="1"}
-		<section id="portada" style="background: url({imagen_costo_beneficio}); background-size: cover; background-repeat: no-repeat;">
-			<div class="botones-portada">
-			  <!--<a href="#" class="btn btn-default btn-fold">Plaza Bolivar</a>
-			  <a href="#" class="btn btn-default btn-fold">Costo Beneficio</a>-->
-			</div>
-		</section>
-		<section id="nosotros">
+		<section id="novedad">
 			<div class="container">
+				<div class="row mt-70">
+					<div class="col-md-1"></div>
+					<div class="col-md-10 text-center">
+						<h2>Costo Beneficio</h2>
+						<h4 class="text-gray-light">Cada mes desarrollamos una investigación en la que diagnosticamos un problema de política pública y realizamos propuestas de reforma. Los temas abordados en ediciones pasada han incluido alcohol, regulación de riesgos, transgénicos, pensiones públicas, agua y saneamiento, comisiones bancarias, y control de fusiones.</h4>
+						<p>Estos contenidos son distribuidos vía suscripciones, y luego de tres meses son abiertos al público a través desde nuestra web</p>
+					</div>
+				</div>
 				<div class="row m-0">
-							<div class="col-md-2"></div>
-							<div class="col-md-8 text-center">
-								<p>{texto_introductorio_costo_benefi}</p>
-							</div>
+					{exp:channel:entries channel="boletin_costo_beneficio" dynamic="off"}
+	 				<div class="col-md-4">
+		 				<a href="{archivo-boletin-cb}" target="_blank">
+		 					<div class="novedades">
+		 						<img src="{imagen-boletin-cb}">
+		 						<div class="overlay text-muted">
+				  					<h4>{title}</h4>
+				  					<p>{descripcion-boletin-cb}</p>
+				  			</div>
+				  		</div>
+		 				</a>
+	 				</div>
+	 				{/exp:channel:entries}
 				</div>
 			</div>
 		</section>
-		<section id="novedades" class="text-center">
-			<div class="container p-0">
-					<h2>Más de Plaza Bolivar</h2>
-				<div class="row m-0 posts">
-					<div class="col-md-4">
-						<div class="post text-center">
-							<img src="{portada_blog}">
-							<a href=""><h3>{titulo_blog_costo_beneficio}</h3></a>
-							<p>{contenido_blog_costo}</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="post text-center">
-							<img src="{portada_blog_2}">
-							<a href=""><h3>{titulo_blog_2}</h3></a>
-							<p>{introduccion_blog_2}</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="post text-center">
-							<img src="{portada_blog_3}">
-							<a href=""><h3>{titulo_blog_3}</h3></a>
-							<p>{introduccion_blog_3}</p>
-						</div>
-					</div>
-				</div>
-				<button class="btn btn-custom">ver más</button>
-			</div>
-		</section>
-		{/exp:channel:entries}
 {embed="includes/footer"}

@@ -96,23 +96,11 @@ h2 {
 
 
 
-/* Button 1b */
-.btn-1b:after {
-	width: 100%;
-	height: 0;
-	top: 0;
-	left: 0;
-	background: #fff;
-}
-
-.btn-1b:hover,
-.btn-1b:active {
-	color: #0e83cd;
-}
-
-.btn-1b:hover:after,
-.btn-1b:active:after {
-	height: 100%;
+.btn {
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .btn:after {
@@ -124,9 +112,23 @@ h2 {
 	transition: all 0.3s;
 }
 
-.btn {
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+
+/* Button 1b */
+.btn-1b:after {
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: #fff;
 }
+
+.btn-1b:hover,
+.btn-1b:active {
+	color: #0e83cd !important;
+}
+
+.btn-1b:hover:after,
+.btn-1b:active:after {
+	height: 100% !important;
+}
+

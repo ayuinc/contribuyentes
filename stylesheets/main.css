@@ -6994,6 +6994,10 @@ html,
 .bg-gray {
   background: #ccc !important; }
 
+.btn-more {
+  font-family: "museo-slab";
+  padding: 7px 35px; }
+
 .navbar {
   min-height: 100px;
   margin-bottom: 0;

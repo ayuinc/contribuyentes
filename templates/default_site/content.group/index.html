@@ -1,11 +1,11 @@
 {embed="includes/head"}
 		{embed="includes/nav"}
 		{exp:channel:entries channel="homepage" limit="1"}
-		<section id="portada" style="background-image:url({imgen_hero});" class="hero-unit">
-		    <div class="text-vertical-center">
-          <h1>{home_titulo_hero}</h1>
+		<section id="portada" style="background-image:url({imgen_hero}); background-position-y: 10px;" class="hero-unit">
+			<div class="text-vertical-center">
+		  <h1>{home_titulo_hero}</h1>
 					<h4>{home_subttulo_hero}</h4>
-        </div>
+		</div>
 		</section>
 		<section id="nosotros" class="text-center">
 			<div class="container">
@@ -65,28 +65,28 @@
 				</div>
 				<div class="flexslider">
 				  <ul class="slides">
-				    <li>
-				      <img src="{site_url}images/homepage/laptop.jpg" />
-				    </li>
-				    <li>
-				      <img src="{site_url}images/homepage/img-1.jpg" />
-				    </li>
-				    <li>
-				      <img src="{site_url}images/homepage/img-2.jpg" />
-				    </li>
-				    <li>
-				      <img src="{site_url}images/homepage/img-3.jpg" />
-				    </li>
-				    <li>
-				      <img src="{site_url}images/homepage/img-4.jpg" />
-				    </li>
-				    <li>
-				      <img src="{site_url}images/homepage/img-2.jpg" />
-				    </li>
-				    <li>
-				      <img src="{site_url}images/homepage/img-3.jpg" />
-				    </li>
-				    <!-- items mirrored twice, total of 12 -->
+					<li>
+					  <img src="{site_url}images/homepage/laptop.jpg" />
+					</li>
+					<li>
+					  <img src="{site_url}images/homepage/img-1.jpg" />
+					</li>
+					<li>
+					  <img src="{site_url}images/homepage/img-2.jpg" />
+					</li>
+					<li>
+					  <img src="{site_url}images/homepage/img-3.jpg" />
+					</li>
+					<li>
+					  <img src="{site_url}images/homepage/img-4.jpg" />
+					</li>
+					<li>
+					  <img src="{site_url}images/homepage/img-2.jpg" />
+					</li>
+					<li>
+					  <img src="{site_url}images/homepage/img-3.jpg" />
+					</li>
+					<!-- items mirrored twice, total of 12 -->
 				  </ul>
 				</div>
 			</div>
@@ -134,29 +134,6 @@
 				</div>
 			</div>
 		</section>
-		<section id="comparte" class="bg-gray pb-70">
-		  <div class="container">
-		    <h1 class="section-title text-gray text-center mt-42">Únete en las redes</h1>
-		  </div>
-		  <div class="container flex-middle">
-		    <div id="share-grid" class="grid-list grid-list-4 grid-list-2-sm grid-list-1-xs">
-		      <a href="https://www.facebook.com/respeto.pe" target="_blank" class="grid-list-item" >
-		        <h3 class="network-name">Facebook</h3>
-		        <div class="share-icon"><i class="icon-facebook"></i></div>
-		        <div class="overlay bg-facebook"></div>
-		      </a>
-		      <a href="http://www.twitter.com/respeto_pe" target="_blank" class="grid-list-item">
-		        <h3 class="network-name">Twitter</h3>
-		        <div class="share-icon"><i class="icon-twitter"></i></div>
-		        <div class="overlay bg-twitter"></div>
-		      </a>
-		      <a href="#" class="grid-list-item">
-		        <h3 class="network-name">Youtube</h3>
-		        <div class="share-icon"><i class="icon-linkedin"></i></div>
-		        <div class="overlay bg-youtube"></div>
-		      </a>
-		    </div>
-		  </div>
-		</section>
+		{embed="includes/redsocial"}
 		{/exp:channel:entries}
 {embed="includes/footer"}		

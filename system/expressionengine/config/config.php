@@ -1,5 +1,11 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+define(SITE_NAME, 'Contribuyentes');
 
+$base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$base_url .= "://".$_SERVER['HTTP_HOST'].'/';
+$admin_url  = $base_url . '/admin.php';
+
+$config['index_page'] = "";
 /*
 |--------------------------------------------------------------------------
 | ExpressionEngine Config Items
@@ -10,22 +16,69 @@
 | observed by ExpressionEngine, e.g. 'permitted_uri_chars'
 |
 */
+$config['site_url'] = $base_url ;
 
 $config['app_version'] = '293';
 $config['license_contact'] = '';
-$config['license_number'] = 'CORE LICENSE';
+$config['license_number'] = '4630-2858-5276-6671';
 $config['debug'] = '1';
-$config['cp_url'] = 'http://104.236.244.65/admin.php';
+$config['cp_url'] = $config['site_url'].'/admin.php';
 $config['doc_url'] = 'http://ellislab.com/expressionengine/user-guide/';
 $config['is_system_on'] = 'y';
 $config['allow_extensions'] = 'y';
 $config['cache_driver'] = 'file';
-$config['cookie_prefix'] = '';
+$config['cookie_prefix'] = SITE_NAME.'_';
 $config['cookie_httponly'] = 'y';
+
+$config['server_path'] = FCPATH;
+
+$config['site_index'] = '';
+$config['theme_folder_url'] = $config['site_url']."/themes/";
+$config['theme_folder_path'] = $config['server_path']."themes";
+$config['save_tmpl_files'] = "y";
+$config['tmpl_file_basepath'] = $config['server_path']."templates";
+$config['avatar_url'] = $config['site_url']."/images/avatars/";
+$config['avatar_path'] = $config['server_path']."images/avatars/";
+$config['photo_url'] = $config['site_url']."/images/member_photos/";
+$config['photo_path'] = $config['server_path']."images/member_photos/";
+$config['sig_img_url'] = $config['site_url']."/images/signature_attachments/";
+$config['sig_img_path'] = $config['server_path']."images/signature_attachments/";
+$config['prv_msg_upload_path'] = $config['server_path']."images/pm_attachments/";
+
+$config['captcha_path'] = $config['server_path']."images/captchas/";
+$config['captcha_url'] = $config['site_url']."/images/captchas/";
 
 
 // END EE config items
-
+/*
+$config['upload_preferences'] = array(
+    2 => array(                                                            // ID of upload destination
+        'name'        => 'Imagenes Autor',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/autor/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/autor/'      // URL of upload directory
+    ),
+    3 => array(                                                            // ID of upload destination
+        'name'        => 'Imagenes del Jurado',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/jurado/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/jurado/'      // URL of upload directory
+    ),
+    1 => array(                                                            // ID of upload destination
+        'name'        => 'La Bitacora',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/bitacora/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/bitacora/'      // URL of upload directory
+    ),
+    4 => array(                                                            // ID of upload destination
+        'name'        => 'Fotos de Iniciativas',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/iniciativas/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/iniciativas/'      // URL of upload directory
+    ),
+    5 => array(                                                            // ID of upload destination
+        'name'        => 'Imagen Generales',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/general/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/general/'      // URL of upload directory
+    )
+);
+*/
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL
@@ -155,3 +208,6 @@ $config['rewrite_short_tags'] = TRUE;
 
 /* End of file config.php */
 /* Location: ./system/expressionengine/config/config.php */
+
+$config['email_newline'] = "\r\n"; 
+$config['email_crlf'] = "\r\n";

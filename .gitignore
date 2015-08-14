@@ -1,0 +1,80 @@
+# EBM
+# http://soygus.com
+# @author MadeByGus
+
+## EBM
+style.min.css
+style.unprefixed.css
+style.prefixed.css
+
+## Node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+npm-debug.log
+node_modules
+
+## Bower
+src/components
+lib
+
+
+
+## Icons
+app/assets/button-icons/*.svg
+app/assets/button-icons/*.eot
+app/assets/button-icons/*.ttf
+app/assets/button-icons/*.woff
+
+## Sass
+.sass-cache
+
+## OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## WORDPRESS
+wp-content/uploads/**
+
+## OLDREADME
+OLDREADME.md
+
+# Expression Engine
+# Images
+# images/avatars/
+# images/captchas/
+# images/smileys/
+# images/member_photos/
+# images/signature_attachments/
+# images/pm_attachments/
+
+# For security do not publish the following files
+system/expressionengine/config/database.php
+system/expressionengine/config/config.php
+
+.htaccess
+
+# Caches
+sized/
+thumbs/
+_thumbs/
+*/expressionengine/cache/*

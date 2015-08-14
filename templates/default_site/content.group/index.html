@@ -65,28 +65,11 @@
 				</div>
 				<div class="flexslider">
 				  <ul class="slides">
+					{exp:channel:entries channel="caricaturas" limit="20"}
 					<li>
-					  <img src="{site_url}images/homepage/laptop.jpg" />
+					  <img src="{imagen_caricaturas}" />
 					</li>
-					<li>
-					  <img src="{site_url}images/homepage/img-1.jpg" />
-					</li>
-					<li>
-					  <img src="{site_url}images/homepage/img-2.jpg" />
-					</li>
-					<li>
-					  <img src="{site_url}images/homepage/img-3.jpg" />
-					</li>
-					<li>
-					  <img src="{site_url}images/homepage/img-4.jpg" />
-					</li>
-					<li>
-					  <img src="{site_url}images/homepage/img-2.jpg" />
-					</li>
-					<li>
-					  <img src="{site_url}images/homepage/img-3.jpg" />
-					</li>
-					<!-- items mirrored twice, total of 12 -->
+					{/exp:channel:entries}
 				  </ul>
 				</div>
 			</div>

@@ -57,6 +57,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} ^/(includes|content|nosotros|investigacion|novedades|costo-beneficio|plaza-bolivar||members|P[0-9]{2,8}) [NC]
 RewriteRule (.*) /index.php/$1 [L]
+
 # -- NSM .htaccess Generator End --
 
 # -- NSM .htaccess Generator End --

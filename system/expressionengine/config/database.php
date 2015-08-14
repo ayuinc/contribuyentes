@@ -16,7 +16,7 @@ $db['expressionengine']['cache_on'] = FALSE;
 $db['expressionengine']['autoinit'] = FALSE;
 $db['expressionengine']['char_set'] = 'utf8';
 $db['expressionengine']['dbcollat'] = 'utf8_general_ci';
-$db['expressionengine']['cachedir'] = '/var/www/html/system/expressionengine/cache/db_cache/';
+$db['expressionengine']['cachedir'] = '/home/Contribuyentes/public_html/system/expressionengine/cache/db_cache/';
 
 /* End of file database.php */
 /* Location: ./system/expressionengine/config/database.php */

@@ -92,7 +92,11 @@
 				<div class="row m-0 colaboradores">
 					{exp:channel:entries channel="asociados" limit="20" dynamic="off"}
 					<div class="col-md-3">
-						<a href="{asociados_link}" target="_blank"><img src="{asociados_imagen}" alt="{title}"></a>
+						<a href="{asociados_link}" target="_blank">
+							{if asociados_imagen!=""}
+							<img src="{asociados_imagen}" alt="{title}">
+							{/if}
+						</a>
 						<h5 class="mb-0 pb-0">{title}</h5>
 						<small>{asociados_tipo}</small>
 					</div>

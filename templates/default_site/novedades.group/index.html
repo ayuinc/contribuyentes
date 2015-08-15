@@ -1,23 +1,26 @@
 {embed="includes/head"}
 		{embed="includes/nav"}
-		<section id="novedad">
+		<section id="novedades ">
 			<div class="container">
 				<div class="row mt-70">
 					<div class="col-md-1"></div>
 					<div class="col-md-10 text-center">
 						<h2>Novedades</h2>
-						<h4 class="text-gray-light">Entérate de nuestras últimas publicaciones y apariciones en medios:</h4>
+						<h4 class="text-gray-light">Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
 					</div>
 				</div>
 				<div class="row m-0">
-					{exp:channel:entries channel="novedades" limit="20" dynamic="off"}
+					{exp:channel:entries channel="boletin_costo_beneficio" limit="3" dynamic="off"}
 	 				<div class="col-md-4">
-		 				<a href="{site_url}/novedades/articulo/{url_title}">
+		 				<a href="{archivo-boletin-cb}" target="_blank">
 		 					<div class="novedades">
-		 						<img src="{novedades_imagen}">
+		 						<img src="{imagen-boletin-cb}">
 		 						<div class="overlay text-muted">
 				  					<h4>{title}</h4>
-				  					<p>{novedades_descripcion}</p>
+				  					<p>{descripcion-boletin-cb}</p>
+				  					<p>Ver PDF →</p>
 				  			</div>
 				  		</div>
 		 				</a>

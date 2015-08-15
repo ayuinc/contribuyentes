@@ -22,16 +22,21 @@
 		<section id="novedades" class="text-center">
 			<div class="container p-0">
 					<h2>Más de Costos y Beneficios</h2>
-				<div class="row m-0 posts">
-					{exp:channel:entries channel="news" limit="10"}
-					<div class="col-md-4">
-						<div class="post text-center">
-							<img src="{novedades_imagen}">
-							<a href="{site_url}/investigacion/articulo/{url_tile}"><h3>{title}</h3></a>
-							<p>{novedades_descripcion}</p>
-						</div>
-					</div>
-					{/exp:channel:entries}
+				<div class="row m-0">
+					{exp:channel:entries channel="boletin_costo_beneficio" dynamic="off"}
+	 				<div class="col-md-4">
+		 				<a href="{archivo-boletin-cb}" target="_blank">
+		 					<div class="novedades">
+		 						<img src="{imagen-boletin-cb}">
+		 						<div class="overlay text-muted">
+				  					<h4>{title}</h4>
+				  					<p>{descripcion-boletin-cb}</p>
+				  					<p>Ver PDF →</p>
+				  			</div>
+				  		</div>
+		 				</a>
+	 				</div>
+	 				{/exp:channel:entries}
 				</div>
 				<a href="{site_url}/investigacion/lista" class="btn btn-custom">ver más</a>
 			</div>

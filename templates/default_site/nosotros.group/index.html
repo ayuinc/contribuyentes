@@ -69,9 +69,13 @@
 				{exp:channel:entries channel="equipo" limit="6" dynamic="off"}
 				<div class="col-md-4">
 					<div class="text-center">
+						{if equipo_imagen!=""}
 						<img src="{equipo_imagen}" alt="{title}">
+						{/if}
 						<h5 class="mb-0 pb-0">{title}</h5>
+						{if equipo_cargo!=""}
 						<small>{equipo_cargo}</small>
+						{/if}
 						<p>{equipo_descripcion}</p>
 					</div>
 				</div>

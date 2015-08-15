@@ -20,9 +20,10 @@
 			</div>
 		</section>
 		<section id="novedad" class="text-center">
+			<div id="costos"></div>
 			<div class="container p-0">
 				<h2 class="mb-35">Más de Costos y Beneficios</h2>
-				<div id="costos" class="row m-0 posts">
+				<div class="row m-0 posts">
 					{exp:channel:entries channel="boletin_costo_beneficio" limit="3" dynamic="off"}
 	 				<div class="col-md-4">
 		 				<a href="{archivo-boletin-cb}" target="_blank">
@@ -38,8 +39,9 @@
 	 				</div>
 	 				{/exp:channel:entries}
 				</div>
+				<div id="articulos"></div>
 				<h2 class="mv-35">Más de Artículos</h2>
-				<div id="articulos" class="row m-0">
+				<div  class="row m-0">
 					{exp:channel:entries channel="novedades" limit="3" dynamic="off"}
 	 				<div class="col-md-4">
 		 				<a href="{site_url}/novedades/articulo/{url_title}">

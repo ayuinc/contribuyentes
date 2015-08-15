@@ -38,6 +38,21 @@
 	 				</div>
 	 				{/exp:channel:entries}
 				</div>
+				<div class="row m-0">
+					{exp:channel:entries channel="novedades" limit="20" dynamic="off"}
+	 				<div class="col-md-4">
+		 				<a href="{site_url}/novedades/articulo/{url_title}">
+		 					<div class="novedades">
+		 						<img src="{novedades_imagen}">
+		 						<div class="overlay text-muted">
+				  					<h4>{title}</h4>
+				  					<p>{novedades_descripcion}</p>
+				  			</div>
+				  		</div>
+		 				</a>
+	 				</div>
+	 				{/exp:channel:entries}
+				</div>
 				<a href="{site_url}/investigacion/lista" class="btn btn-custom">ver más</a>
 			</div>
 		</section>

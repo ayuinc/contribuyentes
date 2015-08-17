@@ -5736,9 +5736,6 @@ body {
     margin-bottom: 30px; }
   #caricaturas .text-center {
     padding: 0 40px; }
-  #caricaturas p {
-    color: #c5c5c5;
-    font-size: 18px; }
   #caricaturas .carousel-control.right,
   #caricaturas .carousel-control.left {
     border: 2px solid gray;

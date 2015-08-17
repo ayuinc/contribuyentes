@@ -7034,19 +7034,18 @@ html,
   width: 100%;
   height: 100%; }
   .modal .modal-content {
-    width: 45%;
-    min-height: 50%;
+    width: 40%;
     text-align: center;
     margin: 50px auto; }
     .modal .modal-content img {
       width: 400px;
       height: auto; }
 
-.modal.active {
-  display: block; }
-
-.modal-header .close {
-  margin-top: -9px !important; }
+.modal-header {
+  padding: 25px;
+  border-bottom: none; }
+  .modal-header .close {
+    margin-top: -9px !important; }
 
 .navbar {
   min-height: 100px;

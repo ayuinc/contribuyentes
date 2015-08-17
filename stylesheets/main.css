@@ -7041,7 +7041,8 @@ html,
       width: 400px;
       height: auto; }
   .modal .modal-text {
-    font-family: "museo-slab"; }
+    font-family: "museo-slab";
+    color: gray; }
 
 .modal-header {
   padding: 25px;

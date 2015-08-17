@@ -7039,13 +7039,14 @@ html,
       height: auto; }
   .modal .modal-text {
     font-family: "museo-slab";
-    color: gray; }
+    color: gray;
+    margin-bottom: 25px; }
     .modal .modal-text nav a div {
       width: 31px;
       height: 31px;
       display: inline-block;
-      margin-left: 3px;
-      margin-right: 3px; }
+      margin-left: 5px;
+      margin-right: 5px; }
     .modal .modal-text nav a .facebook {
       background-image: url(../images/homepage/modal-facebook.png); }
       .modal .modal-text nav a .facebook:hover {

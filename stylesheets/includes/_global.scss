@@ -149,13 +149,14 @@ h2 {
 	.modal-text{
 		 font-family: $font-family-serif;
 		 color: gray;
+		 margin-bottom: 25px;
 		 nav a{
 		 	div{
 		 		width: 31px;
 				height: 31px;
 				display: inline-block;
-				margin-left: 3px;
-				margin-right: 3px;
+				margin-left: 5px;
+				margin-right: 5px;
 		 	}
 		 	.facebook{
 				background-image: url(../images/homepage/modal-facebook.png);

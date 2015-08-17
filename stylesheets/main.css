@@ -7040,6 +7040,8 @@ html,
     .modal .modal-content img {
       width: 400px;
       height: auto; }
+  .modal .modal-text {
+    font-family: "museo-slab"; }
 
 .modal-header {
   padding: 25px;

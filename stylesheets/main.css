@@ -7040,6 +7040,24 @@ html,
   .modal .modal-text {
     font-family: "museo-slab";
     color: gray; }
+    .modal .modal-text nav a div {
+      width: 31px;
+      height: 31px;
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px; }
+    .modal .modal-text nav a .facebook {
+      background-image: url(../images/homepage/modal-facebook.png); }
+      .modal .modal-text nav a .facebook:hover {
+        background-image: url(../images/homepage/modal-facebook-hover.png); }
+    .modal .modal-text nav a .twitter {
+      background-image: url(../images/homepage/modal-twitter.png); }
+      .modal .modal-text nav a .twitter:hover {
+        background-image: url(../images/homepage/modal-twitter-hover.png); }
+    .modal .modal-text nav a .mail {
+      background-image: url(../images/homepage/modal-mail.png); }
+      .modal .modal-text nav a .mail:hover {
+        background-image: url(../images/homepage/modal-mail-hover.png); }
 
 .modal-header {
   padding: 25px;

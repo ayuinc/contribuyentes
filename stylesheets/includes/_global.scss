@@ -149,6 +149,33 @@ h2 {
 	.modal-text{
 		 font-family: $font-family-serif;
 		 color: gray;
+		 nav a{
+		 	div{
+		 		width: 31px;
+				height: 31px;
+				display: inline-block;
+				margin-left: 3px;
+				margin-right: 3px;
+		 	}
+		 	.facebook{
+				background-image: url(../images/homepage/modal-facebook.png);
+				&:hover{
+					background-image: url(../images/homepage/modal-facebook-hover.png);
+				}
+		 	}
+		 	.twitter{
+				background-image: url(../images/homepage/modal-twitter.png);
+				&:hover{
+					background-image: url(../images/homepage/modal-twitter-hover.png);
+				}
+		 	}
+		 	.mail{
+				background-image: url(../images/homepage/modal-mail.png);
+				&:hover{
+					background-image: url(../images/homepage/modal-mail-hover.png);
+				}
+		 	}
+		 }
 	}
 }
 

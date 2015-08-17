@@ -13,3 +13,19 @@ $(function() {
     }
   });
 });
+
+
+$(document).ready(function(){
+  var link = $(".imgClass"),
+      modal = $(".modal"),
+      img = $(".modal img");
+
+  link.click(function(){
+      modal.css({"display":"block"});
+       img.attr("src", $(this).find("img").attr("src"));
+  });
+
+  modal.click(function(){
+      modal.css({"display":"none"});
+  });
+});

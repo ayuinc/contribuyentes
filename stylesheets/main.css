@@ -7028,6 +7028,12 @@ html,
 .btn-1b:active:after {
   height: 100% !important; }
 
+.modal {
+  display: none; }
+
+.modal.active {
+  display: block; }
+
 .navbar {
   min-height: 100px;
   margin-bottom: 0;

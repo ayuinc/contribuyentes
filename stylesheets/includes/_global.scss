@@ -132,3 +132,10 @@ h2 {
 	height: 100% !important;
 }
 
+.modal{
+	display: none;
+}
+
+.modal.active{
+	display: block;
+}

@@ -7029,10 +7029,24 @@ html,
   height: 100% !important; }
 
 .modal {
-  display: none; }
+  background-color: rgba(0, 0, 0, 0.25);
+  display: none;
+  width: 100%;
+  height: 100%; }
+  .modal .modal-content {
+    width: 45%;
+    min-height: 50%;
+    text-align: center;
+    margin: 50px auto; }
+    .modal .modal-content img {
+      width: 400px;
+      height: auto; }
 
 .modal.active {
   display: block; }
+
+.modal-header .close {
+  margin-top: -9px !important; }
 
 .navbar {
   min-height: 100px;

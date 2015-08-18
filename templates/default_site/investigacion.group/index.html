@@ -24,7 +24,7 @@
 			
 			<div class="container p-0">
 				<div id="costos"></div>
-				<h2 class="mb-35">Más de Costos y Beneficios</h2>
+				<h2 class="mb-35">Costo y Beneficio</h2>
 				<div class="row m-0 posts">
 					{exp:channel:entries channel="boletin_costo_beneficio" limit="3" dynamic="off"}
 	 				<div class="col-md-4">
@@ -40,9 +40,10 @@
 		 				</a>
 	 				</div>
 	 				{/exp:channel:entries}
+	 				<a href="{site_url}/investigacion/costo-beneficio" class="btn btn-custom">ver más</a>
 				</div>
 				<div id="articulos"></div>
-				<h2 class="mt-42 mb-35">Más de Artículos</h2>
+				<h2 class="mt-42 mb-35">Artículos</h2>
 				<div  class="row m-0">
 					{exp:channel:entries channel="novedades" limit="3" dynamic="off"}
 	 				<div class="col-md-4">
@@ -58,7 +59,7 @@
 	 				</div>
 	 				{/exp:channel:entries}
 				</div>
-				<a href="{site_url}/investigacion/lista" class="btn btn-custom">ver más</a>
+				<a href="{site_url}/novedades" class="btn btn-custom">ver más</a>
 			</div>
 		</section>
 {embed="includes/footer"}

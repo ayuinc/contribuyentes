@@ -6979,15 +6979,6 @@ html,
       #novedades .posts .post p {
         padding: 0 32px;
         font-size: 14px; }
-  #novedades .btn-custom {
-    color: #3ea4a8;
-    border: 2px solid;
-    background-color: #eeeeee;
-    font-size: 21px;
-    margin: 35px 0;
-    margin-bottom: 70px;
-    border-radius: 0;
-    font-family: serif; }
 
 .bg-facebook:hover {
   background-color: #3b5998 !important; }
@@ -7004,6 +6995,16 @@ html,
 .btn-more {
   font-family: "museo-slab" !important;
   padding: 7px 35px !important; }
+
+.btn-custom {
+  color: #3ea4a8;
+  border: 2px solid;
+  background-color: #eeeeee;
+  font-size: 21px;
+  margin: 35px 0;
+  margin-bottom: 70px;
+  border-radius: 0;
+  font-family: serif; }
 
 .btn {
   position: relative;

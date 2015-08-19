@@ -1,0 +1,30 @@
+{embed="includes/head"}
+		{embed="includes/nav"}
+		<section id="novedad">
+			<div class="container">
+				<div class="row mt-70">
+					<div class="col-md-1"></div>
+					<div class="col-md-10 text-center">
+						<h2>Policy Notes</h2>
+						<h4 class="text-gray-light">Documentos en los que proponemos temas para el debate o buscamos poner algún problema de política pública en la agenda.</h4>
+					</div>
+				</div>
+				<div class="row m-0">
+					{exp:channel:entries channel="policy-notes" dynamic="off"}
+	 				<div class="col-md-4">
+		 				<a href="{archivo-policy}" target="_blank">
+		 					<div class="novedades">
+		 						<img src="{imagen-policy}">
+		 						<div class="overlay text-muted">
+				  					<h4>{title}</h4>
+				  					<p>{descripcion-policy}</p>
+				  					<p>Ver PDF →</p>
+				  			</div>
+				  		</div>
+		 				</a>
+	 				</div>
+	 				{/exp:channel:entries}
+				</div>
+			</div>
+		</section>
+{embed="includes/footer"}

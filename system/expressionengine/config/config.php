@@ -2,7 +2,7 @@
 define(SITE_NAME, 'contribuyentes');
 
 $base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
-$base_url .= "://".$_SERVER['HTTP_HOST'].'/'.SITE_NAME.'/';
+$base_url .= "://".$_SERVER['HTTP_HOST'].'/';
 $admin_url  = $base_url . '/admin.php';
 
 $config['index_page'] = "";

@@ -110,6 +110,13 @@ h2 {
 	  border-radius:0;
 	}
 
+.btn.btn-custom{
+	&:hover{
+		color: #3ea4a8;
+	}
+}
+
+
 .btn {
 	position: relative;
 	-webkit-transition: all 0.3s;

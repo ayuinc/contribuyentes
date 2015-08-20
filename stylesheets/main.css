@@ -5849,6 +5849,16 @@ a:hover, a:focus {
   margin-bottom: 21px;
   margin-top: 21px; }
 
+#share-grid:hover {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
 #share-grid a:hover {
   border: none; }
   #share-grid a:hover .network-name {

@@ -5838,7 +5838,7 @@ a:hover, a:focus {
 .section-title {
   font-family: "museo-slab"; }
 
-#share-grid a {
+#share-grid .grid-list-item {
   padding: 0;
   position: relative;
   display: block;

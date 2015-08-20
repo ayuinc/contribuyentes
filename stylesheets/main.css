@@ -5622,6 +5622,9 @@ html,
 body {
   height: 100%; }
 
+a:hover, a:focus {
+  text-decoration: none !important; }
+
 #portada {
   position: absolute;
   top: 0px; }
@@ -5655,8 +5658,7 @@ body {
     font-weight: 100;
     line-height: 125%; }
   #nosotros .btn-nosotros {
-    color: white;
-    background-color: #3ea4a8;
+    color: #3ea4a8;
     margin-top: 35px;
     border-radius: 0;
     font-family: "museo-slab"; }
@@ -5681,6 +5683,8 @@ body {
   font-size: 18px;
   font-weight: 100;
   line-height: 125%; }
+#investigacion .bg-danger h3 {
+  margin-top: 40px; }
 #investigacion .bg-danger h3, #investigacion .bg-info h3 {
   font-family: "museo-slab";
   color: white; }
@@ -5770,13 +5774,13 @@ body {
   padding: 125px 0; }
   #noticias h4 {
     font-family: "museo-slab";
-    font-size: 49px; }
+    font-size: 30px; }
   #noticias .form-control {
     padding: 21px;
     font-size: 20px;
     font-weight: 300; }
   #noticias .input-group-addon {
-    background-color: #0478e8;
+    background-color: #3ea4a8;
     color: white; }
 
 @media only screen and (max-width: 480px) {
@@ -7085,7 +7089,7 @@ a.btn-investigacion:hover {
   margin-bottom: 0;
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #e2e2e2;
   width: 100%; }
   .navbar .navbar-nav {
     float: none;

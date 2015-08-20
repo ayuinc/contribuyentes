@@ -3,6 +3,10 @@ body{
 	height: 100%;
 }
 
+a:hover, a:focus {
+    text-decoration: none !important;
+}
+
 #portada{
 	position:absolute;
 	top:0px;
@@ -45,8 +49,7 @@ body{
 		line-height: 125%;
 	}
 	.btn-nosotros{
-		color: white;
-		background-color: rgb(62, 164, 168);
+		color: rgb(62, 164, 168);
 		margin-top: 35px;
 		border-radius: 0;
 		font-family: $font-family-serif;
@@ -90,6 +93,14 @@ body{
 			line-height: 125%;
     }
 	}
+  
+  .bg-danger{
+    h3{
+      margin-top: 40px;
+    }
+  }
+
+
 	.bg-danger, .bg-info {
 		h3 {
 	  font-family: $font-family-serif;
@@ -221,7 +232,7 @@ body{
   padding: 125px 0;
 	h4{
 	font-family: $font-family-serif;
-	font-size: 49px;
+	font-size: 30px;
 	}
 	.form-control{
 	   padding:21px;
@@ -229,7 +240,7 @@ body{
      font-weight: 300;
 	}
 	.input-group-addon{
-	background-color:rgb(4, 120, 232);
+	background-color:#3ea4a8;
 	color: white;
 	}
 }

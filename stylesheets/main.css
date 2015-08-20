@@ -5841,7 +5841,17 @@ a:hover, a:focus {
 .content-redes {
   height: 280px;
   border: 2px solid gray;
-  padding: 20px; }
+  padding: 20px;
+  position: relative; }
+  .content-redes .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
   .content-redes:hover .overlay {
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0%);
@@ -5851,16 +5861,6 @@ a:hover, a:focus {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
-
-.content-redes .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
 
 #share-grid a {
   padding: 0;

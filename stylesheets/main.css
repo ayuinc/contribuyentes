@@ -5667,8 +5667,6 @@ body {
 @media only screen and (max-width: 480px) {
   #alianzas .alianzas-center {
     text-align: center; } }
-#investigacion .row {
-  padding-bottom: 3px; }
 #investigacion h2 {
   font-family: "museo-slab";
   font-size: 35px;
@@ -7008,16 +7006,11 @@ html,
   margin-bottom: 70px;
   border-radius: 0; }
 
-.btn.btn-custom:hover {
-  color: #3ea4a8; }
-
 .btn {
   position: relative;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s; }
-  .btn:hover {
-    color: none; }
 
 .btn:after {
   content: '';

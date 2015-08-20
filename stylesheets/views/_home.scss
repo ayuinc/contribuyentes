@@ -341,11 +341,24 @@ h2{
 }
 
 #share-grid a:hover{
+  .network-name{
+    color: white;
+  }
+}
+
+#share-grid a:hover .overlay, #share-grid a.active .overlay {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: none;
   .network-name{
     color: white;
   }
-
 }
 
 @media only screen and (max-width: 480px){

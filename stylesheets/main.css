@@ -5843,6 +5843,12 @@ a:hover, a:focus {
   border: 2px solid #a09e9e;
   padding: 20px;
   position: relative; }
+  .content-redes .bg-facebook {
+    background-color: #3b5998 !important; }
+  .content-redes .bg-twitter {
+    background-color: #32aadc !important; }
+  .content-redes .bg-youtube {
+    background-color: #ec2828 !important; }
   .content-redes .network-name {
     position: absolute;
     top: 10px;

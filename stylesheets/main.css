@@ -5843,6 +5843,11 @@ a:hover, a:focus {
   border: 2px solid gray;
   padding: 20px;
   position: relative; }
+  .content-redes .network-name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; }
   .content-redes .overlay {
     position: absolute;
     top: 0;

@@ -5861,7 +5861,9 @@ a:hover, a:focus {
     transform: translateX(0%);
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; } }
+    transition: all 0.2s ease-in-out; }
+    #share-grid a:hover .overlay .network-name, #share-grid a.active .overlay .network-name {
+      color: white; } }
 @media only screen and (max-width: 768px) {
   #share-grid a .overlay {
     -webkit-transform: translateX(0%);
@@ -5872,7 +5874,7 @@ a:hover, a:focus {
 #share-grid .network-name,
 #share-grid .share-icon {
   padding: 14px;
-  color: gray;
+  color: #e2e2e2;
   font-size: 24px;
   z-index: 30; }
 

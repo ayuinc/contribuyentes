@@ -5849,6 +5849,11 @@ a:hover, a:focus {
   margin-bottom: 21px;
   margin-top: 21px; }
 
+#share-grid a:hover {
+  border: none; }
+  #share-grid a:hover .network-name {
+    color: white; }
+
 @media only screen and (max-width: 480px) {
   #share-grid a {
     margin-left: 0 !important; } }

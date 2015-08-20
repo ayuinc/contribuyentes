@@ -5844,7 +5844,7 @@ a:hover, a:focus {
   display: block;
   height: 244px;
   overflow: hidden;
-  border: 2px solid #e2e2e2;
+  border: 2px solid rgba(115, 115, 115, 0.5);
   margin-left: 67px;
   margin-bottom: 21px;
   margin-top: 21px; }
@@ -5874,7 +5874,7 @@ a:hover, a:focus {
 #share-grid .network-name,
 #share-grid .share-icon {
   padding: 14px;
-  color: #e2e2e2;
+  color: rgba(115, 115, 115, 0.5);
   font-size: 24px;
   z-index: 30; }
 

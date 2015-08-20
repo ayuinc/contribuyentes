@@ -5856,11 +5856,11 @@ a:hover, a:focus {
     bottom: 0;
     left: 0;
     z-index: 1;
-    -webkit-transform: translateX(-101%);
-    -moz-transform: translateX(-101%);
-    -ms-transform: translateX(-101%);
-    -o-transform: translateX(-101%);
-    transform: translateX(-101%);
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }

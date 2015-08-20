@@ -7010,7 +7010,7 @@ html,
   color: #2980b9; }
 
 a.btn-investigacion:hover {
-  color: #2980b9; }
+  color: #2980b9 !important; }
 
 .btn {
   position: relative;

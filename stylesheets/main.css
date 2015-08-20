@@ -5843,6 +5843,8 @@ a:hover, a:focus {
   border: 2px solid #a09e9e;
   padding: 20px;
   position: relative; }
+  .content-redes h3 {
+    color: #a09e9e; }
   .content-redes .network-name {
     position: absolute;
     top: 10px;

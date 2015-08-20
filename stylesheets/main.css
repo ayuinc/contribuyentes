@@ -5838,6 +5838,20 @@ a:hover, a:focus {
 .section-title {
   font-family: "museo-slab"; }
 
+.content-redes {
+  height: 280px;
+  border: 2px solid gray;
+  padding: 20px; }
+  .content-redes:hover .overlay {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+
 #share-grid a {
   padding: 0;
   position: relative;

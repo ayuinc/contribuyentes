@@ -5660,7 +5660,9 @@ a:hover, a:focus {
   #nosotros .btn-nosotros {
     color: #3ea4a8;
     margin-top: 35px;
+    border: 2px solid #3ea4a8;
     border-radius: 0;
+    font-size: 16px;
     font-family: "museo-slab"; }
 
 @media only screen and (max-width: 480px) {

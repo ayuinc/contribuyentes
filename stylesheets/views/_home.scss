@@ -49,10 +49,12 @@ a:hover, a:focus {
 		line-height: 125%;
 	}
 	.btn-nosotros{
-		color: rgb(62, 164, 168);
-		margin-top: 35px;
-		border-radius: 0;
-		font-family: $font-family-serif;
+		color: #3ea4a8;
+    margin-top: 35px;
+    border: 2px solid #3ea4a8;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: "museo-slab";
 	}
 }
 

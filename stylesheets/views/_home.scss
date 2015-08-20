@@ -320,14 +320,15 @@ h2{
 
 .content-redes{
   height: 280px;
-  border: 2px solid gray;
+  border: 2px solid #a09e9e;
   padding: 20px;
   position: relative;
   .network-name{
     position: absolute;
-    top: 0;
+    top: 25px;
     right: 0;
-    left: 0;
+    left: 25px;
+    z-index: 2;
   }
   .overlay{
     position: absolute;
@@ -335,11 +336,16 @@ h2{
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   &:hover{
+    border: none;
+    .network-name{
+      color: white;
+    }
     .overlay{
       -webkit-transform: translateX(0%);
       -moz-transform: translateX(0%);

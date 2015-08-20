@@ -5840,32 +5840,38 @@ a:hover, a:focus {
 
 .content-redes {
   height: 280px;
-  border: 2px solid gray;
+  border: 2px solid #a09e9e;
   padding: 20px;
   position: relative; }
   .content-redes .network-name {
     position: absolute;
-    top: 0;
+    top: 25px;
     right: 0;
-    left: 0; }
+    left: 25px;
+    z-index: 2; }
   .content-redes .overlay {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
-  .content-redes:hover .overlay {
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
-    transform: translateX(0%);
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
+  .content-redes:hover {
+    border: none; }
+    .content-redes:hover .network-name {
+      color: white; }
+    .content-redes:hover .overlay {
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+      transform: translateX(0%);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
 
 #share-grid a {
   padding: 0;

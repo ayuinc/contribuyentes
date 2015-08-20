@@ -5845,7 +5845,7 @@ a:hover, a:focus {
   position: relative; }
   .content-redes .network-name {
     position: absolute;
-    top: 25px;
+    top: 10px;
     right: 0;
     left: 25px;
     z-index: 2; }
@@ -5856,6 +5856,11 @@ a:hover, a:focus {
     bottom: 0;
     left: 0;
     z-index: 1;
+    -webkit-transform: translateX(-101%);
+    -moz-transform: translateX(-101%);
+    -ms-transform: translateX(-101%);
+    -o-transform: translateX(-101%);
+    transform: translateX(-101%);
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }

@@ -115,6 +115,9 @@ h2 {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	&:hover{
+		color: none;
+	}
 }
 
 .btn:after {

@@ -7013,6 +7013,8 @@ html,
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s; }
+  .btn:hover {
+    color: none; }
 
 .btn:after {
   content: '';

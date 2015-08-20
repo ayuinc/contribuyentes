@@ -110,6 +110,12 @@ h2 {
 	  border-radius:0;
 	}
 
+.btn.btn-custom{
+	&:hover{
+		color: #646CB7;
+	}
+}
+
 
 .btn {
 	position: relative;

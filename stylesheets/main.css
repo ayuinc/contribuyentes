@@ -7006,6 +7006,9 @@ html,
   margin-bottom: 70px;
   border-radius: 0; }
 
+.btn.btn-custom:hover {
+  color: #646CB7; }
+
 .btn {
   position: relative;
   -webkit-transition: all 0.3s;

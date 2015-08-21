@@ -5752,7 +5752,7 @@ a:hover, a:focus {
   #caricaturas {
     padding: 50px 20px; } }
 #alianzas .picture img {
-  width: 140px;
+  width: 150px;
   margin: 0 auto; }
 #alianzas h2 {
   font-family: "museo-slab";
@@ -6987,8 +6987,10 @@ html,
   display: table; }
 
 @media only screen and (max-width: 480px) {
-  #portada .text-vertical-center {
-    padding-left: 23px; }
+  #portada {
+    background-position-y: 0; }
+    #portada .text-vertical-center {
+      padding-left: 23px; }
 
   .modal .modal-content {
     width: 85%;
@@ -7400,6 +7402,9 @@ html[xmlns] .flexslider .slides {
   bottom: -40px;
   text-align: center; }
 
+@media only screen and (max-width: 480px) {
+  .flex-control-nav {
+    bottom: -110px; } }
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;

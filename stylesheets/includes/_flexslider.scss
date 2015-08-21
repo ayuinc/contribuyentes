@@ -199,6 +199,14 @@ html[xmlns] .flexslider .slides {
   bottom: -40px;
   text-align: center;
 }
+
+@media only screen and (max-width: 480px){
+  .flex-control-nav {
+    bottom: -110px;
+  }
+}
+
+
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;

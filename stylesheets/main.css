@@ -6991,6 +6991,8 @@ html,
     background-position-y: 0; }
     #portada .text-vertical-center {
       padding-left: 23px; }
+    #portada h1 {
+      font-size: 20px; }
 
   .modal .modal-content {
     width: 85%;

@@ -6984,7 +6984,8 @@ html,
   width: 100%;
   position: relative;
   background-size: cover;
-  display: table; }
+  display: table;
+  background-position-y: 100px; }
 
 @media only screen and (max-width: 480px) {
   #portada {

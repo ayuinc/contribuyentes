@@ -5,21 +5,21 @@
 				<div class="row mt-70">
 					<div class="col-md-1"></div>
 					<div class="col-md-10 text-center">
-						<h2>Investigación</h2>
-						<h4 class="text-gray-light">Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+						<h2>Costos y Beneficios</h2>
+						<h4 class="text-gray-light">Cada mes desarrollamos una investigación en la que diagnosticamos un problema de política pública y realizamos propuestas de reforma. Los temas abordados en ediciones pasada han incluido alcohol, regulación de riesgos, transgénicos, pensiones públicas, agua y saneamiento, comisiones bancarias, y control de fusiones.</h4>
+						<p>Estos contenidos son distribuidos vía suscripciones, y luego de tres meses son abiertos al público a través desde nuestra web</p>
 					</div>
 				</div>
 				<div class="row m-0">
-					{exp:channel:entries channel="investigacion" limit="20" dynamic="off"}
+					{exp:channel:entries channel="boletin_costo_beneficio" dynamic="off"}
 	 				<div class="col-md-4">
-		 				<a href="{site_url}/novedades/articulo/{url_title}">
+		 				<a href="{archivo-boletin-cb}" target="_blank">
 		 					<div class="novedades">
-		 						<img src="{novedades_imagen}">
+		 						<img src="{imagen-boletin-cb}">
 		 						<div class="overlay text-muted">
 				  					<h4>{title}</h4>
-				  					<p>{novedades_descripcion}</p>
+				  					<p>{descripcion-boletin-cb}</p>
+				  					<p>Ver PDF →</p>
 				  			</div>
 				  		</div>
 		 				</a>

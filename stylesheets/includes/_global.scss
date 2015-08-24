@@ -5,14 +5,32 @@
 		position:relative;
 		background-size:cover;
 		display: table;
+		background-position-y: 100px;
+		
 }
 
 @media only screen and (max-width: 480px){
 	#portada{
+		background-position-y: 0;
 		.text-vertical-center{
 			padding-left: 23px;
 		}
+		h1{
+			font-size: 20px;
+		}
 	}
+	.modal .modal-content {
+    width: 85%;
+    text-align: center;
+    margin: 120px auto;
+	}
+	
+	.modal .modal-content img {
+    width: 240px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+	
 }
 
 #novedades {
@@ -61,16 +79,7 @@ h2 {
 	}
 	}
 	}
-	.btn-custom{
-	  color: #3ea4a8;
-	  border: 2px solid;
-	  background-color: #eeeeee;
-	  font-size: 21px;
-	  margin: 35px 0;
-	  margin-bottom: 70px;
-	  border-radius:0;
-	  font-family: serif;
-	}
+	
 }
 
 .bg-facebook:hover {
@@ -94,6 +103,28 @@ h2 {
     padding: 7px 35px !important;
 }
 
+.btn-custom{
+	  color: #3ea4a8;
+	  border: 2px solid;
+	  font-family: "museo-sans", sans-serif !important;
+	  background-color: #eeeeee;
+	  margin: 35px 0;
+	  text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 300;
+	  margin-bottom: 70px;
+	  border-radius:0;
+	}
+
+.btn.btn-custom{
+	&:hover{
+		color: #2980b9;
+	}
+}
+
+a.btn-investigacion:hover{
+	color: #2980b9 !important;
+}
 
 
 .btn {
@@ -101,6 +132,7 @@ h2 {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+
 }
 
 .btn:after {
@@ -122,13 +154,65 @@ h2 {
 	background: #fff;
 }
 
-.btn-1b:hover,
-.btn-1b:active {
-	color: #0e83cd !important;
-}
 
 .btn-1b:hover:after,
 .btn-1b:active:after {
 	height: 100% !important;
 }
 
+.modal{
+	background-color: rgba(0, 0, 0, 0.25);
+	display: none;
+	width: 100%;
+	height: 100%;
+	.modal-content{
+		width: 40%;
+		text-align: center;
+		margin: 50px auto;
+		img{
+			width: 400px;
+			height: auto;
+			margin-bottom: 20px;
+		}
+	}
+	.modal-text{
+		 font-family: $font-family-serif;
+		 color: gray;
+		 margin-bottom: 25px;
+		 nav a{
+		 	div{
+		 		width: 31px;
+				height: 31px;
+				display: inline-block;
+				margin-left: 5px;
+				margin-right: 5px;
+		 	}
+		 	.facebook{
+				background-image: url(../images/homepage/modal-facebook.png);
+				&:hover{
+					background-image: url(../images/homepage/modal-facebook-hover.png);
+				}
+		 	}
+		 	.twitter{
+				background-image: url(../images/homepage/modal-twitter.png);
+				&:hover{
+					background-image: url(../images/homepage/modal-twitter-hover.png);
+				}
+		 	}
+		 	.mail{
+				background-image: url(../images/homepage/modal-mail.png);
+				&:hover{
+					background-image: url(../images/homepage/modal-mail-hover.png);
+				}
+		 	}
+		 }
+	}
+}
+
+.modal-header{
+	padding: 25px;
+    border-bottom: none;
+    .close {
+    	margin-top: -9px !important;
+	}
+}

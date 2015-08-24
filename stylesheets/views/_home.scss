@@ -3,6 +3,10 @@ body{
 	height: 100%;
 }
 
+a:hover, a:focus {
+    text-decoration: none !important;
+}
+
 #portada{
 	position:absolute;
 	top:0px;
@@ -45,11 +49,12 @@ body{
 		line-height: 125%;
 	}
 	.btn-nosotros{
-		color: white;
-		background-color: rgb(62, 164, 168);
-		margin-top: 35px;
-		border-radius: 0;
-		font-family: $font-family-serif;
+		color: #3ea4a8;
+    margin-top: 35px;
+    border: 2px solid #3ea4a8;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: "museo-slab";
 	}
 }
 
@@ -69,9 +74,7 @@ body{
 
 
 #investigacion{
-.row{
-	padding-bottom: 3px;
-}
+
 	h2{
 	  font-family: $font-family-serif;
     font-size: 35px;
@@ -92,6 +95,14 @@ body{
 			line-height: 125%;
     }
 	}
+  
+  .bg-danger{
+    h3{
+      margin-top: 40px;
+    }
+  }
+
+
 	.bg-danger, .bg-info {
 		h3 {
 	  font-family: $font-family-serif;
@@ -164,10 +175,6 @@ body{
    .text-center{
       padding: 0 40px;
    }
-	p{
-	    color: rgb(197, 197, 197);
-        font-size: 18px;
-       }
     .carousel-control.right,
     .carousel-control.left {
       border: 2px solid gray;
@@ -188,7 +195,7 @@ body{
 #alianzas{
 	.picture{
 		img{
-			width: 100px;
+			width: 150px;
 			margin: 0 auto;
 		}
 	}
@@ -227,7 +234,7 @@ body{
   padding: 125px 0;
 	h4{
 	font-family: $font-family-serif;
-	font-size: 49px;
+	font-size: 30px;
 	}
 	.form-control{
 	   padding:21px;
@@ -235,7 +242,7 @@ body{
      font-weight: 300;
 	}
 	.input-group-addon{
-	background-color:rgb(4, 120, 232);
+	background-color:#3ea4a8;
 	color: white;
 	}
 }
@@ -310,16 +317,86 @@ h2{
   font-family: $font-family-serif;
 }
 
+
+.content-redes{
+  height: 280px;
+  border: 2px solid #a09e9e;
+  padding: 20px;
+  position: relative;
+  h3{
+    color: #a09e9e;
+  }
+  .network-name{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 25px;
+    z-index: 2;
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover{
+    .network-name{
+      color: white;
+    }
+  }
+}
+
+.content-redes:hover{
+  .overlay{
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+
+
+
+
 #share-grid a {
   padding: 0;
   position: relative;
   display: block;
   height: 244px;
   overflow: hidden;
-  border: 2px solid white;
-  margin-left: 67px;
-  margin-bottom: 21px;
-  margin-top: 21px;
+  border: 2px solid rgba(115, 115, 115, 0.5);
+}
+
+
+#share-grid a:hover{
+  .network-name{
+    color: white;
+  }
+}
+
+#share-grid a:hover .overlay, #share-grid a.active .overlay {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  .network-name{
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 480px){
@@ -338,6 +415,10 @@ h2{
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    border: none;
+    .network-name{
+      color: white;
+    }
   }
 }
 @media only screen and (max-width: 768px) {
@@ -349,10 +430,13 @@ h2{
     transform: translateX(0%);
   }
 }
+
+
+
 #share-grid .network-name,
 #share-grid .share-icon {
   padding: 14px;
-  color: white;
+  color: rgba(115, 115, 115, 0.5);
   font-size: 24px;
   z-index: 30;
 }

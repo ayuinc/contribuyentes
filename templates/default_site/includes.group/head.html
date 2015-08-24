@@ -2,46 +2,44 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Contribuyentes con Respeto</title>
+		<title>Contribuyentes con Respeto{if embed:titulo} | {embed:titulo}{/if}</title>
 		
+
+    {exp:channel:entries channel="metatags" limit="1" dynamic="off"}
     <!-- Project SEO -->
-    <meta name="description" content="">
-    <meta name="keywords" content="" /> 
-    <meta name="author" content="" />
+    <meta name="description" content="{descripcion_facebook}">
+    <meta name="keywords" content="Contribuyentes con Respeto" /> 
+    <meta name="author" content="@LaboratoriaLA" />
 
     <!-- Responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
+    <meta property="og:url" content="{site_url}">
+    <meta property="og:title" content="{title}">
     <meta property="og:site_name" content="Contribuyentes con Respeto">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:description" content="{descripcion_facebook}">
+    {imagen_contribuyentes}
+    <meta property="og:image" content="{image:url:large}">
+    {/imagen_contribuyentes}
+    
 
     <!-- Twitter Cards -->
-    <meta name="twitter:card" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:url" content="">
-    <meta name="twitter:description" content=".">
-    <meta name="twitter:site" content="Contribuyentes con Respeto">
-    <meta name="twitter:creator" content="">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{title}">
+    <meta name="twitter:url" content="{site_url}">
+    <meta name="twitter:description" content="{descripcion_twitter}">
+    <meta name="twitter:site" content="@respeto_pe">
+    <meta name="twitter:creator" content="@respeto_pe">
+    {imagen_contribuyentes}
+    <meta name="twitter:image" content="{image:url:small}">
+    {/imagen_contribuyentes}
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="http://tini.com.pe/favicon.ico">
 
-    <!-- Apple Mobile -->
-    <meta name="apple-mobile-web-app-title" content="">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- Apple icons -->
-    <link rel="apple-touch-icon" sizes="156x156" href="#">
-    <link rel="apple-touch-icon" sizes="128x128" href="#">
-    <link rel="apple-touch-icon" sizes="76x76" href="#">
-    <link rel="apple-touch-icon" href="#">
+    <link rel="shortcut icon" href="{site_url}images/homepage/favicon-contribuyentes.png">
+    {/exp:channel:entries}
     
     <!--Webfont-->		
 		<link rel="stylesheet" type="text/css" href="{site_url}stylesheets/main.css">

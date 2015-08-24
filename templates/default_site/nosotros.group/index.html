@@ -36,8 +36,7 @@
 				<div class="row m-0 descripcion">
 					<div class="col-md-2"></div>
 					<div class="col-md-8 text-center">
-						<h2>Área de Trabajo</h2>
-						<h4 class="text-gray-light">Nuestras áreas de investigación y difusión son:</h4>
+						<h2>Áreas de Trabajo</h2>
 					</div>
 				</div>
 				<div class="container"> 
@@ -69,9 +68,13 @@
 				{exp:channel:entries channel="equipo" limit="6" dynamic="off"}
 				<div class="col-md-4">
 					<div class="text-center">
+						{if equipo_imagen!=""}
 						<img src="{equipo_imagen}" alt="{title}">
+						{/if}
 						<h5 class="mb-0 pb-0">{title}</h5>
+						{if equipo_cargo!=""}
 						<small>{equipo_cargo}</small>
+						{/if}
 						<p>{equipo_descripcion}</p>
 					</div>
 				</div>
@@ -82,15 +85,21 @@
 			<div class="container">
 				<div class="row m-0 pt-35">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<h2>Colaboradores</h2>
+							<h2>Asociados</h2>
 						</div>
 				</div>
 				<div class="row m-0 colaboradores">
 					{exp:channel:entries channel="asociados" limit="20" dynamic="off"}
 					<div class="col-md-3">
-						<a href="{asociados_link}" target="_blank"><img src="{asociados_imagen}" alt="{title}"></a>
+						<a href="{asociados_link}" target="_blank">
+							{if asociados_imagen!=""}
+							<img src="{asociados_imagen}" alt="{title}">
+							{/if}
+						</a>
 						<h5 class="mb-0 pb-0">{title}</h5>
+						{if asociados_tipo!=""}
 						<small>{asociados_tipo}</small>
+						{/if}
 					</div>
 					{/exp:channel:entries}
 				</div>
@@ -100,15 +109,14 @@
 			<div class="container">
 				<div class="row m-0 pt-35">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<h2>Asociados</h2>
+							<h2>Colaboradores</h2>
 						</div>
 				</div>
 				<div class="row m-0 colaboradores">
 					<div class="col-md-6 col-md-offset-3 text-center">
-						{exp:channel:entries channel="colaboradores" limit="20" dynamic="off"}
+						{exp:channel:entries channel="colaboradores" limit="1" dynamic="off"}
 						<div class="pb-21">
-							<h5 class="mb-0 pb-0">{title}</h5>
-							<small>{asociados_tipo}</small>
+							<p>{colaboradores_contenido}</p>
 						</div>
 						{/exp:channel:entries}
 					</div>

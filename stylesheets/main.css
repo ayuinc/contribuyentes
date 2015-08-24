@@ -5622,6 +5622,9 @@ html,
 body {
   height: 100%; }
 
+a:hover, a:focus {
+  text-decoration: none !important; }
+
 #portada {
   position: absolute;
   top: 0px; }
@@ -5655,10 +5658,11 @@ body {
     font-weight: 100;
     line-height: 125%; }
   #nosotros .btn-nosotros {
-    color: white;
-    background-color: #3ea4a8;
+    color: #3ea4a8;
     margin-top: 35px;
+    border: 2px solid #3ea4a8;
     border-radius: 0;
+    font-size: 16px;
     font-family: "museo-slab"; }
 
 @media only screen and (max-width: 480px) {
@@ -5667,8 +5671,6 @@ body {
 @media only screen and (max-width: 480px) {
   #alianzas .alianzas-center {
     text-align: center; } }
-#investigacion .row {
-  padding-bottom: 3px; }
 #investigacion h2 {
   font-family: "museo-slab";
   font-size: 35px;
@@ -5683,6 +5685,8 @@ body {
   font-size: 18px;
   font-weight: 100;
   line-height: 125%; }
+#investigacion .bg-danger h3 {
+  margin-top: 40px; }
 #investigacion .bg-danger h3, #investigacion .bg-info h3 {
   font-family: "museo-slab";
   color: white; }
@@ -5736,9 +5740,6 @@ body {
     margin-bottom: 30px; }
   #caricaturas .text-center {
     padding: 0 40px; }
-  #caricaturas p {
-    color: #c5c5c5;
-    font-size: 18px; }
   #caricaturas .carousel-control.right,
   #caricaturas .carousel-control.left {
     border: 2px solid gray;
@@ -5751,7 +5752,7 @@ body {
   #caricaturas {
     padding: 50px 20px; } }
 #alianzas .picture img {
-  width: 100px;
+  width: 150px;
   margin: 0 auto; }
 #alianzas h2 {
   font-family: "museo-slab";
@@ -5775,13 +5776,13 @@ body {
   padding: 125px 0; }
   #noticias h4 {
     font-family: "museo-slab";
-    font-size: 49px; }
+    font-size: 30px; }
   #noticias .form-control {
     padding: 21px;
     font-size: 20px;
     font-weight: 300; }
   #noticias .input-group-addon {
-    background-color: #0478e8;
+    background-color: #3ea4a8;
     color: white; }
 
 @media only screen and (max-width: 480px) {
@@ -5837,16 +5838,65 @@ body {
 .section-title {
   font-family: "museo-slab"; }
 
+.content-redes {
+  height: 280px;
+  border: 2px solid #a09e9e;
+  padding: 20px;
+  position: relative; }
+  .content-redes h3 {
+    color: #a09e9e; }
+  .content-redes .network-name {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 25px;
+    z-index: 2; }
+  .content-redes .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .content-redes:hover .network-name {
+    color: white; }
+
+.content-redes:hover .overlay {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
 #share-grid a {
   padding: 0;
   position: relative;
   display: block;
   height: 244px;
   overflow: hidden;
-  border: 2px solid white;
-  margin-left: 67px;
-  margin-bottom: 21px;
-  margin-top: 21px; }
+  border: 2px solid rgba(115, 115, 115, 0.5); }
+
+#share-grid a:hover .network-name {
+  color: white; }
+
+#share-grid a:hover .overlay, #share-grid a.active .overlay {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: none; }
+  #share-grid a:hover .overlay .network-name, #share-grid a.active .overlay .network-name {
+    color: white; }
 
 @media only screen and (max-width: 480px) {
   #share-grid a {
@@ -5860,7 +5910,10 @@ body {
     transform: translateX(0%);
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; } }
+    transition: all 0.2s ease-in-out;
+    border: none; }
+    #share-grid a:hover .overlay .network-name, #share-grid a.active .overlay .network-name {
+      color: white; } }
 @media only screen and (max-width: 768px) {
   #share-grid a .overlay {
     -webkit-transform: translateX(0%);
@@ -5871,7 +5924,7 @@ body {
 #share-grid .network-name,
 #share-grid .share-icon {
   padding: 14px;
-  color: white;
+  color: rgba(115, 115, 115, 0.5);
   font-size: 24px;
   z-index: 30; }
 
@@ -6931,11 +6984,26 @@ html,
   width: 100%;
   position: relative;
   background-size: cover;
-  display: table; }
+  display: table;
+  background-position-y: 100px; }
 
 @media only screen and (max-width: 480px) {
-  #portada .text-vertical-center {
-    padding-left: 23px; } }
+  #portada {
+    background-position-y: 0; }
+    #portada .text-vertical-center {
+      padding-left: 23px; }
+    #portada h1 {
+      font-size: 20px; }
+
+  .modal .modal-content {
+    width: 85%;
+    text-align: center;
+    margin: 120px auto; }
+
+  .modal .modal-content img {
+    width: 240px;
+    height: auto;
+    margin-bottom: 20px; } }
 #novedades {
   background-color: #eeeeee; }
   #novedades h2 {
@@ -6972,15 +7040,6 @@ html,
       #novedades .posts .post p {
         padding: 0 32px;
         font-size: 14px; }
-  #novedades .btn-custom {
-    color: #3ea4a8;
-    border: 2px solid;
-    background-color: #eeeeee;
-    font-size: 21px;
-    margin: 35px 0;
-    margin-bottom: 70px;
-    border-radius: 0;
-    font-family: serif; }
 
 .bg-facebook:hover {
   background-color: #3b5998 !important; }
@@ -6997,6 +7056,24 @@ html,
 .btn-more {
   font-family: "museo-slab" !important;
   padding: 7px 35px !important; }
+
+.btn-custom {
+  color: #3ea4a8;
+  border: 2px solid;
+  font-family: "museo-sans", sans-serif !important;
+  background-color: #eeeeee;
+  margin: 35px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 70px;
+  border-radius: 0; }
+
+.btn.btn-custom:hover {
+  color: #2980b9; }
+
+a.btn-investigacion:hover {
+  color: #2980b9 !important; }
 
 .btn {
   position: relative;
@@ -7020,20 +7097,58 @@ html,
   left: 0;
   background: #fff; }
 
-.btn-1b:hover,
-.btn-1b:active {
-  color: #0e83cd !important; }
-
 .btn-1b:hover:after,
 .btn-1b:active:after {
   height: 100% !important; }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.25);
+  display: none;
+  width: 100%;
+  height: 100%; }
+  .modal .modal-content {
+    width: 40%;
+    text-align: center;
+    margin: 50px auto; }
+    .modal .modal-content img {
+      width: 400px;
+      height: auto;
+      margin-bottom: 20px; }
+  .modal .modal-text {
+    font-family: "museo-slab";
+    color: gray;
+    margin-bottom: 25px; }
+    .modal .modal-text nav a div {
+      width: 31px;
+      height: 31px;
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px; }
+    .modal .modal-text nav a .facebook {
+      background-image: url(../images/homepage/modal-facebook.png); }
+      .modal .modal-text nav a .facebook:hover {
+        background-image: url(../images/homepage/modal-facebook-hover.png); }
+    .modal .modal-text nav a .twitter {
+      background-image: url(../images/homepage/modal-twitter.png); }
+      .modal .modal-text nav a .twitter:hover {
+        background-image: url(../images/homepage/modal-twitter-hover.png); }
+    .modal .modal-text nav a .mail {
+      background-image: url(../images/homepage/modal-mail.png); }
+      .modal .modal-text nav a .mail:hover {
+        background-image: url(../images/homepage/modal-mail-hover.png); }
+
+.modal-header {
+  padding: 25px;
+  border-bottom: none; }
+  .modal-header .close {
+    margin-top: -9px !important; }
 
 .navbar {
   min-height: 100px;
   margin-bottom: 0;
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #e2e2e2;
   width: 100%; }
   .navbar .navbar-nav {
     float: none;
@@ -7066,7 +7181,17 @@ html,
 
 @media only screen and (max-width: 480px) {
   .navbar {
-    min-height: 60px; } }
+    min-height: 60px; }
+
+  .modal .modal-content {
+    width: 85%;
+    text-align: center;
+    margin: 120px auto; }
+
+  .modal .modal-content img {
+    width: 240px;
+    height: auto;
+    margin-bottom: 20px; } }
 @media only screen and (max-width: 480px) {
   .navbar ul {
     margin-top: 22px !important; } }
@@ -7280,6 +7405,9 @@ html[xmlns] .flexslider .slides {
   bottom: -40px;
   text-align: center; }
 
+@media only screen and (max-width: 480px) {
+  .flex-control-nav {
+    bottom: -110px; } }
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;

@@ -7025,7 +7025,7 @@ html,
     #portada .text-vertical-center {
       padding-left: 23px; }
     #portada h1 {
-      font-size: 20px; }
+      font-size: 20px !important; }
 
   .modal .modal-content {
     width: 85%;
@@ -7439,7 +7439,7 @@ html[xmlns] .flexslider .slides {
 
 @media only screen and (max-width: 480px) {
   .flex-control-nav {
-    bottom: -110px; } }
+    bottom: -60px; } }
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;

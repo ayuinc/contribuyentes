@@ -274,10 +274,10 @@ h2{
   	background-color: lightgray;
 	}
 	.redessociales{
-	padding: 0 8% 7%;
-	.col-md-4{
-	  margin-bottom: 27px;
-	}
+	  padding: 0 8% 7%;
+	  .col-md-4{
+	    margin-bottom: 27px;
+	  }
 	}
 }
 
@@ -333,6 +333,41 @@ h2{
     left: 25px;
     z-index: 2;
   }
+
+  .redes-facebook{
+    width: 15px;
+    background-image: url(../images/homepage/facebook-gris.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    background-size: cover;
+  }
+
+  .redes-twitter{
+    width: 40px;
+    background-image: url(../images/homepage/twitter-gris.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    background-size: cover;
+  }
+
+  .redes-youtube{
+    width: 45px;
+    background-image: url(../images/homepage/youtube-gris.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    background-size: cover;
+  }
+
+
   .overlay{
     position: absolute;
     top: 0;
@@ -347,6 +382,15 @@ h2{
   &:hover{
     .network-name{
       color: white;
+    }
+    .redes-facebook{
+      background-image: url(../images/homepage/facebook-white.png);
+    }
+    .redes-twitter{
+      background-image: url(../images/homepage/twitter-white.png);
+    }
+    .redes-youtube{
+      background-image: url(../images/homepage/youtube-white.png);
     }
   }
 }

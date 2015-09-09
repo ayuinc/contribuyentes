@@ -2588,7 +2588,6 @@ tbody.collapse.in {
   padding: 10px 12px;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1;
   color: #555555;
   text-align: center;
   background-color: #eeeeee;
@@ -5851,6 +5850,33 @@ a:hover, a:focus {
     right: 0;
     left: 25px;
     z-index: 2; }
+  .content-redes .redes-facebook {
+    width: 15px;
+    background-image: url(../images/homepage/facebook-gris.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    background-size: cover; }
+  .content-redes .redes-twitter {
+    width: 40px;
+    background-image: url(../images/homepage/twitter-gris.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    background-size: cover; }
+  .content-redes .redes-youtube {
+    width: 45px;
+    background-image: url(../images/homepage/youtube-gris.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    background-size: cover; }
   .content-redes .overlay {
     position: absolute;
     top: 0;
@@ -5863,6 +5889,12 @@ a:hover, a:focus {
     transition: all 0.2s ease-in-out; }
   .content-redes:hover .network-name {
     color: white; }
+  .content-redes:hover .redes-facebook {
+    background-image: url(../images/homepage/facebook-white.png); }
+  .content-redes:hover .redes-twitter {
+    background-image: url(../images/homepage/twitter-white.png); }
+  .content-redes:hover .redes-youtube {
+    background-image: url(../images/homepage/youtube-white.png); }
 
 .content-redes:hover .overlay {
   -webkit-transform: translateX(0%);

@@ -1,0 +1,23 @@
+{embed="includes/head"}
+		{embed="includes/nav"}
+		<section id="novedad">
+			<div class="container">
+				<div class="row mt-70">
+					<div class="col-md-1"></div>
+					<div class="col-md-10 text-center">
+						<h2>Caricaturas</h2>
+						<!-- <h4 class="text-gray-light">Entérate de nuestras últimas publicaciones y apariciones en medios:</h4> -->
+					</div>
+				</div>
+				<div class="row m-0">
+					{exp:channel:entries channel="caricaturas" dynamic="off"}
+	 				<div class="col-md-4">
+	 					<div class="novedades">
+	 						<img src="{imagen_caricaturas}">
+			  		</div>
+	 				</div>
+	 				{/exp:channel:entries}
+				</div>
+			</div>
+		</section>
+{embed="includes/footer"}

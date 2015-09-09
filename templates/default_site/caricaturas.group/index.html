@@ -10,12 +10,15 @@
 					</div>
 				</div>
 				<div class="row m-0">
-					{exp:channel:entries channel="caricaturas" dynamic="off"}
+					{exp:channel:entries channel="caricaturas" limit="12" dynamic="off"}
 	 				<div class="col-md-4">
 	 					<div class="novedades">
 	 						<img src="{imagen_caricaturas}">
 			  		</div>
 	 				</div>
+	 				{paginate}
+            <p class="text-center">Páginas {current_page} - {total_pages} : {pagination_links}</p>
+          {/paginate}
 	 				{/exp:channel:entries}
 				</div>
 			</div>

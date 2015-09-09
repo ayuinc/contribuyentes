@@ -13,13 +13,25 @@
 					{exp:channel:entries channel="caricaturas" limit="12" dynamic="off"}
 	 				<div class="col-md-4">
 	 					<div class="novedades">
-	 						<img src="{imagen_caricaturas}">
+	 						<a href="javascript:void(0);" class="imgClass">
+					  		<img src="{imagen_caricaturas}" />
+					  	</a>
 			  		</div>
 	 				</div>
 	 				{paginate}
             <p class="text-center">Páginas {current_page} - {total_pages} : {pagination_links}</p>
           {/paginate}
 	 				{/exp:channel:entries}
+	 				<div class="modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							</div>
+							<div class="modal-body">
+								<img src="">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

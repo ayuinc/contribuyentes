@@ -2,50 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Contribuyentes por Respeto{if embed:titulo} | {embed:titulo}{/if}</title>
-		
-
-    {exp:channel:entries channel="metatags" limit="1" dynamic="off"}
-    <!-- Project SEO -->
-    <meta name="description" content="{descripcion_facebook}">
-    <meta name="keywords" content="Contribuyentes por Respeto" /> 
-    <meta name="author" content="@LaboratoriaLA" />
-
-    <!-- Responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{site_url}">
-    <meta property="og:title" content="{title}">
-    <meta property="og:site_name" content="Contribuyentes por Respeto">
-    <meta property="og:description" content="{descripcion_facebook}">
-    {imagen_contribuyentes}
-    <meta property="og:image" content="{image:url:large}">
-    {/imagen_contribuyentes}
-    
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{title}">
-    <meta name="twitter:url" content="{site_url}">
-    <meta name="twitter:description" content="{descripcion_twitter}">
-    <meta name="twitter:site" content="@respeto_pe">
-    <meta name="twitter:creator" content="@respeto_pe">
-    {imagen_contribuyentes}
-    <meta name="twitter:image" content="{image:url:small}">
-    {/imagen_contribuyentes}
 
     <!-- FAVICON -->
-
     <link rel="shortcut icon" href="{site_url}images/homepage/favicon-contribuyentes.png">
-    {/exp:channel:entries}
-
+    {exp:seo_lite default_title='{embed:titulo}' default_description='{embed:descripcion}' }
+    
+    <!-- Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="google-site-verification" content="gSXxez-FQdC5htb9XcGPxeUyCxVEQAzbw_z1pwqvj18" />
+    
     <!--Webfont-->		
 		<link rel="stylesheet" type="text/css" href="{site_url}stylesheets/main.css">
 		<script src="//use.typekit.net/ixt8tsd.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-                <script src="{site_url}javascripts/modernizr.custom.js"></script>
+    <script src="{site_url}javascripts/modernizr.custom.js"></script>
+    
 	</head>
 	<body>		

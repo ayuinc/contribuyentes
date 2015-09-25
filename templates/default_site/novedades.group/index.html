@@ -12,12 +12,12 @@
 				<div class="row m-0">
 					{exp:channel:entries channel="novedades" limit="20" dynamic="off"}
 	 				<div class="col-md-4">
-		 				<a href="{site_url}/novedades/articulo/{url_title}">
+		 				<a href="{site_url}novedades/articulo/{url_title}">
 		 					<div class="novedades">
-		 						<img src="{novedades_imagen}">
+		 						<img src="{novedades_imagen}" alt="{title}">
 		 						<div class="overlay text-muted">
-				  					<h4>{title}</h4>
-				  					<p>{novedades_descripcion}</p>
+			  					<h4>{title}</h4>
+			  					<p>{novedades_descripcion}</p>
 				  			</div>
 				  		</div>
 		 				</a>

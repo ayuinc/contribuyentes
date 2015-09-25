@@ -1,6 +1,6 @@
-{embed="includes/head"}
-		{embed="includes/nav"}
-		{exp:channel:entries channel="novedades" limit="1"}
+{exp:channel:entries channel="caricaturas" limit="1"}
+{embed="includes/head" titulo="{title}"}
+		{embed="includes/nav"}		
 		<section id="novedad">
 			<div class="container">
 				<div class="row mt-70">
@@ -12,20 +12,12 @@
 				<div class="row m-0">
 	 				<div class="col-md-10 col-md-offset-1">
  						<div class="pb-28">
-	 						<img src="{novedades_imagen}" width="100%">
+	 						<img src="{imagen_caricaturas}" alt="{title}" width="100%">
  						</div>
-		  			{novedades_contenido}
-						{if novedades_autor!=""}
-		  			<p><span style="color: #e31b13;">Por:</span> {novedades_autor}</p>
-						{/if}
-						{if novedades_fuente!=""}
-		  			<p><span style="color: #e31b13;">Nota:</span> {novedades_fuente}</p>
-		  			{/if}
-		  			{if video_de_youtube!=""}
-		  			<div class="mt-14">
-		  				<iframe width="100%;" height="470px" src="https://www.youtube.com/embed/{video_de_youtube}" frameborder="0" allowfullscreen></iframe>
-		  			</div>
-		  			{/if}
+						{if caricaturas_tags}
+							<h4 class="pt-7 mb-0 pb-0">Tags:</h4>
+			  			<p>{caricaturas_tags}</p>							
+						{/if} 						
 		  			<div class="pt-28">
 			  			<h4>Comentarios</h4>
 			  			<div id="disqus_thread"></div>
@@ -34,5 +26,5 @@
 				</div>
 			</div>
 		</section>
-		{/exp:channel:entries}
+{/exp:channel:entries}
 {embed="includes/footer"}

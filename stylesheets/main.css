@@ -5771,18 +5771,16 @@ a:hover, a:focus {
 @media only screen and (max-width: 480px) {
   #novedades .novedades {
     padding: 0 20px; } }
-#noticias {
-  padding: 125px 0; }
-  #noticias h4 {
-    font-family: "museo-slab";
-    font-size: 30px; }
-  #noticias .form-control {
-    padding: 21px;
-    font-size: 20px;
-    font-weight: 300; }
-  #noticias .input-group-addon {
-    background-color: #3ea4a8;
-    color: white; }
+#noticias h4 {
+  font-family: "museo-slab";
+  font-size: 30px; }
+#noticias .form-control {
+  padding: 21px;
+  font-size: 20px;
+  font-weight: 300; }
+#noticias .input-group-addon {
+  background-color: #3ea4a8;
+  color: white; }
 
 @media only screen and (max-width: 480px) {
   #noticias {

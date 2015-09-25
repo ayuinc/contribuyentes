@@ -7088,11 +7088,9 @@ html,
   padding: 7px 35px !important; }
 
 .btn-custom {
-  color: #3ea4a8;
-  border: 2px solid;
+  color: #FFFFFF;
   font-family: "museo-sans", sans-serif !important;
-  background-color: #eeeeee;
-  margin: 35px 0;
+  background-color: #3ea4a8;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 300;

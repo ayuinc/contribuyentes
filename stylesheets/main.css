@@ -7054,7 +7054,7 @@ html,
     #novedades .posts .post {
       background-color: white;
       color: gray;
-      height: 440px;
+      height: 420px;
       margin-bottom: 14px; }
       #novedades .posts .post a {
         color: #837f7f; }
@@ -7071,7 +7071,8 @@ html,
         font-family: "museo-slab"; }
       #novedades .posts .post p {
         padding: 0 32px;
-        font-size: 14px; }
+        font-size: 15px;
+        font-weight: 300; }
 
 .bg-facebook:hover {
   background-color: #3b5998 !important; }

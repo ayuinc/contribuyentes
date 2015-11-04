@@ -7065,7 +7065,9 @@ html,
       #novedades .posts .post h3 {
         padding: 20px 0 0px;
         text-align: center;
-        font-family: "museo-slab"; }
+        font-family: "museo-slab";
+        font-size: 18px;
+        line-height: 125%; }
       #novedades .posts .post p {
         padding: 0 32px;
         font-size: 15px;
@@ -7211,9 +7213,9 @@ a.btn-investigacion:hover {
       padding-left: 0; }
 
 .input-buscar {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
-  padding: 7px 10px; }
+  padding: 5px 10px; }
 
 @media only screen and (max-width: 480px) {
   .navbar {

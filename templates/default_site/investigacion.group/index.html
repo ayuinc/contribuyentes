@@ -33,11 +33,11 @@
 		 					<div class="novedades">
 		 						<img src="{imagen-boletin-cb}">
 		 						<div class="overlay text-muted">
-				  					<h4>{title}</h4>
+				  					<h4 class="weight-light">{title}</h4>
 				  					{if descripcion-boletin-cb}
-				  						<p>{descripcion-boletin-cb}</p>
+				  						<p class="weight-light">{descripcion-boletin-cb}</p>
 				  					{if:else}
-				  						<p>Esta ilustración está disponible en PDF.</p>
+				  						<p class="weight-light">Esta ilustración está disponible en formato PDF.</p>
 				  					{/if}
 				  					<p><small>Bajar archivo →</small></p>
 				  			</div>
@@ -60,9 +60,12 @@
 			 					<div class="novedades">
 			 						<img src="{imagen_policy}">
 			 						<div class="overlay text-muted">
-					  					<h4>{title}</h4>
-					  					<p>{descripcion_policy}</p>
-					  					<p>Ver PDF →</p>
+					  					<h4 class="weight-light">{title}</h4>
+					  					{if descripcion_policy}
+					  						<p class="weight-light">{descripcion_policy}</p>
+					  					{if:else}
+					  						<p class="weight-light">Esta ilustración está disponible en formato PDF.</p>
+					  					{/if}					  					
 					  			</div>
 					  		</div>
 			 				</a>

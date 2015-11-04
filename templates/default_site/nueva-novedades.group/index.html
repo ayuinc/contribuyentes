@@ -27,24 +27,24 @@
 					</div>
 					{exp:channel:entries channel="novedades" limit="3" dynamic="off"}
 	 				<div class="col-md-4">
-		 				<a href="{archivo-boletin-cb}" target="_blank">
+		 				<a href="{site_url}novedades/articulo/{url_title}" target="_blank">
 		 					<div class="novedades">
 		 						<img src="{imagen-boletin-cb}">
 		 						<div class="overlay text-muted">
 				  					<h4 class="weight-light">{title}</h4>
-				  					{if descripcion-boletin-cb}
+				  					{if novedades_descripcion}
 				  						<p class="weight-light">{descripcion-boletin-cb}</p>
 				  					{if:else}
-				  						<p class="weight-light">Esta ilustración está disponible en formato PDF.</p>
+				  						<p class="weight-light">Ingresa al detalle del contenido</p>
 				  					{/if}
-				  					<p><small>Bajar archivo →</small></p>
+				  					<p><small>Leer más →</small></p>
 				  			</div>
 				  		</div>
 		 				</a>
 	 				</div>
 	 				{/exp:channel:entries}
 				</div>
-	 			<a href="{site_url}costo-beneficio" class="btn btn-custom btn-more btn-1 btn-1b">ver más</a>
+	 			<a href="{site_url}novedades" class="btn btn-custom btn-more btn-1 btn-1b">ver más</a>
 			</div>
 			<div class="container pt-35">
 				<div id="policy-notes"></div>

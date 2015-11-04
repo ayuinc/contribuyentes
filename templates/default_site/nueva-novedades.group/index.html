@@ -1,40 +1,76 @@
 {embed="includes/head"}
 		{embed="includes/nav"}
-		<section id="portada">
+		{!--exp:channel:entries channel="investigacion" limit="1"--}
+		<!--<section id="portada" style="background-image:url({investigacion_fondo})">
 			<div class="botones-portada">
-			  <a href="{site_url}plaza-bolivar" class="btn btn-default btn-fold">Plaza Bolivar</a>
-			  <a href="{site_url}costo-beneficio" class="btn btn-default btn-fold">Costo Beneficio</a>
+			  <a href="{site_url}investigacion#costos" class="btn btn-default btn-fold">Costo y Beneficio</a>
+			  <a href="{site_url}investigacion#policy-notes" class="btn btn-default btn-fold">Policy Notes</a>
 			</div>
-		</section>
+		</section>-->
+		{!--/exp:channel:entries--}
 		<section id="nosotros" class="text-center">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-1"></div>
-					<div class="col-md-10">
-						<h3 class="text-gray">Contribuyentes por Respeto busca... sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</h3>
-						<!--<button class="btn btn-custom btn-vista-investigacion">ver más</button>-->
+					<div class="col-md-8 col-md-offset-2">
+						<h3 class="text-gray weight-light mb-21">Encuentra aquí nuestros análisis y propuestas sobre diversos problemas de políticas públicas</h3>
+						<h4><a href="{site_url}novedades#costos" class="text-gray-dark">Novedades</a> | <a href="{site_url}infografia-imagenes#policy-notes" class="text-gray-dark">Infografía e Imágenes</a></h4>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="novedades" class="text-center">
-			<div class="container p-0">
-					<h2>Más de Costo Beneficio</h2>
+		<section id="novedad" class="text-center">
+			<div class="container pb-35">
+				<div id="costos"></div>
 				<div class="row m-0 posts">
-					{exp:channel:entries channel="news" limit="10"}
-					<div class="col-md-4">
-						<div class="post text-center">
-							<img src="{novedades_imagen}">
-							<a href="{site_url}/investigacion/articulo/{url_tile}"><h3>{title}</h3></a>
-							<p>{novedades_descripcion}</p>
-						</div>
+					<div class="col-md-6 col-md-offset-3">
+						<p class="mb-21 h2">Novedades</p>
 					</div>
-					{/exp:channel:entries}
+					{exp:channel:entries channel="novedades" limit="3" dynamic="off"}
+	 				<div class="col-md-4">
+		 				<a href="{archivo-boletin-cb}" target="_blank">
+		 					<div class="novedades">
+		 						<img src="{imagen-boletin-cb}">
+		 						<div class="overlay text-muted">
+				  					<h4 class="weight-light">{title}</h4>
+				  					{if descripcion-boletin-cb}
+				  						<p class="weight-light">{descripcion-boletin-cb}</p>
+				  					{if:else}
+				  						<p class="weight-light">Esta ilustración está disponible en formato PDF.</p>
+				  					{/if}
+				  					<p><small>Bajar archivo →</small></p>
+				  			</div>
+				  		</div>
+		 				</a>
+	 				</div>
+	 				{/exp:channel:entries}
 				</div>
-				<a href="{site_url}/investigacion/lista" class="btn btn-custom">ver más</a>
+	 			<a href="{site_url}costo-beneficio" class="btn btn-custom btn-more btn-1 btn-1b">ver más</a>
+			</div>
+			<div class="container pt-35">
+				<div id="policy-notes"></div>
+				<div class="row m-0 posts">
+					<div class="col-md-6 col-md-offset-3">
+						<p class="mb-21 h2">Infografías e Imágenes</p>
+					</div>					
+					{exp:channel:entries channel="infografia_imagenes" dynamic="off" limit="3"}
+		 				<div class="col-md-4">
+			 				<a href="{archivo-policy}" target="_blank">
+			 					<div class="novedades">
+			 						<img src="{imagen_policy}">
+			 						<div class="overlay text-muted">
+					  					<h4 class="weight-light">{title}</h4>
+					  					{if descripcion_policy}
+					  						<p class="weight-light">{descripcion_policy}</p>
+					  					{if:else}
+					  						<p class="weight-light">Esta ilustración está disponible en formato PDF.</p>
+					  					{/if}					  					
+					  			</div>
+					  		</div>
+			 				</a>
+		 				</div>
+		 			{/exp:channel:entries}
+				</div>
+	 			<a href="{site_url}policy-notes" class="btn btn-custom btn-more btn-1 btn-1b">ver más</a>
 			</div>
 		</section>
 {embed="includes/footer"}

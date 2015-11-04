@@ -19,7 +19,10 @@
 		        <li><a href="{site_url}novedades" class="weight">Novedades</a></li>
 		        <li class="bg-header"><a href="{site_url}#alianzas" class="weight">Alianzas</a></li>
 		        <li class="bg-header">
-							{exp:search:simple_form channel="novedades|caricaturas"}
+							{exp:search:simple_form 
+								channel="novedades|caricaturas"
+								result_page="buscar/index"
+							}
                 <input type="text" name="keywords" id="keywords" value="" size="18" maxlength="100" >
                 <input type="submit" value="Buscar" class="btn btn-nosotros btn-1 btn-1b">
 							{/exp:search:simple_form}		        

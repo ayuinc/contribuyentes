@@ -5,24 +5,29 @@
 				<div class="row mt-70">
 					<div class="col-md-1"></div>
 					<div class="col-md-10 text-center">
-						<h2>Novedades</h2>
+						<h2>Resultados de la busqueda</h2>
 						<h4 class="text-gray-light">Entérate de nuestras últimas publicaciones y apariciones en medios:</h4>
 					</div>
 				</div>
+			</div>
+			<div class="container-md">
 				<div class="row m-0">
-					{exp:channel:entries channel="novedades" limit="20" dynamic="off"}
-	 				<div class="col-md-4">
+					{exp:search:search_results}
+	 				<div class="col-md-12">
 		 				<a href="{site_url}novedades/articulo/{url_title}">
-		 					<div class="novedades">
-		 						<img src="{novedades_imagen}" alt="{title}">
-		 						<div class="overlay text-muted">
-			  					<h4>{title}</h4>
-			  					<p>{novedades_descripcion}</p>
-				  			</div>
-				  		</div>
-		 				</a>
+			 				<h4>{title}</h4>
+			 			</a>	
+ 					  {if novedades_descripcion}
+  						<p>{novedades_descripcion}</p>
+  					{/if}		
 	 				</div>
-	 				{/exp:channel:entries}
+			    {paginate}
+			    <div class="col-md-12">
+			      <p class="text-center pv-14">Page {current_page} of {total_pages} pages {pagination_links}</p>
+			    </div>
+			    {/paginate}
+					
+					{/exp:search:search_results}
 				</div>
 			</div>
 		</section>

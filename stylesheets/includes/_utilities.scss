@@ -52,7 +52,8 @@ $margins-paddings: ("p": "padding", "m": "margin", "pt": "padding-top", "pb": "p
       line-height: 1.2; } }
 
 .h3 {
-  font-size: 1.71429rem; }
+  font-size: 1.71429rem;
+  line-height: 125%; }
   .h3.lead {
     font-size: 33px;
     font-size: 2.35714rem;

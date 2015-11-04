@@ -21,8 +21,7 @@
 		</section>
 		
 		<section id="novedad" class="text-center">
-			
-			<div class="container pb-35">
+			<div class="container pv-35">
 				<div id="costos"></div>
 				<h2 class="mb-35">Costo y Beneficio</h2>
 				<div class="row m-0 posts">
@@ -42,30 +41,27 @@
 	 				{/exp:channel:entries}
 				</div>
 	 			<a href="{site_url}/costo-beneficio" class="btn btn-custom btn-more btn-1 btn-1b" style="background-color: white; border: 2px solid #3ea4a8; color: #3ea4a8;">ver más</a>
-
+			</div>
+			<div class="container pv-35">
 				<div id="policy-notes"></div>
 				<h2 class="mb-35">Policy Notes</h2>
 				<div class="row m-0 posts">
-					
-				{exp:channel:entries channel="policy_notes" dynamic="off"}
-	 				<div class="col-md-4">
-		 				<a href="{archivo-policy}" target="_blank">
-		 					<div class="novedades">
-		 						<img src="{imagen_policy}">
-		 						<div class="overlay text-muted">
-				  					<h4>{title}</h4>
-				  					<p>{descripcion_policy}</p>
-				  					<p>Ver PDF →</p>
-				  			</div>
-				  		</div>
-		 				</a>
-	 				</div>
-	 			{/exp:channel:entries}
-
+					{exp:channel:entries channel="policy_notes" dynamic="off"}
+		 				<div class="col-md-4">
+			 				<a href="{archivo-policy}" target="_blank">
+			 					<div class="novedades">
+			 						<img src="{imagen_policy}">
+			 						<div class="overlay text-muted">
+					  					<h4>{title}</h4>
+					  					<p>{descripcion_policy}</p>
+					  					<p>Ver PDF →</p>
+					  			</div>
+					  		</div>
+			 				</a>
+		 				</div>
+		 			{/exp:channel:entries}
 				</div>
 	 			<a href="{site_url}/policy-notes" class="btn btn-custom btn-more btn-1 btn-1b" style="background-color: white; border: 2px solid #3ea4a8; color: #3ea4a8;">ver más</a>
-
-
 			</div>
 		</section>
 {embed="includes/footer"}

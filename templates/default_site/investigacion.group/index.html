@@ -34,8 +34,12 @@
 		 						<img src="{imagen-boletin-cb}">
 		 						<div class="overlay text-muted">
 				  					<h4>{title}</h4>
-				  					<p>{descripcion-boletin-cb}</p>
-				  					<p>Ver PDF →</p>
+				  					{if descripcion-boletin-cb}
+				  						<p>{descripcion-boletin-cb}</p>
+				  					{if:else}
+				  						<p>Esta ilustración está disponible en PDF.</p>
+				  					{/if}
+				  					<p><small>Bajar archivo →</small></p>
 				  			</div>
 				  		</div>
 		 				</a>

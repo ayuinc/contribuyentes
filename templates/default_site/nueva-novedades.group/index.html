@@ -13,14 +13,14 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<h3 class="text-gray weight-light mb-21">Encuentra aquí nuestros análisis y propuestas sobre diversos problemas de políticas públicas</h3>
-						<h4><a href="{site_url}novedades#costos" class="text-gray-dark">Novedades</a> | <a href="{site_url}infografia-imagenes#policy-notes" class="text-gray-dark">Infografía e Imágenes</a></h4>
+						<h4><a href="{site_url}novedades#novedades" class="text-gray-dark">Novedades</a> | <a href="{site_url}infografia-imagenes#info" class="text-gray-dark">Infografía e Imágenes</a></h4>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="novedad" class="text-center">
 			<div class="container pb-35">
-				<div id="costos"></div>
+				<div id="novedades"></div>
 				<div class="row m-0 posts">
 					<div class="col-md-6 col-md-offset-3">
 						<p class="mb-21 h2">Novedades</p>
@@ -47,23 +47,18 @@
 	 			<a href="{site_url}novedades" class="btn btn-custom btn-more btn-1 btn-1b">ver más</a>
 			</div>
 			<div class="container pt-35">
-				<div id="policy-notes"></div>
+				<div id="info"></div>
 				<div class="row m-0 posts">
 					<div class="col-md-6 col-md-offset-3">
 						<p class="mb-21 h2">Infografías e Imágenes</p>
 					</div>					
 					{exp:channel:entries channel="infografia_imagenes" dynamic="off" limit="3"}
 		 				<div class="col-md-4">
-			 				<a href="{archivo-policy}" target="_blank">
+			 				<a href="{site_url}infografias-imagenes/articulo/articulo/{url_title}" target="_blank">
 			 					<div class="novedades">
-			 						<img src="{imagen_policy}">
+			 						<img src="{imagen_caricaturas}" alt="{title}">
 			 						<div class="overlay text-muted">
-					  					<h4 class="weight-light">{title}</h4>
-					  					{if descripcion_policy}
-					  						<p class="weight-light">{descripcion_policy}</p>
-					  					{if:else}
-					  						<p class="weight-light">Esta ilustración está disponible en formato PDF.</p>
-					  					{/if}					  					
+					  					<h4 class="weight-light">{title}</h4>			  					
 					  			</div>
 					  		</div>
 			 				</a>

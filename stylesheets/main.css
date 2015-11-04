@@ -6418,7 +6418,8 @@ html,
         visibility: hidden; }
       #novedad .novedades .overlay h4 {
         font-family: "museo-slab";
-        margin-bottom: 30px; }
+        margin-bottom: 14px;
+        line-height: 125%; }
 
 .overlay:hover h4,
 .overlay:hover p {

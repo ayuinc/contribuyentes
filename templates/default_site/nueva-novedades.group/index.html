@@ -1,0 +1,40 @@
+{embed="includes/head"}
+		{embed="includes/nav"}
+		<section id="portada">
+			<div class="botones-portada">
+			  <a href="{site_url}plaza-bolivar" class="btn btn-default btn-fold">Plaza Bolivar</a>
+			  <a href="{site_url}costo-beneficio" class="btn btn-default btn-fold">Costo Beneficio</a>
+			</div>
+		</section>
+		<section id="nosotros" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"></div>
+					<div class="col-md-10">
+						<h3 class="text-gray">Contribuyentes por Respeto busca... sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</h3>
+						<!--<button class="btn btn-custom btn-vista-investigacion">ver más</button>-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="novedades" class="text-center">
+			<div class="container p-0">
+					<h2>Más de Costo Beneficio</h2>
+				<div class="row m-0 posts">
+					{exp:channel:entries channel="news" limit="10"}
+					<div class="col-md-4">
+						<div class="post text-center">
+							<img src="{novedades_imagen}">
+							<a href="{site_url}/investigacion/articulo/{url_tile}"><h3>{title}</h3></a>
+							<p>{novedades_descripcion}</p>
+						</div>
+					</div>
+					{/exp:channel:entries}
+				</div>
+				<a href="{site_url}/investigacion/lista" class="btn btn-custom">ver más</a>
+			</div>
+		</section>
+{embed="includes/footer"}

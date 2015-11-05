@@ -1,4 +1,4 @@
-{exp:channel:entries channel="caricaturas" limit="1"}
+{exp:channel:entries channel="caricatura_nueva" limit="1"}
 {embed="includes/head" titulo="{title}"}
 		{embed="includes/nav"}		
 		<section id="novedad">
@@ -12,7 +12,11 @@
 				<div class="row m-0">
 	 				<div class="col-md-10 col-md-offset-1">
  						<div class="pb-28">
-	 						<img src="{imagen_caricaturas}" alt="{title}" width="100%">
+		 					{if imagen_caricaturas}
+				  		<img src="{imagen_caricaturas}" alt="{title}" width="100%"/>
+				  		{if:else}
+				  		<img src="{url_caricatura}" alt="{title}" width="100%"/>
+				  		{/if}
  						</div>
 						{if caricaturas_tags}
 							<h4 class="pt-7 mb-0 pb-0">Tags:</h4>

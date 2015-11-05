@@ -6347,7 +6347,8 @@ body {
       font-weight: 100; }
 
 #colaboradores {
-  background-color: #F7F7F7; }
+  background-color: #F7F7F7;
+  padding: 70px 0; }
 
 #asociados {
   background-color: #FFF; }

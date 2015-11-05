@@ -44,10 +44,12 @@
 				</div>
 				<div class="container"> 
 					{exp:channel:entries channel="area_de_trabajo" limit="5" dynamic="off"}
-					<div class="row m-0 trabajo">
-						<div class="col-md-4 text-center overlay">
+					<div class="row m-0">
+						<div class="col-md-4">
 							<h4>{title}</h4>
+							{if area_descripcion}
 							<p>{area_descripcion}</p>
+							{/if}
 						</div>
 					</div>
 					{/exp:channel:entries}

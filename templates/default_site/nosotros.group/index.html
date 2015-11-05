@@ -18,7 +18,7 @@
 						<div class="mision hidden">
 							<a href=""><img src="http://placehold.it/100x100"></a>
 						</div>
-						<h2 class="pb-0">Misión</h2>
+						<h2 class="pb-0 text-serif">Misión</h2>
 						<h4 class="text-gray-light">{mision}</h4>
 					</div>
 				</div>
@@ -27,7 +27,7 @@
 						<div class="mision hidden">
 							<a href=""><img src="http://placehold.it/100x100"></a>
 						</div>
-						<h2 class="pb-0">Visión</h2>
+						<h2 class="pb-0 text-serif">Visión</h2>
 						<h4 class="text-gray-light">{vision}</h4>
 					</div>
 				</div>
@@ -39,7 +39,7 @@
 				<div class="row m-0 descripcion">
 					<div class="col-md-2"></div>
 					<div class="col-md-8 text-center">
-						<h2>Áreas de Trabajo</h2>
+						<h3>Áreas de Trabajo</h2>
 					</div>
 				</div>
 				<div class="container"> 
@@ -52,7 +52,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 text-center overlay">
-							<h3>{title}</h3>
+							<h4>{title}</h4>
 							<p>{area_descripcion}</p>
 						</div>
 					</div>
@@ -63,7 +63,7 @@
 		<section id="equipo">
 				<div class="row m-0 pv-35">
 						<div class="col-md-8 col-md-offset-2 text-center">			
-							<h2 class="text-center pb-0 mb-0">Consejo Directivo</h2>
+							<h3 class="text-center pb-0 mb-0">Consejo Directivo</h3>
 							<h4 class="text-gray weight-light">El trabajo de Contribuyentes por Respeto no sería posible sin el siguiente equipo:</h4>
 						</div>
 				</div>
@@ -74,7 +74,7 @@
 						{if equipo_imagen!=""}
 						<img src="{equipo_imagen}" alt="{title}">
 						{/if}
-						<h5 class="mb-0 pb-0">{title}</h5>
+						<h4 class="mb-0 pb-0">{title}</h4>
 						{if equipo_cargo!=""}
 						<small>{equipo_cargo}</small>
 						{/if}
@@ -88,13 +88,13 @@
 			<div class="container">
 				<div class="row m-0 pt-35">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<h2 class="mb-0">Colaboradores</h2>
+							<h3 class="mb-0">Colaboradores</h3>
 						</div>
 				</div>
 				<div class="row m-0 colaboradores">
 					{exp:channel:entries channel="colaboradores" limit="20" dynamic="off"}
 					<div class="col-md-3 text-center">
-						<h5 class="mb-0 pb-0">{title}</h5>
+						<h4 class="mb-0 pb-0">{title}</h4>
 						<p>{colaboradores_contenido}</p>
 					</div>
 					{/exp:channel:entries}
@@ -105,7 +105,7 @@
 			<div class="container">
 				<div class="row m-0 pt-35">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<h2 class="mb-0">Asociados</h2>
+							<h3 class="mb-0">Asociados</h3>
 						</div>
 				</div>
 				<div class="row m-0 colaboradores">

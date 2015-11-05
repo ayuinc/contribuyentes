@@ -12,6 +12,16 @@
 #hero-section {
 	height:550px;
 	width:100%;
+	.row {
+		position: relative;
+    z-index: 1;
+    top: 23rem;
+    div {
+	    h1 {
+		    color:white;
+	    }
+    }
+	}
 }
 
 @media only screen and (max-width: 480px){

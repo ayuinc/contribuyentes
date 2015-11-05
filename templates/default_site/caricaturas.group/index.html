@@ -15,7 +15,11 @@
 	 					<div class="novedades">
 	 						<!--<a href="javascript:void(0);" class="imgClass">-->
 		 					<a href="{site_url}caricaturas/caricatura/{url_title}">
+			 					{if imagen_caricaturas}
 					  		<img src="{imagen_caricaturas}" alt="{title}"/>
+					  		{if:else}
+					  		<img src="{url_caricatura}" alt="{title}"/>
+					  		{/if}
 					  	</a>
 			  		</div>
 	 				</div>

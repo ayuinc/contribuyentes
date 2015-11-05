@@ -6298,7 +6298,7 @@ body {
       font-family: "museo-slab"; }
 
 #area {
-  background-color: #eeeeee;
+  background-color: #F7F7F7;
   padding: 50px 0; }
   #area .descripcion {
     padding-bottom: 60px; }
@@ -6347,7 +6347,7 @@ body {
       font-weight: 100; }
 
 #asociados {
-  background-color: lightgray; }
+  background-color: #F7F7F7; }
   #asociados h2 {
     font-family: "museo-slab";
     font-size: 35px;

@@ -7025,6 +7025,10 @@ html,
     top: 23rem; }
     #hero-section .row div h1 {
       color: white; }
+    #hero-section .row div h4 {
+      color: white; }
+    #hero-section .row div p {
+      color: white; }
 
 @media only screen and (max-width: 480px) {
   #portada {

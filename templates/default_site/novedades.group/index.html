@@ -6,11 +6,11 @@
 					<div class="col-md-1"></div>
 					<div class="col-md-10 text-center">
 						<h2>Novedades</h2>
-						<h4 class="text-gray-light">Entérate de nuestras últimas publicaciones y apariciones en medios:</h4>
+						<h4 class="text-gray-light weight-light">Entérate de nuestras últimas publicaciones y apariciones en medios:</h4>
 					</div>
 				</div>
 				<div class="row m-0">
-					{exp:channel:entries channel="novedades" limit="20" dynamic="off"}
+					{exp:channel:entries channel="novedades" limit="21" dynamic="off"}
 	 				<div class="col-md-4">
 		 				
 		 					<div class="novedades">
@@ -26,7 +26,7 @@
 	 				</div>
 	 				{paginate}
 	 				<div class="col-md-12">
-            <p class="text-center pv-14">Páginas {current_page} - {total_pages} : {pagination_links}</p>
+            <h4 class="text-center pv-14">Páginas {pagination_links}</h4>
 	 				</div>
           {/paginate}
 	 				{/exp:channel:entries}

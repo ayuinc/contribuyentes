@@ -27,21 +27,21 @@
 						<p class="mb-21 h2">Novedades</p>
 					</div>
 					{exp:channel:entries channel="novedades" limit="3" dynamic="off"}
-	 				<div class="col-md-4">
-		 				<a href="{site_url}novedades/articulo/{url_title}" target="_blank">
+	 				<div class="col-md-4">		 				
 		 					<div class="novedades">
-		 						<img src="{novedades_imagen}" alt="{title}">
-		 						<div class="overlay text-muted">
-				  					<h4 class="weight-light">{title}</h4>
-				  					{if novedades_descripcion}
-				  						<p class="weight-light">{descripcion-boletin-cb}</p>
-				  					{if:else}
-				  						<p class="weight-light">Ingresa al detalle del contenido</p>
-				  					{/if}
-				  					<p><small>Leer más →</small></p>
+		 						<!--<img src="{novedades_imagen}" alt="{title}">-->
+		 						<!--<div class="overlay text-muted">-->
+		 						<div>
+			 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
+			  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
+			  					<p class="mb-7 pb-0 text-gray weight-light">
+				  					{exp:char_limit total="120" exact="no" strip_tags="yes"}
+				  						{novedades_descripcion}
+				  					{/exp:char_limit}
+				  				</p>
+			  					<a href="{site_url}novedades/articulo/{url_title}" class="weight-light">Lee más →</a>
 				  			</div>
-				  		</div>
-		 				</a>
+				  		</div>		 				
 	 				</div>
 	 				{/exp:channel:entries}
 				</div>

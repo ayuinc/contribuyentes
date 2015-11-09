@@ -14,14 +14,20 @@
 	 				<div class="col-md-4">
 		 				<a href="{site_url}novedades/articulo/{url_title}">
 		 					<div class="novedades">
-		 						<img src="{novedades_imagen}" alt="{title}">
-		 						<div class="overlay text-muted">
+		 						<!--<img src="{novedades_imagen}" alt="{title}">-->
+		 						<!--<div class="overlay text-muted">-->
+		 						<div>
 			  					<h4>{title}</h4>
 			  					<p>{novedades_descripcion}</p>
 				  			</div>
 				  		</div>
 		 				</a>
 	 				</div>
+	 				{paginate}
+	 				<div class="col-md-12">
+            <p class="text-center pv-14">Páginas {current_page} - {total_pages} : {pagination_links}</p>
+	 				</div>
+          {/paginate}
 	 				{/exp:channel:entries}
 				</div>
 			</div>

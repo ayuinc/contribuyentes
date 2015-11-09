@@ -12,16 +12,17 @@
 				<div class="row m-0">
 					{exp:channel:entries channel="novedades" limit="20" dynamic="off"}
 	 				<div class="col-md-4">
-		 				<a href="{site_url}novedades/articulo/{url_title}">
+		 				
 		 					<div class="novedades">
 		 						<!--<img src="{novedades_imagen}" alt="{title}">-->
 		 						<!--<div class="overlay text-muted">-->
 		 						<div>
 			  					<h4>{title}</h4>
 			  					<p>{novedades_descripcion}</p>
+			  					<a href="{site_url}novedades/articulo/{url_title}">Lee más →</a>
 				  			</div>
 				  		</div>
-		 				</a>
+		 				
 	 				</div>
 	 				{paginate}
 	 				<div class="col-md-12">

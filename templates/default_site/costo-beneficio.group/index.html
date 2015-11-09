@@ -6,20 +6,21 @@
 					<div class="col-md-1"></div>
 					<div class="col-md-10 text-center">
 						<h2>Costo y Beneficio</h2>
-						<h4 class="text-gray-light">Trimestralmente desarrollamos una investigación en la que diagnosticamos un problema de política pública y realizamos propuestas de reforma. Los temas abordados en ediciones pasada han incluido alcohol, regulación de riesgos, transgénicos, pensiones públicas, agua y saneamiento, comisiones bancarias, y control de fusiones.</h4>
-						<p>Estos contenidos son distribuidos vía suscripciones, y luego de tres meses son abiertos al público a través de nuestra web</p>
+						<h4 class="text-gray-light weight-light">Trimestralmente desarrollamos una investigación en la que diagnosticamos un problema de política pública y realizamos propuestas de reforma. Los temas abordados en ediciones pasada han incluido alcohol, regulación de riesgos, transgénicos, pensiones públicas, agua y saneamiento, comisiones bancarias, y control de fusiones.</h4>
+						<p class="text-gray-light weight-light">Estos contenidos son distribuidos vía suscripciones, y luego de tres meses son abiertos al público a través de nuestra web</p>
 					</div>
 				</div>
 				<div class="row m-0">
 					{exp:channel:entries channel="boletin_costo_beneficio" dynamic="off"}
 	 				<div class="col-md-4">
-		 				<a href="{archivo-boletin-cb}" target="_blank">
-		 					<div class="novedades">
-		 						<img src="{imagen-boletin-cb}">
-		 						<div class="overlay text-muted">
-				  					<h4>{title}</h4>
-				  					<p>{descripcion-boletin-cb}</p>
-				  					<p>Ver PDF →</p>
+		 					<div>
+			 					{imagen-boletin-cb}
+		 							<img src="{image:url:medium}" alt="{title}">
+		 						{/imagen-boletin-cb}
+		 						<div>
+			  					<h4>{title}</h4>
+			  					<p>{descripcion-boletin-cb}</p>
+			  					<a href="{archivo-boletin-cb}" target="_blank">Ver PDF →</a>
 				  			</div>
 				  		</div>
 		 				</a>

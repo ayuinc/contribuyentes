@@ -7,9 +7,13 @@ html,
 
 .articulos-contenido {
 	p {
-		font-size: 14px;
+		font-size: 16px;
 		color:#a09e9e; 
-		line-height: 125%;
+		line-height: 135%;
+		font-weight: 100;
+		b {
+			color:#333;
+		}
 	}
 }
 

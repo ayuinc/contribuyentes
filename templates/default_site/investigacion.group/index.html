@@ -19,11 +19,11 @@
 				</div>
 			</div>
 		</section>
-		<section id="novedad" class="text-center">
+		<section id="novedad">
 			<div class="container pb-35">
 				<div id="costos"></div>
 				<div class="row m-0 posts">
-					<div class="col-md-6 col-md-offset-3">
+					<div class="col-md-6 col-md-offset-3 text-center">
 						<p class="mb-21 h2">Costo y Beneficio</p>
 					</div>
 					{exp:channel:entries channel="boletin_costo_beneficio" dynamic="off" limit="3"}
@@ -46,7 +46,9 @@
 	 				</div>			
 	 				{/exp:channel:entries}
 				</div>
-	 			<a href="{site_url}costo-beneficio" class="btn btn-custom btn-more btn-1 btn-1b">ver más</a>
+				<div class="text-center">
+	 				<a href="{site_url}costo-beneficio" class="btn btn-custom btn-more btn-1 btn-1b">ver todos</a>
+				</div>
 			</div>
 			<div class="container pt-35">
 				<div id="policy-notes"></div>

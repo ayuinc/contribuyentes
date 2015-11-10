@@ -10,20 +10,30 @@
 					</div>
 				</div>
 				<div class="row m-0">
-				{exp:channel:entries channel="policy_notes" dynamic="off"}
-	 				<div class="col-md-4">
-		 				<a href="{archivo-policy}" target="_blank">
-		 					<div class="novedades">
-		 						<img src="{imagen_policy}">
-		 						<div class="overlay text-muted">
-				  					<h4>{title}</h4>
-				  					<p>{descripcion_policy}</p>
-				  					<p>Ver PDF →</p>
-				  			</div>
-				  		</div>
-		 				</a>
+					{exp:channel:entries channel="policy_notes" dynamic="off" limit="21"}
+	 				<div class="col-md-4 mb-35">		 				
+	 					<div class="novedades">
+		 					{imagen_policy}
+	 							<img src="{image:url:medium}" alt="{title}">
+	 						{/imagen_policy}
+	 						<div class="mt-14">
+		 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
+		  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
+		  					<p class="mb-7 pb-0 text-gray weight-light">
+			  					{exp:char_limit total="120" exact="no" strip_tags="yes"}
+			  						{descripcion_policy}
+			  					{/exp:char_limit}
+			  				</p>
+		  					<a href="{archivo-policy}" class="weight-light">Ver PDF →</a>
+			  			</div>
+			  		</div>		 				
+	 				</div>			 	
+	 				{paginate}
+	 				<div class="col-md-12">
+            <h4 class="text-center pv-14">Páginas {pagination_links}</h4>
 	 				</div>
-	 			{/exp:channel:entries}
+          {/paginate}	 							
+		 			{/exp:channel:entries}
 				</div>
 			</div>
 		</section>

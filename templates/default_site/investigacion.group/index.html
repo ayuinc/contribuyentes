@@ -57,24 +57,28 @@
 						<p class="mb-21 h2">Policy Notes</p>
 					</div>					
 					{exp:channel:entries channel="policy_notes" dynamic="off" limit="3"}
-		 				<div class="col-md-4">
-			 				<a href="{archivo-policy}" target="_blank">
-			 					<div class="novedades">
-			 						<img src="{imagen_policy}">
-			 						<div class="overlay text-muted">
-					  					<h4 class="weight-light">{title}</h4>
-					  					{if descripcion_policy}
-					  						<p class="weight-light">{descripcion_policy}</p>
-					  					{if:else}
-					  						<p class="weight-light">Esta ilustración está disponible en formato PDF.</p>
-					  					{/if}					  					
-					  			</div>
-					  		</div>
-			 				</a>
-		 				</div>
+	 				<div class="col-md-4 mb-35">		 				
+	 					<div class="novedades">
+		 					{imagen_policy}
+	 							<img src="{image:url:medium}" alt="{title}">
+	 						{/imagen_policy}
+	 						<div class="mt-14">
+		 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
+		  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
+		  					<p class="mb-7 pb-0 text-gray weight-light">
+			  					{exp:char_limit total="120" exact="no" strip_tags="yes"}
+			  						{descripcion_policy}
+			  					{/exp:char_limit}
+			  				</p>
+		  					<a href="{archivo-policy}" class="weight-light">Ver PDF →</a>
+			  			</div>
+			  		</div>		 				
+	 				</div>			 				
 		 			{/exp:channel:entries}
 				</div>
-	 			<a href="{site_url}policy-notes" class="btn btn-custom btn-more btn-1 btn-1b">ver más</a>
+				<div class="text-center">				
+	 				<a href="{site_url}policy-notes" class="btn btn-custom btn-more btn-1 btn-1b">ver todos</a>
+				</div>
 			</div>
 		</section>
 {embed="includes/footer"}

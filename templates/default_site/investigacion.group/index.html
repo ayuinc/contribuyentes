@@ -26,23 +26,24 @@
 					<div class="col-md-6 col-md-offset-3">
 						<p class="mb-21 h2">Costo y Beneficio</p>
 					</div>
-					{exp:channel:entries channel="boletin_costo_beneficio" limit="3" dynamic="off"}
-	 				<div class="col-md-4">
-		 				<a href="{archivo-boletin-cb}" target="_blank">
+					{exp:channel:entries channel="boletin_costo_beneficio" dynamic="off" limit="3"}
+	 				<div class="col-md-4 mb-35">		 				
 		 					<div class="novedades">
-		 						<img src="{imagen-boletin-cb}" alt="{title}" width="100%">
-		 						<div class="overlay text-muted">
-				  					<h4 class="weight-light">{title}</h4>
-				  					{if descripcion-boletin-cb}
-				  						<p class="weight-light">{descripcion-boletin-cb}</p>
-				  					{if:else}
-				  						<p class="weight-light">Esta ilustración está disponible en formato PDF.</p>
-				  					{/if}
-				  					<p><small>Bajar archivo →</small></p>
+			 					{imagen-boletin-cb}
+		 							<img src="{image:url:medium}" alt="{title}">
+		 						{/imagen-boletin-cb}
+		 						<div class="mt-14">
+			 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
+			  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
+			  					<p class="mb-7 pb-0 text-gray weight-light">
+				  					{exp:char_limit total="120" exact="no" strip_tags="yes"}
+				  						{descripcion-boletin-cb}
+				  					{/exp:char_limit}
+				  				</p>
+			  					<a href="{archivo-boletin-cb}" class="weight-light">Ver PDF →</a>
 				  			</div>
-				  		</div>
-		 				</a>
-	 				</div>
+				  		</div>		 				
+	 				</div>			
 	 				{/exp:channel:entries}
 				</div>
 	 			<a href="{site_url}costo-beneficio" class="btn btn-custom btn-more btn-1 btn-1b">ver más</a>

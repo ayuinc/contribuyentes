@@ -6391,7 +6391,8 @@ html,
   height: 100%; }
 
 .caricaturas-internas {
-  height: 250px; }
+  height: 300px;
+  margin-bottom: 21px; }
   .caricaturas-internas img {
     width: 292px;
     height: 200px; }

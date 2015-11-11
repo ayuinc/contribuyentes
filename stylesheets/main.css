@@ -6390,6 +6390,10 @@ html,
 .container {
   height: 100%; }
 
+.caricaturas-internas img {
+  width: 292px;
+  height: 200px; }
+
 .articulos-contenido p {
   font-size: 16px;
   color: #a09e9e;

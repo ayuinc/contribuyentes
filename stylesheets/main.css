@@ -6411,36 +6411,34 @@ html,
   line-height: 135%;
   font-weight: 100; }
 
-#novedad {
-  padding: 50px 0; }
-  #novedad .container {
-    padding: 0 7%;
-    padding-bottom: 2%; }
-  #novedad .text-center {
-    margin-bottom: 50px;
-    padding: 0 40px; }
-  #novedad .row {
-    padding-bottom: 14px; }
-  #novedad h3 {
-    text-align: initial;
-    padding: 21px 0; }
-  #novedad .novedades {
-    position: relative;
-    height: 200px;
-    margin-bottom: 14px; }
-    #novedad .novedades .overlay {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      padding: 35px; }
-      #novedad .novedades .overlay h4,
-      #novedad .novedades .overlay p {
-        visibility: hidden; }
-      #novedad .novedades .overlay h4 {
-        font-family: "museo-slab";
-        margin-bottom: 14px;
-        line-height: 125%; }
+#novedad .container {
+  padding: 0 7%;
+  padding-bottom: 2%; }
+#novedad .text-center {
+  margin-bottom: 50px;
+  padding: 0 40px; }
+#novedad .row {
+  padding-bottom: 14px; }
+#novedad h3 {
+  text-align: initial;
+  padding: 21px 0; }
+#novedad .novedades {
+  position: relative;
+  height: 200px;
+  margin-bottom: 14px; }
+  #novedad .novedades .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 35px; }
+    #novedad .novedades .overlay h4,
+    #novedad .novedades .overlay p {
+      visibility: hidden; }
+    #novedad .novedades .overlay h4 {
+      font-family: "museo-slab";
+      margin-bottom: 14px;
+      line-height: 125%; }
 
 .overlay:hover h4,
 .overlay:hover p {

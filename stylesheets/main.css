@@ -6411,6 +6411,9 @@ html,
 .novedades-v2 {
   background-color: #F7f7f7;
   padding: 56px 0; }
+  .novedades-v2 .col-md-4 {
+    padding: 14px;
+    background-color: #FFF; }
 
 #novedad .container {
   padding: 0 7%;

@@ -6413,7 +6413,8 @@ html,
   padding: 56px 0; }
   .novedades-v2 .col-md-4 div {
     padding: 14px;
-    background-color: #FFF; }
+    background-color: #FFF;
+    min-height: 230px; }
 
 #novedad .container {
   padding: 0 7%;

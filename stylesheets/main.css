@@ -6411,6 +6411,9 @@ html,
   line-height: 135%;
   font-weight: 100; }
 
+.novedades-v2 {
+  background-color: #F7f7f7; }
+
 #novedad .container {
   padding: 0 7%;
   padding-bottom: 2%; }

@@ -6412,7 +6412,8 @@ html,
   font-weight: 100; }
 
 .novedades-v2 {
-  background-color: #F7f7f7; }
+  background-color: #F7f7f7;
+  padding: 56px 0; }
 
 #novedad .container {
   padding: 0 7%;

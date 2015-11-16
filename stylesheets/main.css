@@ -5669,6 +5669,9 @@ a:hover, a:focus {
 @media only screen and (max-width: 480px) {
   #alianzas .alianzas-center {
     text-align: center; } }
+.investigacion-v2 {
+  padding: 56px 0; }
+
 #investigacion h2 {
   font-family: "museo-slab";
   font-size: 35px;

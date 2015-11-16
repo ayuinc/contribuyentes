@@ -5681,6 +5681,8 @@ a:hover, a:focus {
     padding: 14px; }
   .investigacion-v2 h4 {
     color: white; }
+  .investigacion-v2 p {
+    color: white; }
   .investigacion-v2 a {
     border: 1px solid white;
     padding: 7px 10px;

@@ -5671,9 +5671,13 @@ a:hover, a:focus {
     text-align: center; } }
 .investigacion-v2 {
   padding: 56px 0; }
-  .investigacion-v2 .bg-policy {
+  .investigacion-v2 .bg-costo {
     background-color: #e31b13;
-    height: 350px;
+    height: 333px;
+    padding: 14px; }
+  .investigacion-v2 .bg-policy {
+    background-color: #3ea4a8;
+    height: 333px;
     padding: 14px; }
 
 #investigacion h2 {

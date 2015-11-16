@@ -5682,7 +5682,8 @@ a:hover, a:focus {
   .investigacion-v2 a {
     border: 1px solid white;
     padding: 7px 10px;
-    color: white; }
+    color: white;
+    font-size: 16px; }
 
 #investigacion h2 {
   font-family: "museo-slab";

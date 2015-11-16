@@ -7390,8 +7390,6 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 .flexslider {
   margin: 0 0 60px;
-  background: #eeeeee;
-  border: 4px solid #eeeeee;
   position: relative;
   zoom: 1;
   -webkit-border-radius: 4px;

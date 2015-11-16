@@ -1,13 +1,5 @@
 {embed="includes/head"}
 		{embed="includes/nav"}
-		{!--exp:channel:entries channel="investigacion" limit="1"--}
-		<!--<section id="portada" style="background-image:url({investigacion_fondo})">
-			<div class="botones-portada">
-			  <a href="{site_url}investigacion#costos" class="btn btn-default btn-fold">Costo y Beneficio</a>
-			  <a href="{site_url}investigacion#policy-notes" class="btn btn-default btn-fold">Policy Notes</a>
-			</div>
-		</section>-->
-		{!--/exp:channel:entries--}
 		<section id="nosotros" class="text-center">
 			<div class="container">
 				<div class="row">
@@ -29,8 +21,6 @@
 					{exp:channel:entries channel="novedades" limit="3" dynamic="off"}
 	 				<div class="col-md-4">		 				
 		 					<div class="novedades">
-		 						<!--<img src="{novedades_imagen}" alt="{title}">-->
-		 						<!--<div class="overlay text-muted">-->
 		 						<div>
 			 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
 			  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
@@ -61,7 +51,7 @@
 			 					<div class="novedades">
 			 						<img src="{imagen_caricaturas}" alt="{title}">
 			 						<div class="overlay text-muted">
-					  					<h4 class="weight-light">{title}</h4>			  					
+					  				<h4 class="weight-light">{title}</h4>			  					
 					  			</div>
 					  		</div>
 			 				</a>

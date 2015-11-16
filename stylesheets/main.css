@@ -5680,7 +5680,8 @@ a:hover, a:focus {
     height: 333px;
     padding: 14px; }
   .investigacion-v2 h4 {
-    color: white; }
+    color: white;
+    font-weight: 300; }
   .investigacion-v2 p {
     color: white; }
   .investigacion-v2 a {

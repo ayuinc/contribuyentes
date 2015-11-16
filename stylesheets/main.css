@@ -5671,6 +5671,10 @@ a:hover, a:focus {
     text-align: center; } }
 .investigacion-v2 {
   padding: 56px 0; }
+  .investigacion-v2 .bg-policy {
+    background-color: #e31b13;
+    height: 350px;
+    padding: 14px; }
 
 #investigacion h2 {
   font-family: "museo-slab";

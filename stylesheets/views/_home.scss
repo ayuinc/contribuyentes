@@ -73,9 +73,14 @@ a:hover, a:focus {
 
 .investigacion-v2 {
 	padding: 56px 0;
-	.bg-policy {
+	.bg-costo {
 		background-color:#e31b13;
-		height: 350px;
+		height: 333px;
+		padding: 14px;
+	}	
+	.bg-policy {
+		background-color:#3ea4a8;
+		height: 333px;
 		padding: 14px;
 	}
 }

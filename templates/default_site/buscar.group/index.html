@@ -22,10 +22,14 @@
   						<p class="mb-7 pb-0 text-gray weight-light">{texto_introductorio_costo_benefi}</p>
   						<a href="{archivo-boletin-cb}" class="weight-light">Ver PDF →</a>	
   					{/if}
-  					{if descripcion_policy}
-  						<p class="mb-7 pb-0 text-gray weight-light">{descripcion_policy}</p>
+  					{if imagen_caricaturas}
+  						<p class="mb-7 pb-0 text-gray weight-light">{title}</p>
   						<a href="{site_url}caricaturas/caricatura/{url_title}" class="weight-light">Ver imágen →</a>
-  					{/if}  					 					
+  					{/if} 
+  					{if descripcion_policy}
+  						<p class="mb-7 pb-0 text-gray weight-light">{title}</p>
+  						<a href="{archivo-policy}" class="weight-light">Ver documento →</a>
+  					{/if}   					 					 					
 	 				</div>
 			    {paginate}
 			    <div class="col-md-6 col-md-offset-3">

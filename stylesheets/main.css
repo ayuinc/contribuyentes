@@ -5652,10 +5652,9 @@ a:hover, a:focus {
     line-height: 125%;
     font-weight: 100; }
   #nosotros p {
-    color: #a09e9e;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
-    line-height: 125%; }
+    line-height: 130%; }
   #nosotros .btn-nosotros {
     color: #3ea4a8;
     margin-top: 35px;

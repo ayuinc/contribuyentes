@@ -5631,8 +5631,7 @@ a:hover, a:focus {
     color: white;
     display: table-cell;
     vertical-align: middle;
-    padding-left: 60px;
-    background-color: rgba(10, 10, 10, 0.4); }
+    background-color: rgba(50, 50, 50, 0.3); }
     #portada div h1 {
       font-size: 42px;
       font-family: "museo-slab";

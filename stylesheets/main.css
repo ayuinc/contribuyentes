@@ -7062,11 +7062,10 @@ html,
   width: 100%;
   position: relative;
   background-size: cover;
-  display: table;
-  background-position-y: 100px; }
+  display: table; }
 
 #hero-section {
-  height: 550px;
+  height: 600px;
   width: 100%; }
   #hero-section .row {
     position: relative;

@@ -31,7 +31,12 @@ a:hover, a:focus {
 .formulario-registro {
 	input[type="text"] {
 		border: 1px solid #F7F7F7;
+		padding: 7px;
 	}
+	input[type="email"] {
+		border: 1px solid #F7F7F7;
+		padding: 7px;
+	}	
 }
 
 

@@ -5643,6 +5643,10 @@ a:hover, a:focus {
 
 .formulario-registro {
   padding-top: 21px; }
+  .formulario-registro label {
+    color: #FFF;
+    font-weight: 100;
+    font-size: 20px; }
   .formulario-registro input[type="text"] {
     border: 1px solid #F7F7F7;
     padding: 7px;
@@ -5665,7 +5669,8 @@ a:hover, a:focus {
     color: #FFF;
     font-size: 14px;
     font-weight: 300;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 25px; }
 
 #nosotros {
   background-color: #F7F7F7;

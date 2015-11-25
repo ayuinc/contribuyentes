@@ -3,7 +3,7 @@
 	margin-bottom:0;
 	position:fixed;
 	z-index:10;
-	background-color:#F7F7F7;
+	background-color:#F9F9F9;  
 	width:100%;
 	.navbar-nav{
 		float: none;
@@ -12,8 +12,8 @@
 			float: none;
 			display: inline-block;
 			font-size:rem(16px);
-			font-size:20px;
-			padding:0 21px;
+			font-size:16px;
+			padding:0 5px;
 			@media screen and (max-width: #{$screen-phone}){
 				display: block;
 			}

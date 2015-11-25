@@ -7251,7 +7251,7 @@ a.btn-investigacion:hover {
   margin-bottom: 0;
   position: fixed;
   z-index: 10;
-  background-color: #F9F9F9;
+  background-color: #F7F7F7;
   width: 100%; }
   .navbar .navbar-nav {
     float: none;
@@ -7266,7 +7266,7 @@ a.btn-investigacion:hover {
         .navbar .navbar-nav li {
           display: block; } }
       .navbar .navbar-nav li a {
-        color: #a6a1a1; }
+        color: #646464; }
   .navbar .navbar-toggle {
     background-color: #CCCCC !important;
     border-color: #4d4c4c; }

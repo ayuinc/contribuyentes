@@ -5641,6 +5641,9 @@ a:hover, a:focus {
       font-size: 18px;
       font-weight: 100; }
 
+.formulario-registro input[type="text"] {
+  border: 1px solid #F7F7F7; }
+
 #nosotros {
   background-color: #F7F7F7;
   padding: 70px 0; }

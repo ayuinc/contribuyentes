@@ -29,24 +29,32 @@ a:hover, a:focus {
 }
 
 .formulario-registro {
+	padding-top: 35px;
 	input[type="text"] {
 		border: 1px solid #F7F7F7;
 		padding: 7px;
 		width:100%;
+		font-size: 14px;
+		font-weight: 100;
+		color: #aaa;
 	}
 	input[type="email"] {
 		border: 1px solid #F7F7F7;
 		padding: 7px;
 		width:100%;
+		font-size: 14px;
+		font-weight: 100;
+		color: #aaa;		
 	}	
 	input[type="submit"] {
-		border: 1px solid #F7F7F7;
+		border: none;
 		padding: 7px;
 		width:100%;
 		background-color: #3ea4a8;
 		color: #FFF;
-		font-size: 20px;
+		font-size: 14px;
 		font-weight: 300;
+		text-transform: uppercase;
 	}		
 }
 

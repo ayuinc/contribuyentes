@@ -69,7 +69,7 @@ RewriteCond %{QUERY_STRING} !^(ACT=.*)$ [NC]
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5})$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} ^/Contribuyentes/(includes|content|nosotros|investigacion|buscar|costo-beneficio|plaza-bolivar|policy-notes|caricaturas|novedades|publicaciones|infografias-imagenes||members|P[0-9]{2,8}) [NC]
+RewriteCond %{REQUEST_URI} ^/Contribuyentes/(includes|content|nosotros|investigacion|buscar|costo-beneficio|plaza-bolivar|policy-notes|caricaturas|novedades|publicaciones|graficos-infografias||members|P[0-9]{2,8}) [NC]
 RewriteRule (.*) /Contribuyentes/index.php/$1 [L]
 
 # -- NSM .htaccess Generator End --

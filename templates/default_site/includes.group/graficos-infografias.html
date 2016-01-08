@@ -1,12 +1,21 @@
 					{exp:channel:entries channel="infografia_imagenes" dynamic="off" limit="3"}
-		 				<div class="col-md-4">
-			 				<a href="{site_url}graficos-infografias/articulo/articulo/{url_title}" target="_blank">
-			 					<div class="novedades">
-			 						<img src="{imagen_caricaturas}" alt="{title}" width="100%">
-			 						<div class="overlay text-muted">
-					  				<h4 class="weight-light">{title}</h4>			  					
-					  			</div>
-					  		</div>
-			 				</a>
-		 				</div>
+	 				<div class="col-md-4 mb-35">		 				
+	 					<div class="caricaturas-internas">
+		 					{if imagen_caricaturas}
+				  		<img src="{imagen_caricaturas}" alt="{title}"/>
+				  		{if:else}
+				  		<img src="{url_caricatura}" alt="{title}"/>
+				  		{/if}
+	 						<div class="mt-14">
+		 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
+		  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
+		  					<p class="mb-7 pb-0 text-gray weight-light">
+			  					{exp:char_limit total="100" exact="no" strip_tags="yes"}
+			  						{descripcion_policy}
+			  					{/exp:char_limit}
+			  				</p>
+		  					<a href="{site_url}caricaturas/caricatura/{url_title}" class="weight-light">Ver caricatura →</a>
+			  			</div>
+			  		</div>		 				
+	 				</div>	
 	 				{/exp:channel:entries}

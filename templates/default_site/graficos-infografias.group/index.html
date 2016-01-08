@@ -1,14 +1,13 @@
 {embed="includes/head"}
 		{embed="includes/nav"}
-		<section id="novedad">
+		<section class="novedades pt-56 pb-56">
 			<div class="container">
-				<div class="row mt-70">
-					<div class="col-md-1"></div>
-					<div class="col-md-10 text-center">
-						<h2>Infografías e Imágenes</h2>
+				<div class="row pb-35">
+					<div class="col-md-8 col-md-offset-2">
+						<h3 class="text-center">Gráficos e Infografías</h3>
 					</div>
 				</div>
-				<div class="row m-0 posts">
+				<div class="row posts">
 					{exp:channel:entries channel="infografia_imagenes" limit="12" dynamic="off"}
 		 				<div class="col-md-4">
 			 				<a href="{site_url}graficos-infografias/articulo/{url_title}">
@@ -33,16 +32,7 @@
 	 				</div>
           {/paginate}
 	 				{/exp:channel:entries}
-	 				<div class="modal">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-							</div>
-							<div class="modal-body">
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
-		</section>
+		</section>			
 {embed="includes/footer"}

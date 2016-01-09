@@ -103,30 +103,17 @@
 	 				</div>	
 		 			{/exp:channel:entries}
 				</div>
-				<div class="col-md-6 col-md-offset-3 text-center">				
-	 				<a href="{site_url}caricaturas" class="btn btn-custom btn-more btn-1 btn-1b">ver todas</a>
+			</div>
+		</section>			
+		<section class="novedades pt-56 pb-56">
+			<div class="container p-0">
+				<div class="row pb-35">
+					<div class="col-md-8 col-md-offset-2">
+						<h3 class="text-center">Gráficos e Infografías</h3>
+					</div>
 				</div>
-			</div>	
-			<div class="container pt-35">
-				<div id="info"></div>
-				<div class="row m-0 posts">
-					<div class="col-md-6 col-md-offset-3 text-center">
-						<p class="mb-21 h2">Gráficos e Infografías</p>
-					</div>					
-					{exp:channel:entries channel="infografia_imagenes" dynamic="off" limit="3"}
-		 				<div class="col-md-4">
-			 				<a href="{site_url}graficos-infografias/articulo/articulo/{url_title}" target="_blank">
-			 					<div class="novedades">
-									<div class="caricaturas-internas">
-			 						<img class="img-responsive" src="{imagen_caricaturas}" alt="{title}">
-									</div>
-			 						<div class="overlay text-muted">
-					  				<h4 class="weight-light">{title}</h4>			  					
-					  			</div>
-					  		</div>
-			 				</a>
-		 				</div>
-		 			{/exp:channel:entries}
+				<div class="row posts">
+					{embed="includes/graficos-infografias"}
 				</div>
 				<div class="col-md-6 col-md-offset-3 text-center">				
 	 				<a href="{site_url}graficos-infografias" class="btn btn-custom btn-more btn-1 btn-1b">ver todas</a>

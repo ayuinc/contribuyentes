@@ -1,0 +1,31 @@
+{embed="includes/head"}
+		{embed="includes/nav"}
+		<section id="novedad">
+			<div class="container">
+				<div class="row mt-70">
+					<div class="col-md-1"></div>
+					<div class="col-md-10 text-center">
+						<h2>Investigación</h2>
+						<h4 class="text-gray-light">Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+					</div>
+				</div>
+				<div class="row m-0">
+					{exp:channel:entries channel="investigacion" limit="20" dynamic="off"}
+	 				<div class="col-md-4">
+		 				<a href="{site_url}/novedades/articulo/{url_title}">
+		 					<div class="novedades">
+		 						<img src="{novedades_imagen}">
+		 						<div class="overlay text-muted">
+				  					<h4>{title}</h4>
+				  					<p>{novedades_descripcion}</p>
+				  			</div>
+				  		</div>
+		 				</a>
+	 				</div>
+	 				{/exp:channel:entries}
+				</div>
+			</div>
+		</section>
+{embed="includes/footer"}

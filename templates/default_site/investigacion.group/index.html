@@ -111,32 +111,14 @@
 			</div>
 		</section>			
 		<section class="novedades pt-56 pb-56">
-			<div class="container">
+			<div class="container p-0">
 				<div class="row pb-35">
 					<div class="col-md-8 col-md-offset-2">
 						<h3 class="text-center">Gráficos e Infografías</h3>
 					</div>
 				</div>
 				<div class="row posts">
-					{exp:channel:entries channel="infografia_imagenes" dynamic="off" limit="3"}
-		 				<div class="col-md-4">
-			 				<a href="{site_url}graficos-infografias/articulo/{url_title}" >
-			 					<div class="caricaturas-internas">
-			 						<img src="{imagen_caricaturas}" alt="{title}">
-			 						<div class="mt-14">
-				 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
-				  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
-				  					<p class="mb-7 pb-0 text-gray weight-light">
-					  					{exp:char_limit total="100" exact="no" strip_tags="yes"}
-					  						{descripcion_policy}
-					  					{/exp:char_limit}
-					  				</p>
-				  					<p class="weight-light">Ver gráfico →</p>
-					  			</div>
-					  		</div>
-			 				</a>
-		 				</div>
-	 				{/exp:channel:entries}
+					{embed="includes/graficos-infografias"}
 				</div>
 				<div class="col-md-6 col-md-offset-3 text-center pt-56">
 					<a href="{site_url}graficos-infografias" class="btn btn-custom btn-more btn-1 btn-1b">ver todos</a>

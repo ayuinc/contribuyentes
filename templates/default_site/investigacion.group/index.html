@@ -72,75 +72,62 @@
 	 				<a href="{site_url}policy-notes" class="btn btn-custom btn-more btn-1 btn-1b">ver todos</a>
 				</div>
 			</div>
-		</section>
-		<section class="novedades pt-56 pb-56">
-			<div class="container p-0 ">
-				<div class="row pb-35">
-					<div class="col-md-8 col-md-offset-2">
-						<h3 class="text-center">Caricaturas</h3>
-					</div>
-				</div>
-				<div class="row posts">
+			<div class="container pt-35">
+				<div id="info"></div>
+				<div class="row m-0 posts">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<p class="mb-21 h2">Caricaturas</p>
+					</div>					
 					{exp:channel:entries channel="caricatura_nueva" limit="3" dynamic="off"}
-		 				<div class="col-md-4">
-			 				<a href="{site_url}caricaturas/caricatura/{url_title}" >
-			 					<div class="caricaturas-internas">
-				 					{if imagen_caricaturas}
-						  		<img src="{imagen_caricaturas}" alt="{title}"/>
-						  		{if:else}
-						  		<img src="{url_caricatura}" alt="{title}"/>
-						  		{/if}
-			 						<div class="mt-14">
-				 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
-				  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
-				  					<p class="mb-7 pb-0 text-gray weight-light">
-					  					{exp:char_limit total="100" exact="no" strip_tags="yes"}
-					  						{descripcion_policy}
-					  					{/exp:char_limit}
-					  				</p>
-				  					<p class="weight-light">Ver caricatura →</p>
-					  			</div>
-					  		</div>
-			 				</a>
-		 				</div>
-		 			{/exp:channel:entries}						
+	 				<div class="col-md-4 mb-35">		 				
+	 					<div class="caricaturas-internas">
+		 					{if imagen_caricaturas}
+				  		<img src="{imagen_caricaturas}" alt="{title}"/>
+				  		{if:else}
+				  		<img src="{url_caricatura}" alt="{title}"/>
+				  		{/if}
+	 						<div class="mt-14">
+		 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
+		  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
+		  					<p class="mb-7 pb-0 text-gray weight-light">
+			  					{exp:char_limit total="100" exact="no" strip_tags="yes"}
+			  						{descripcion_policy}
+			  					{/exp:char_limit}
+			  				</p>
+		  					<a href="{site_url}caricaturas/caricatura/{url_title}" class="weight-light">Ver caricatura →</a>
+			  			</div>
+			  		</div>		 				
+	 				</div>	
+		 			{/exp:channel:entries}
 				</div>
-				<div class="col-md-6 col-md-offset-3 text-center pt-56">
-					<a href="{site_url}caricaturas" class="btn btn-custom btn-more btn-1 btn-1b">ver todas</a>
+				<div class="col-md-6 col-md-offset-3 text-center">				
+	 				<a href="{site_url}caricaturas" class="btn btn-custom btn-more btn-1 btn-1b">ver todas</a>
 				</div>
-			</div>
-		</section>			
-		<section class="novedades pt-56 pb-56">
-			<div class="container">
-				<div class="row pb-35">
-					<div class="col-md-8 col-md-offset-2">
-						<h3 class="text-center">Gráficos e Infografías</h3>
-					</div>
-				</div>
-				<div class="row posts">
+			</div>	
+			<div class="container pt-35">
+				<div id="info"></div>
+				<div class="row m-0 posts">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<p class="mb-21 h2">Gráficos e Infografías</p>
+					</div>					
 					{exp:channel:entries channel="infografia_imagenes" dynamic="off" limit="3"}
 		 				<div class="col-md-4">
-			 				<a href="{site_url}graficos-infografias/articulo/{url_title}" >
-			 					<div class="caricaturas-internas">
-			 						<img src="{imagen_caricaturas}" alt="{title}">
-			 						<div class="mt-14">
-				 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
-				  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
-				  					<p class="mb-7 pb-0 text-gray weight-light">
-					  					{exp:char_limit total="100" exact="no" strip_tags="yes"}
-					  						{descripcion_policy}
-					  					{/exp:char_limit}
-					  				</p>
-				  					<p class="weight-light">Ver gráfico →</p>
+			 				<a href="{site_url}graficos-infografias/articulo/articulo/{url_title}" target="_blank">
+			 					<div class="novedades">
+									<div class="caricaturas-internas">
+			 						<img class="img-responsive" src="{imagen_caricaturas}" alt="{title}">
+									</div>
+			 						<div class="overlay text-muted">
+					  				<h4 class="weight-light">{title}</h4>			  					
 					  			</div>
 					  		</div>
 			 				</a>
 		 				</div>
-	 				{/exp:channel:entries}
+		 			{/exp:channel:entries}
 				</div>
-				<div class="col-md-6 col-md-offset-3 text-center pt-56">
-					<a href="{site_url}graficos-infografias" class="btn btn-custom btn-more btn-1 btn-1b">ver todos</a>
+				<div class="col-md-6 col-md-offset-3 text-center">				
+	 				<a href="{site_url}graficos-infografias" class="btn btn-custom btn-more btn-1 btn-1b">ver todas</a>
 				</div>
-			</div>
-		</section>	
+			</div>			
+		</section>
 {embed="includes/footer"}

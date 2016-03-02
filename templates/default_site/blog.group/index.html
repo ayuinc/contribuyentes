@@ -4,14 +4,14 @@
 			<div class="container">
 				<div class="row mt-70">
 					<div class="col-md-1"></div>
-					<div class="col-md-10 text-center">
-						<h1>Novedades</h1>
-						<h4 class="text-gray-light weight-light">Entérate de nuestras últimas publicaciones y apariciones en medios:</h4>
+					<div class="col-md-10 text-center pb-21">
+						<h1>Blog</h1>
+						<!--<h4 class="text-gray-light weight-light">Entérate de nuestras últimas publicaciones y apariciones en medios:</h4>-->
 					</div>
 				</div>
 				<div class="row m-0">
 					{exp:channel:entries channel="novedades" limit="21" dynamic="off"}
-	 				<div class="col-md-12">		 				
+	 				<div class="col-md-10 col-md-offset-1">		 				
 		 					<div class="novedades">
 		 						<div>
 			 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
@@ -26,7 +26,7 @@
 				  		</div>		 				
 	 				</div>
 	 				{paginate}
-	 				<div class="col-md-12">
+	 				<div class="col-md-10 col-md-offset-1">
             <h4 class="text-center pv-14">Páginas {pagination_links}</h4>
 	 				</div>
           {/paginate}

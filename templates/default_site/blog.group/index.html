@@ -1,0 +1,37 @@
+{embed="includes/head"}
+		{embed="includes/nav"}
+		<section id="novedad">
+			<div class="container">
+				<div class="row mt-70">
+					<div class="col-md-1"></div>
+					<div class="col-md-10 text-center">
+						<h1>Novedades</h1>
+						<h4 class="text-gray-light weight-light">Entérate de nuestras últimas publicaciones y apariciones en medios:</h4>
+					</div>
+				</div>
+				<div class="row m-0">
+					{exp:channel:entries channel="novedades" limit="21" dynamic="off"}
+	 				<div class="col-md-4">		 				
+		 					<div class="novedades">
+		 						<div>
+			 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
+			  					<h4 class="mt-7 mb-7 pb-0">{title}</h4>
+			  					<p class="mb-7 pb-0 text-gray weight-light">
+				  					{exp:char_limit total="120" exact="no" strip_tags="yes"}
+				  						{novedades_descripcion}
+				  					{/exp:char_limit}
+				  				</p>
+			  					<a href="{site_url}novedades/articulo/{url_title}" class="weight-light">Lee más →</a>
+				  			</div>
+				  		</div>		 				
+	 				</div>
+	 				{paginate}
+	 				<div class="col-md-12">
+            <h4 class="text-center pv-14">Páginas {pagination_links}</h4>
+	 				</div>
+          {/paginate}
+	 				{/exp:channel:entries}
+				</div>
+			</div>
+		</section>
+{embed="includes/footer"}

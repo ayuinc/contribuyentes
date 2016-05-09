@@ -6,7 +6,7 @@
 					<div class="col-md-8 col-md-offset-2">
 						<h1>Novedades</h1>
 						<h3 class="text-gray weight-light mb-21">Encuentra aquí nuestros análisis y propuestas sobre diversos problemas de políticas públicas</h3>
-						<h4><a href="{site_url}publicaciones#novedades" class="text-gray-dark">Novedades</a> | <a href="{site_url}publicaciones#info" class="text-gray-dark">Infografía e Imágenes</a></h4>
+						<h4><a href="{site_url}novedades#novedades" class="text-gray-dark">Novedades</a> | <a href="{site_url}novedades#info" class="text-gray-dark">Infografía e Imágenes</a></h4>
 					</div>
 				</div>
 			</div>
@@ -18,7 +18,7 @@
 					<div class="col-md-6 col-md-offset-3 text-center">
 						<p class="mb-21 h2">Novedades</p>
 					</div>
-					{exp:channel:entries channel="novedades" limit="3" dynamic="off"}
+					{exp:channel:entries channel="novedades" limit="27" dynamic="off"}
 	 				<div class="col-md-4">		 				
 		 					<div class="novedades">
 		 						<div>
@@ -29,15 +29,18 @@
 				  						{novedades_descripcion}
 				  					{/exp:char_limit}
 				  				</p>
-			  					<a href="{site_url}publicaciones/novedad/{url_title}" class="weight-light">Lee más →</a>
+			  					<a href="{site_url}novedades/novedad/{url_title}" class="weight-light">Lee más →</a>
 				  			</div>
 				  		</div>		 				
 	 				</div>
+
+			    {paginate}
+			    <div class="col-md-8 col-md-offset-2 pt-35">	
+			      <p class="text-center">Página {current_page} de {total_pages} páginas {pagination_links}</p>
+			    </div>
+			    {/paginate}
 	 				{/exp:channel:entries}
-				</div>
-				<div class="col-md-6 col-md-offset-3 text-center">
-	 				<a href="{site_url}novedades" class="btn btn-custom btn-more btn-1 btn-1b">ver todas</a>
 				</div>
 			</div>
 		</section>
-{embed="includes/footer"}
+{embed="includes/footer"}  

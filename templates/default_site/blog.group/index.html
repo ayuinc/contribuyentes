@@ -10,30 +10,41 @@
 					</div>
 				</div>
 				<div class="row m-0">
-					{exp:channel:entries channel="blog" limit="21" dynamic="off"}
-	 				<div class="col-md-8 col-md-offset-2 pb-56">		 				
-		 					<div>
-		 						<div>
-			 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
-			  					<h3 class="mt-7 pt-0 mb-7 pb-0">{title}</h3>
-			  					<div class="pt-14 pb-21">
-				  					<img src="{novedades_imagen}" alt="{title}" width="100%">
-			  					</div>
-			  					<p class="mb-7 pb-0 text-gray weight-light">
-				  					{exp:char_limit total="120" exact="no" strip_tags="yes"}
-				  						{novedades_descripcion}
-				  					{/exp:char_limit}
-				  				</p>
-			  					<a href="{site_url}blog/articulo/{url_title}" class="weight-light">Lee más →</a>
-				  			</div>
-				  		</div>		 				
-	 				</div>
-	 				{paginate}
-	 				<div class="col-md-8 col-md-offset-2">
-            <h4 class="text-center pv-14">Páginas {pagination_links}</h4>
-	 				</div>
-          {/paginate}
-	 				{/exp:channel:entries}
+					<div class="col-md-8 pb-56">
+						{exp:channel:entries channel="blog" limit="21" dynamic="off"}
+		 				<div class="col-md-12 pb-56">		 				
+			 					<div>
+			 						<div>
+				 						<small class="text-gray weight">{entry_date format="%d/%m/%Y"}</small>
+				  					<h3 class="mt-7 pt-0 mb-7 pb-0">{title}</h3>
+				  					<div class="pt-14 pb-21">
+					  					<img src="{novedades_imagen}" alt="{title}" width="100%">
+				  					</div>
+				 						<div class="articulos-contenido">
+						  				{novedades_contenido}
+				 						</div>
+				 						<div class="pt-14 pb-14">
+					 						<p><a href="{site_url}blog/articulo/{url_title}">Ir al artículo →</a></p>
+				 						</div>
+					  			</div>
+					  		</div>		 				
+		 				</div>
+		 				{paginate}
+		 				<div class="col-md-12">
+	            <h4 class="text-center pv-14">Páginas {pagination_links}</h4>
+		 				</div>
+	          {/paginate}
+		 				{/exp:channel:entries}
+					</div>
+					<div class="col-md-4 pb-56">
+						<h3 class="mt-o pt-0">Los más vistos</h3>
+						{exp:channel:entries channel="blog" limit="5" dynamic="off" orderby="view_count_one" sort="desc"}
+							<div class="pb-0">
+								<h5 class="mb-0 pb-0">{title} ({view_count_one} visitas)</h5>
+								<p><a href="{site_url}blog/articulo/{url_title}">Lee más →</a></p>
+							</div>
+						{/exp:channel:entries}
+					</div>
 				</div>
 			</div>
 		</section>

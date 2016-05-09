@@ -19,10 +19,10 @@ $lang = array(
 'off',
 
 'first' =>
-'First',
+'Primera',
 
 'last' =>
-'Last',
+'Última',
 
 'enabled' =>
 'enabled',
@@ -40,7 +40,7 @@ $lang = array(
 'Update',
 
 'thank_you' =>
-'Thank You!',
+'Gracias!',
 
 'page' =>
 'Page',
@@ -96,8 +96,8 @@ $lang = array(
 'preference' =>
 'Preference',
 
-'pag_first_link' => '&lsaquo; First',
-'pag_last_link' => 'Last &rsaquo;',
+'pag_first_link' => '&lsaquo; Primera',
+'pag_last_link' => 'Última &rsaquo;',
 
 //----------------------------
 // Errors

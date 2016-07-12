@@ -1,6 +1,6 @@
 {embed="includes/head"}
 		{embed="includes/nav"}
-		{exp:channel:entries channel="novedades" limit="1"}
+		{exp:channel:entries channel="disclaimer" limit="1"}
 		<section id="novedad">
 			<div class="container">
 				<div class="row mt-70">
@@ -12,15 +12,9 @@
 				<div class="row m-0">
 	 				<div class="col-md-10 col-md-offset-1">
  						<div class="pb-28">
-	 						{if video_de_youtube}
-	 							<iframe width="777" height="437" src="https://www.youtube.com/embed/{video_de_youtube}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-	 						{if:else}
-	 							<img src="{novedades_imagen}" width="100%" alt="{title}">
-	 						{/if}
+	 						<img src="{novedades_imagen}" alt="{title} width="100%">
  						</div>
- 						<div class="articulos-contenido">
 		  			{novedades_contenido}
- 						</div>
 		  			<div class="pt-28">
 			  			<h4>Comentarios</h4>
 			  			<div id="disqus_thread"></div>
